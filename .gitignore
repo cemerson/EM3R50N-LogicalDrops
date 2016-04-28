@@ -47,3 +47,9 @@ Paulscode*.txt
 README.txt
 forge-*.txt
 LICENSE*.txt
+
+saves/
+logs/
+mods/
+resourcepacks/
+saves/
