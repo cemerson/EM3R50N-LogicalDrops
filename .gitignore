@@ -40,6 +40,11 @@ local.properties
 .buildpath
 
 # Other (cemerson)
+saves/
+logs/
+mods/
+resourcepacks/
+saves/
 run/
 MinecraftForge*.txt
 CREDITS*.txt
@@ -47,9 +52,9 @@ Paulscode*.txt
 README.txt
 forge-*.txt
 LICENSE*.txt
+saves/*
+logs/*
+mods/*
+resourcepacks/*
+run/*
 
-saves/
-logs/
-mods/
-resourcepacks/
-saves/
