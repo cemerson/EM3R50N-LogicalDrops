@@ -21,8 +21,8 @@ plugins {
 }
 */
 version = "0.9"
-group= "com.cemerson.realisticdrops" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "EM3R50N-RealisticDrops.1.9-"
+group= "com.cemerson.logicaldrops" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = "EM3R50N-LogicalDrops.1.9"
 
 minecraft {
     version = "1.9-12.16.0.1865-1.9"

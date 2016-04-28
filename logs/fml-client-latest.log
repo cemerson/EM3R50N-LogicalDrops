@@ -1,0 +1,1480 @@
+[19:22:37] [main/DEBUG] [FML/]: Injecting tracing printstreams for STDOUT/STDERR.
+[19:22:37] [main/INFO] [FML/]: Forge Mod Loader version 12.16.0.1865 for Minecraft 1.9 loading
+[19:22:37] [main/INFO] [FML/]: Java is Java HotSpot(TM) 64-Bit Server VM, version 1.8.0_77, running on Windows 7:amd64:6.1, installed at C:\Program Files\Java\jdk1.8.0_77\jre
+[19:22:37] [main/DEBUG] [FML/]: Java classpath at launch is C:\Users\Administrator\Desktop\MCD\EM3R50N-RealisticDrops\bin;C:\Users\Administrator\.gradle\caches\minecraft\net\minecraftforge\forge\1.9-12.16.0.1865-1.9\snapshot\20160312\forgeSrc-1.9-12.16.0.1865-1.9.jar;C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\oshi-project\oshi-core\1.1\9ddf7b048a8d701be231c0f4f95fd986198fd2d8\oshi-core-1.1.jar;C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\net.java.dev.jna\jna\3.4.0\803ff252fedbd395baffd43b37341dc4a150a554\jna-3.4.0.jar;C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\net.java.dev.jna\platform\3.4.0\e3f70017be8100d3d6923f50b3d2ee17714e9c13\platform-3.4.0.jar;C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.ibm.icu\icu4j-core-mojang\51.2\63d216a9311cca6be337c1e458e587f99d382b84\icu4j-core-mojang-51.2.jar;C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\net.sf.jopt-simple\jopt-simple\4.6\306816fb57cf94f108a43c95731b08934dcae15c\jopt-simple-4.6.jar;C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\io.netty\netty-all\4.0.23.Final\294104aaf1781d6a56a07d561e792c5d0c95f45\netty-all-4.0.23.Final.jar;C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.google.guava\guava\17.0\9c6ef172e8de35fd8d4d8783e4821e57cdef7445\guava-17.0.jar;C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.apache.commons\commons-lang3\3.3.2\90a3822c38ec8c996e84c16a3477ef632cbc87a3\commons-lang3-3.3.2.jar;C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\commons-io\commons-io\2.4\b1b6ea3b7e4aa4f492509a4952029cd8e48019ad\commons-io-2.4.jar;C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\commons-codec\commons-codec\1.9\9ce04e34240f674bc72680f8b843b1457383161a\commons-codec-1.9.jar;C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\net.java.jutils\jutils\1.0.0\e12fe1fda814bd348c1579329c86943d2cd3c6a6\jutils-1.0.0.jar;C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.2.4\a60a5e993c98c864010053cb901b7eab25306568\gson-2.2.4.jar;C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.mojang\authlib\1.5.22\afaa8f6df976fcb5520e76ef1d5798c9e6b5c0b2\authlib-1.5.22.jar;C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.mojang\realms\1.8.7\b624280016616bb56cc6c30282684322edc7e7eb\realms-1.8.7.jar;C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.apache.commons\commons-compress\1.8.1\a698750c16740fd5b3871425f4cb3bbaa87f529d\commons-compress-1.8.1.jar;C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpclient\4.3.3\18f4247ff4572a074444572cee34647c43e7c9c7\httpclient-4.3.3.jar;C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\commons-logging\commons-logging\1.1.3\f6f66e966c70a83ffbdb6f17a0919eaf7c8aca7f\commons-logging-1.1.3.jar;C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpcore\4.3.2\31fbbff1ddbf98f3aa7377c94d33b0447c646b6e\httpcore-4.3.2.jar;C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.apache.logging.log4j\log4j-api\2.0-beta9\1dd66e68cccd907880229f9e2de1314bd13ff785\log4j-api-2.0-beta9.jar;C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.apache.logging.log4j\log4j-core\2.0-beta9\678861ba1b2e1fccb594bb0ca03114bb05da9695\log4j-core-2.0-beta9.jar;C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\net.minecraft\launchwrapper\1.12\111e7bea9c968cdb3d06ef4632bf7ff0824d0f36\launchwrapper-1.12.jar;C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\jline\jline\2.13\2d9530d0a25daffaffda7c35037b046b627bb171\jline-2.13.jar;C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm-debug-all\5.0.3\f9e364ae2a66ce2a543012a4668856e84e5dab74\asm-debug-all-5.0.3.jar;C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.typesafe.akka\akka-actor_2.11\2.3.3\ed62e9fc709ca0f2ff1a3220daa8b70a2870078e\akka-actor_2.11-2.3.3.jar;C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.typesafe\config\1.2.1\f771f71fdae3df231bcd54d5ca2d57f0bf93f467\config-1.2.1.jar;C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-actors-migration_2.11\1.1.0\dfa8bc42b181d5b9f1a5dd147f8ae308b893eb6f\scala-actors-migration_2.11-1.1.0.jar;C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-compiler\2.11.1\56ea2e6c025e0821f28d73ca271218b8dd04926a\scala-compiler-2.11.1.jar;C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.scala-lang.plugins\scala-continuations-library_2.11\1.0.2\e517c53a7e9acd6b1668c5a35eccbaa3bab9aac\scala-continuations-library_2.11-1.0.2.jar;C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.scala-lang.plugins\scala-continuations-plugin_2.11.1\1.0.2\f361a3283452c57fa30c1ee69448995de23c60f7\scala-continuations-plugin_2.11.1-1.0.2.jar;C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-library\2.11.1\e11da23da3eabab9f4777b9220e60d44c1aab6a\scala-library-2.11.1.jar;C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.scala-lang.modules\scala-parser-combinators_2.11\1.0.1\f05d7345bf5a58924f2837c6c1f4d73a938e1ff0\scala-parser-combinators_2.11-1.0.1.jar;C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-reflect\2.11.1\6580347e61cc7f8e802941e7fde40fa83b8badeb\scala-reflect-2.11.1.jar;C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.scala-lang.modules\scala-swing_2.11\1.0.1\b1cdd92bd47b1e1837139c1c53020e86bb9112ae\scala-swing_2.11-1.0.1.jar;C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.scala-lang.modules\scala-xml_2.11\1.0.2\820fbca7e524b530fdadc594c39d49a21ea0337e\scala-xml_2.11-1.0.2.jar;C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\lzma\lzma\0.0.1\521616dc7487b42bef0e803bd2fa3faf668101d7\lzma-0.0.1.jar;C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\net.sf.trove4j\trove4j\3.0.3\42ccaf4761f0dfdfa805c9e340d99a755907e2dd\trove4j-3.0.3.jar;C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.paulscode\codecjorbis\20101023\c73b5636faf089d9f00e8732a829577de25237ee\codecjorbis-20101023.jar;C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.paulscode\codecwav\20101023\12f031cfe88fef5c1dd36c563c0a3a69bd7261da\codecwav-20101023.jar;C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.paulscode\libraryjavasound\20101123\5c5e304366f75f9eaa2e8cca546a1fb6109348b3\libraryjavasound-20101123.jar;C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.paulscode\librarylwjglopenal\20100824\73e80d0794c39665aec3f62eee88ca91676674ef\librarylwjglopenal-20100824.jar;C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.paulscode\soundsystem\20120107\419c05fe9be71f792b2d76cfc9b67f1ed0fec7f6\soundsystem-20120107.jar;C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\net.java.jinput\jinput\2.0.5\39c7796b469a600f72380316f6b1f11db6c2c7c4\jinput-2.0.5.jar;C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.lwjgl.lwjgl\lwjgl\2.9.4-nightly-20150209\697517568c68e78ae0b4544145af031c81082dfe\lwjgl-2.9.4-nightly-20150209.jar;C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.lwjgl.lwjgl\lwjgl_util\2.9.4-nightly-20150209\d51a7c040a721d13efdfbd34f8b257b2df882ad0\lwjgl_util-2.9.4-nightly-20150209.jar;C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\java3d\vecmath\1.5.2\79846ba34cbd89e2422d74d53752f993dcc2ccaf\vecmath-1.5.2.jar;C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.fusesource.jansi\jansi\1.11\655c643309c2f45a56a747fda70e3fadf57e9f11\jansi-1.11.jar;C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-actors\2.11.0\8ccfb6541de179bb1c4d45cf414acee069b7f78b\scala-actors-2.11.0.jar;C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\net.java.jinput\jinput-platform\2.0.5\7ff832a6eb9ab6a767f1ade2b548092d0fa64795\jinput-platform-2.0.5-natives-linux.jar;C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\net.java.jinput\jinput-platform\2.0.5\385ee093e01f587f30ee1c8a2ee7d408fd732e16\jinput-platform-2.0.5-natives-windows.jar;C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\net.java.jinput\jinput-platform\2.0.5\53f9c919f34d2ca9de8c51fc4e1e8282029a9232\jinput-platform-2.0.5-natives-osx.jar;C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\2.0.1\516c03b21d50a644d538de0f0369c620989cd8f0\jsr305-2.0.1.jar;C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.lwjgl.lwjgl\lwjgl-platform\2.9.4-nightly-20150209\b84d5102b9dbfabfeb5e43c7e2828d98a7fc80e0\lwjgl-platform-2.9.4-nightly-20150209-natives-windows.jar;C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.lwjgl.lwjgl\lwjgl-platform\2.9.4-nightly-20150209\931074f46c795d2f7b30ed6395df5715cfd7675b\lwjgl-platform-2.9.4-nightly-20150209-natives-linux.jar;C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.lwjgl.lwjgl\lwjgl-platform\2.9.4-nightly-20150209\bcab850f8f487c3f4c4dbabde778bb82bd1a40ed\lwjgl-platform-2.9.4-nightly-20150209-natives-osx.jar;C:\Users\Administrator\.gradle\caches\minecraft\deobfedDeps\compileDummy.jar;C:\Users\Administrator\.gradle\caches\minecraft\deobfedDeps\providedDummy.jar;C:\Users\Administrator\.gradle\caches\minecraft\net\minecraftforge\forge\1.9-12.16.0.1865-1.9\start
+[19:22:37] [main/DEBUG] [FML/]: Java library path at launch is C:\Program Files\Java\jdk1.8.0_77\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_77/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_77/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_77/bin/../jre/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files\ImageMagick-6.9.0-Q16;C:\Ruby200-x64\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;c:\Program Files\nodejs\;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\gs\gs9.15\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit\;C:\Program Files (x86)\Git\cmd;C:\Program Files (x86)\OpenSSH\bin;C:\Users\Administrator\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files (x86)\nodejs\;C:\Program Files\doxygen\bin;c:\Program Files\WinRAR;c:\Program Files\Microsoft Office\Office15;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_77\bin;C:\Program Files (x86)\Android\android-sdk\tools;C:\Program Files (x86)\Android\android-sdk\platform-tools;C:\apache-ant-1.9.3\bin;C:\Program Files (x86)\Git\cmd;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\gradle\gradle-2.12\bin;C:\Program Files\Java\jre1.8.0_77\bin;C:\Users\Administrator\Desktop;;.;C:/Users/Administrator/.gradle/caches/minecraft/net/minecraft/natives/1.9
+[19:22:37] [main/INFO] [FML/]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
+[19:22:37] [main/DEBUG] [FML/]: Instantiating coremod class FMLCorePlugin
+[19:22:37] [main/DEBUG] [FML/]: Added access transformer class net.minecraftforge.fml.common.asm.transformers.AccessTransformer to enqueued access transformers
+[19:22:37] [main/DEBUG] [FML/]: Enqueued coremod FMLCorePlugin
+[19:22:37] [main/DEBUG] [FML/]: Instantiating coremod class FMLForgePlugin
+[19:22:37] [main/DEBUG] [FML/]: Enqueued coremod FMLForgePlugin
+[19:22:37] [main/DEBUG] [FML/]: All fundamental core mods are successfully located
+[19:22:37] [main/DEBUG] [FML/]: Attempting to load commandline specified mods, relative to C:\Users\Administrator\Desktop\MCD\EM3R50N-RealisticDrops\.
+[19:22:37] [main/DEBUG] [FML/]: Discovering coremods
+[19:22:37] [main/INFO] [LaunchWrapper/]: Calling tweak class net.minecraftforge.gradle.tweakers.CoremodTweaker
+[19:22:37] [main/INFO] [GradleStart/]: Injecting location in coremod net.minecraftforge.fml.relauncher.FMLCorePlugin
+[19:22:37] [main/INFO] [GradleStart/]: Injecting location in coremod net.minecraftforge.classloading.FMLForgePlugin
+[19:22:37] [main/INFO] [LaunchWrapper/]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[19:22:37] [main/INFO] [LaunchWrapper/]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[19:22:37] [main/INFO] [LaunchWrapper/]: Loading tweak class name net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
+[19:22:37] [main/INFO] [LaunchWrapper/]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[19:22:37] [main/INFO] [LaunchWrapper/]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[19:22:37] [main/INFO] [LaunchWrapper/]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[19:22:37] [main/DEBUG] [FML/]: Injecting coremod FMLCorePlugin {net.minecraftforge.fml.relauncher.FMLCorePlugin} class transformers
+[19:22:37] [main/TRACE] [FML/]: Registering transformer net.minecraftforge.fml.common.asm.transformers.BlamingTransformer
+[19:22:37] [main/TRACE] [FML/]: Registering transformer net.minecraftforge.fml.common.asm.transformers.SideTransformer
+[19:22:37] [main/TRACE] [FML/]: Registering transformer net.minecraftforge.fml.common.asm.transformers.EventSubscriptionTransformer
+[19:22:37] [main/TRACE] [FML/]: Registering transformer net.minecraftforge.fml.common.asm.transformers.EventSubscriberTransformer
+[19:22:37] [main/DEBUG] [FML/]: Injection complete
+[19:22:37] [main/DEBUG] [FML/]: Running coremod plugin for FMLCorePlugin {net.minecraftforge.fml.relauncher.FMLCorePlugin}
+[19:22:37] [main/DEBUG] [FML/]: Running coremod plugin FMLCorePlugin
+[19:22:37] [main/ERROR] [FML/]: The binary patch set is missing. Either you are in a development environment, or things are not going to work!
+[19:22:37] [main/DEBUG] [FML/]: Loading deobfuscation resource C:\Users\Administrator\.gradle\caches\minecraft\de\oceanlabs\mcp\mcp_snapshot\20160312\srgs\srg-mcp.srg with 31798 records
+[19:22:38] [main/ERROR] [FML/]: FML appears to be missing any signature data. This is not a good thing
+[19:22:38] [main/DEBUG] [FML/]: Coremod plugin class FMLCorePlugin run successfully
+[19:22:38] [main/INFO] [LaunchWrapper/]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[19:22:38] [main/DEBUG] [FML/]: Injecting coremod FMLForgePlugin {net.minecraftforge.classloading.FMLForgePlugin} class transformers
+[19:22:38] [main/DEBUG] [FML/]: Injection complete
+[19:22:38] [main/DEBUG] [FML/]: Running coremod plugin for FMLForgePlugin {net.minecraftforge.classloading.FMLForgePlugin}
+[19:22:38] [main/DEBUG] [FML/]: Running coremod plugin FMLForgePlugin
+[19:22:38] [main/DEBUG] [FML/]: Coremod plugin class FMLForgePlugin run successfully
+[19:22:38] [main/INFO] [LaunchWrapper/]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[19:22:38] [main/DEBUG] [FML/]: Loaded 188 rules from AccessTransformer config file forge_at.cfg
+[19:22:38] [main/DEBUG] [FML/]: Validating minecraft
+[19:22:39] [main/DEBUG] [FML/]: Minecraft validated, launching...
+[19:22:39] [main/INFO] [LaunchWrapper/]: Calling tweak class net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
+[19:22:39] [main/INFO] [LaunchWrapper/]: Loading tweak class name net.minecraftforge.fml.common.launcher.TerminalTweaker
+[19:22:39] [main/INFO] [LaunchWrapper/]: Calling tweak class net.minecraftforge.fml.common.launcher.TerminalTweaker
+[19:22:39] [main/INFO] [LaunchWrapper/]: Launching wrapped minecraft {net.minecraft.client.main.Main}
+[19:22:43] [Client thread/DEBUG] [FML/]: Creating vanilla freeze snapshot
+[19:22:43] [Client thread/DEBUG] [FML/]: Vanilla freeze snapshot created
+[19:22:45] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - LanguageManager took 0.001s
+[19:22:45] [Client thread/INFO] [STDOUT/]: [net.minecraftforge.fml.client.SplashProgress:start:200]: ---- Minecraft Crash Report ----
+// Don't do that.
+
+Time: 4/27/16 7:22 PM
+Description: Loading screen debug info
+
+This is just a prompt for computer specs to be printed. THIS IS NOT A ERROR
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.9
+	Operating System: Windows 7 (amd64) version 6.1
+	Java Version: 1.8.0_77, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 176164776 bytes (168 MB) / 603979776 bytes (576 MB) up to 1886912512 bytes (1799 MB)
+	JVM Flags: 1 total; -Xmx2024M
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: 
+	Loaded coremods (and transformers): 
+	GL info: ' Vendor: 'NVIDIA Corporation' Version: '4.5.0 NVIDIA 362.00' Renderer: 'GeForce GTX 970/PCIe/SSE2'
+[19:22:45] [Client thread/INFO] [FML/]: MinecraftForge v12.16.0.1865 Initialized
+[19:22:45] [Client thread/INFO] [FML/]: Replaced 207 ore recipes
+[19:22:45] [Client thread/DEBUG] [FML/]: File C:\Users\Administrator\Desktop\MCD\EM3R50N-RealisticDrops\config\injectedDependencies.json not found. No dependencies injected
+[19:22:46] [Client thread/DEBUG] [FML/]: Building injected Mod Containers [net.minecraftforge.fml.common.FMLContainer, net.minecraftforge.common.ForgeModContainer]
+[19:22:46] [Client thread/DEBUG] [FML/]: Attempting to load mods contained in the minecraft jar file and associated classes
+[19:22:46] [Client thread/DEBUG] [FML/]: Found a minecraft related directory at C:\Users\Administrator\Desktop\MCD\EM3R50N-RealisticDrops\bin, examining for mod candidates
+[19:22:46] [Client thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\Administrator\.gradle\caches\minecraft\net\minecraftforge\forge\1.9-12.16.0.1865-1.9\snapshot\20160312\forgeSrc-1.9-12.16.0.1865-1.9.jar, examining for mod candidates
+[19:22:46] [Client thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\oshi-project\oshi-core\1.1\9ddf7b048a8d701be231c0f4f95fd986198fd2d8\oshi-core-1.1.jar, examining for mod candidates
+[19:22:46] [Client thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\net.java.dev.jna\jna\3.4.0\803ff252fedbd395baffd43b37341dc4a150a554\jna-3.4.0.jar, examining for mod candidates
+[19:22:46] [Client thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\net.java.dev.jna\platform\3.4.0\e3f70017be8100d3d6923f50b3d2ee17714e9c13\platform-3.4.0.jar, examining for mod candidates
+[19:22:46] [Client thread/TRACE] [FML/]: Skipping known library file C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.ibm.icu\icu4j-core-mojang\51.2\63d216a9311cca6be337c1e458e587f99d382b84\icu4j-core-mojang-51.2.jar
+[19:22:46] [Client thread/TRACE] [FML/]: Skipping known library file C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\net.sf.jopt-simple\jopt-simple\4.6\306816fb57cf94f108a43c95731b08934dcae15c\jopt-simple-4.6.jar
+[19:22:46] [Client thread/TRACE] [FML/]: Skipping known library file C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\io.netty\netty-all\4.0.23.Final\294104aaf1781d6a56a07d561e792c5d0c95f45\netty-all-4.0.23.Final.jar
+[19:22:46] [Client thread/TRACE] [FML/]: Skipping known library file C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.google.guava\guava\17.0\9c6ef172e8de35fd8d4d8783e4821e57cdef7445\guava-17.0.jar
+[19:22:46] [Client thread/TRACE] [FML/]: Skipping known library file C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.apache.commons\commons-lang3\3.3.2\90a3822c38ec8c996e84c16a3477ef632cbc87a3\commons-lang3-3.3.2.jar
+[19:22:46] [Client thread/TRACE] [FML/]: Skipping known library file C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\commons-io\commons-io\2.4\b1b6ea3b7e4aa4f492509a4952029cd8e48019ad\commons-io-2.4.jar
+[19:22:46] [Client thread/TRACE] [FML/]: Skipping known library file C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\commons-codec\commons-codec\1.9\9ce04e34240f674bc72680f8b843b1457383161a\commons-codec-1.9.jar
+[19:22:46] [Client thread/TRACE] [FML/]: Skipping known library file C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\net.java.jutils\jutils\1.0.0\e12fe1fda814bd348c1579329c86943d2cd3c6a6\jutils-1.0.0.jar
+[19:22:46] [Client thread/TRACE] [FML/]: Skipping known library file C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.2.4\a60a5e993c98c864010053cb901b7eab25306568\gson-2.2.4.jar
+[19:22:46] [Client thread/TRACE] [FML/]: Skipping known library file C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.mojang\authlib\1.5.22\afaa8f6df976fcb5520e76ef1d5798c9e6b5c0b2\authlib-1.5.22.jar
+[19:22:46] [Client thread/TRACE] [FML/]: Skipping known library file C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.mojang\realms\1.8.7\b624280016616bb56cc6c30282684322edc7e7eb\realms-1.8.7.jar
+[19:22:46] [Client thread/TRACE] [FML/]: Skipping known library file C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.apache.commons\commons-compress\1.8.1\a698750c16740fd5b3871425f4cb3bbaa87f529d\commons-compress-1.8.1.jar
+[19:22:46] [Client thread/TRACE] [FML/]: Skipping known library file C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpclient\4.3.3\18f4247ff4572a074444572cee34647c43e7c9c7\httpclient-4.3.3.jar
+[19:22:46] [Client thread/TRACE] [FML/]: Skipping known library file C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\commons-logging\commons-logging\1.1.3\f6f66e966c70a83ffbdb6f17a0919eaf7c8aca7f\commons-logging-1.1.3.jar
+[19:22:46] [Client thread/TRACE] [FML/]: Skipping known library file C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpcore\4.3.2\31fbbff1ddbf98f3aa7377c94d33b0447c646b6e\httpcore-4.3.2.jar
+[19:22:46] [Client thread/TRACE] [FML/]: Skipping known library file C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.apache.logging.log4j\log4j-api\2.0-beta9\1dd66e68cccd907880229f9e2de1314bd13ff785\log4j-api-2.0-beta9.jar
+[19:22:46] [Client thread/TRACE] [FML/]: Skipping known library file C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.apache.logging.log4j\log4j-core\2.0-beta9\678861ba1b2e1fccb594bb0ca03114bb05da9695\log4j-core-2.0-beta9.jar
+[19:22:46] [Client thread/TRACE] [FML/]: Skipping known library file C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\net.minecraft\launchwrapper\1.12\111e7bea9c968cdb3d06ef4632bf7ff0824d0f36\launchwrapper-1.12.jar
+[19:22:46] [Client thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\jline\jline\2.13\2d9530d0a25daffaffda7c35037b046b627bb171\jline-2.13.jar, examining for mod candidates
+[19:22:46] [Client thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm-debug-all\5.0.3\f9e364ae2a66ce2a543012a4668856e84e5dab74\asm-debug-all-5.0.3.jar, examining for mod candidates
+[19:22:46] [Client thread/TRACE] [FML/]: Skipping known library file C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.typesafe.akka\akka-actor_2.11\2.3.3\ed62e9fc709ca0f2ff1a3220daa8b70a2870078e\akka-actor_2.11-2.3.3.jar
+[19:22:46] [Client thread/TRACE] [FML/]: Skipping known library file C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.typesafe\config\1.2.1\f771f71fdae3df231bcd54d5ca2d57f0bf93f467\config-1.2.1.jar
+[19:22:46] [Client thread/TRACE] [FML/]: Skipping known library file C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-actors-migration_2.11\1.1.0\dfa8bc42b181d5b9f1a5dd147f8ae308b893eb6f\scala-actors-migration_2.11-1.1.0.jar
+[19:22:46] [Client thread/TRACE] [FML/]: Skipping known library file C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-compiler\2.11.1\56ea2e6c025e0821f28d73ca271218b8dd04926a\scala-compiler-2.11.1.jar
+[19:22:46] [Client thread/TRACE] [FML/]: Skipping known library file C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.scala-lang.plugins\scala-continuations-library_2.11\1.0.2\e517c53a7e9acd6b1668c5a35eccbaa3bab9aac\scala-continuations-library_2.11-1.0.2.jar
+[19:22:46] [Client thread/TRACE] [FML/]: Skipping known library file C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.scala-lang.plugins\scala-continuations-plugin_2.11.1\1.0.2\f361a3283452c57fa30c1ee69448995de23c60f7\scala-continuations-plugin_2.11.1-1.0.2.jar
+[19:22:46] [Client thread/TRACE] [FML/]: Skipping known library file C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-library\2.11.1\e11da23da3eabab9f4777b9220e60d44c1aab6a\scala-library-2.11.1.jar
+[19:22:46] [Client thread/TRACE] [FML/]: Skipping known library file C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.scala-lang.modules\scala-parser-combinators_2.11\1.0.1\f05d7345bf5a58924f2837c6c1f4d73a938e1ff0\scala-parser-combinators_2.11-1.0.1.jar
+[19:22:46] [Client thread/TRACE] [FML/]: Skipping known library file C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-reflect\2.11.1\6580347e61cc7f8e802941e7fde40fa83b8badeb\scala-reflect-2.11.1.jar
+[19:22:46] [Client thread/TRACE] [FML/]: Skipping known library file C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.scala-lang.modules\scala-swing_2.11\1.0.1\b1cdd92bd47b1e1837139c1c53020e86bb9112ae\scala-swing_2.11-1.0.1.jar
+[19:22:46] [Client thread/TRACE] [FML/]: Skipping known library file C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.scala-lang.modules\scala-xml_2.11\1.0.2\820fbca7e524b530fdadc594c39d49a21ea0337e\scala-xml_2.11-1.0.2.jar
+[19:22:46] [Client thread/TRACE] [FML/]: Skipping known library file C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\lzma\lzma\0.0.1\521616dc7487b42bef0e803bd2fa3faf668101d7\lzma-0.0.1.jar
+[19:22:46] [Client thread/TRACE] [FML/]: Skipping known library file C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\net.sf.trove4j\trove4j\3.0.3\42ccaf4761f0dfdfa805c9e340d99a755907e2dd\trove4j-3.0.3.jar
+[19:22:46] [Client thread/TRACE] [FML/]: Skipping known library file C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.paulscode\codecjorbis\20101023\c73b5636faf089d9f00e8732a829577de25237ee\codecjorbis-20101023.jar
+[19:22:46] [Client thread/TRACE] [FML/]: Skipping known library file C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.paulscode\codecwav\20101023\12f031cfe88fef5c1dd36c563c0a3a69bd7261da\codecwav-20101023.jar
+[19:22:46] [Client thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.paulscode\libraryjavasound\20101123\5c5e304366f75f9eaa2e8cca546a1fb6109348b3\libraryjavasound-20101123.jar, examining for mod candidates
+[19:22:46] [Client thread/TRACE] [FML/]: Skipping known library file C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.paulscode\librarylwjglopenal\20100824\73e80d0794c39665aec3f62eee88ca91676674ef\librarylwjglopenal-20100824.jar
+[19:22:46] [Client thread/TRACE] [FML/]: Skipping known library file C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.paulscode\soundsystem\20120107\419c05fe9be71f792b2d76cfc9b67f1ed0fec7f6\soundsystem-20120107.jar
+[19:22:46] [Client thread/TRACE] [FML/]: Skipping known library file C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\net.java.jinput\jinput\2.0.5\39c7796b469a600f72380316f6b1f11db6c2c7c4\jinput-2.0.5.jar
+[19:22:46] [Client thread/TRACE] [FML/]: Skipping known library file C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.lwjgl.lwjgl\lwjgl\2.9.4-nightly-20150209\697517568c68e78ae0b4544145af031c81082dfe\lwjgl-2.9.4-nightly-20150209.jar
+[19:22:46] [Client thread/TRACE] [FML/]: Skipping known library file C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.lwjgl.lwjgl\lwjgl_util\2.9.4-nightly-20150209\d51a7c040a721d13efdfbd34f8b257b2df882ad0\lwjgl_util-2.9.4-nightly-20150209.jar
+[19:22:46] [Client thread/TRACE] [FML/]: Skipping known library file C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\java3d\vecmath\1.5.2\79846ba34cbd89e2422d74d53752f993dcc2ccaf\vecmath-1.5.2.jar
+[19:22:46] [Client thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.fusesource.jansi\jansi\1.11\655c643309c2f45a56a747fda70e3fadf57e9f11\jansi-1.11.jar, examining for mod candidates
+[19:22:46] [Client thread/TRACE] [FML/]: Skipping known library file C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-actors\2.11.0\8ccfb6541de179bb1c4d45cf414acee069b7f78b\scala-actors-2.11.0.jar
+[19:22:46] [Client thread/TRACE] [FML/]: Skipping known library file C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\net.java.jinput\jinput-platform\2.0.5\7ff832a6eb9ab6a767f1ade2b548092d0fa64795\jinput-platform-2.0.5-natives-linux.jar
+[19:22:46] [Client thread/TRACE] [FML/]: Skipping known library file C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\net.java.jinput\jinput-platform\2.0.5\385ee093e01f587f30ee1c8a2ee7d408fd732e16\jinput-platform-2.0.5-natives-windows.jar
+[19:22:46] [Client thread/TRACE] [FML/]: Skipping known library file C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\net.java.jinput\jinput-platform\2.0.5\53f9c919f34d2ca9de8c51fc4e1e8282029a9232\jinput-platform-2.0.5-natives-osx.jar
+[19:22:46] [Client thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\2.0.1\516c03b21d50a644d538de0f0369c620989cd8f0\jsr305-2.0.1.jar, examining for mod candidates
+[19:22:46] [Client thread/TRACE] [FML/]: Skipping known library file C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.lwjgl.lwjgl\lwjgl-platform\2.9.4-nightly-20150209\b84d5102b9dbfabfeb5e43c7e2828d98a7fc80e0\lwjgl-platform-2.9.4-nightly-20150209-natives-windows.jar
+[19:22:46] [Client thread/TRACE] [FML/]: Skipping known library file C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.lwjgl.lwjgl\lwjgl-platform\2.9.4-nightly-20150209\931074f46c795d2f7b30ed6395df5715cfd7675b\lwjgl-platform-2.9.4-nightly-20150209-natives-linux.jar
+[19:22:46] [Client thread/TRACE] [FML/]: Skipping known library file C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.lwjgl.lwjgl\lwjgl-platform\2.9.4-nightly-20150209\bcab850f8f487c3f4c4dbabde778bb82bd1a40ed\lwjgl-platform-2.9.4-nightly-20150209-natives-osx.jar
+[19:22:46] [Client thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\Administrator\.gradle\caches\minecraft\deobfedDeps\compileDummy.jar, examining for mod candidates
+[19:22:46] [Client thread/DEBUG] [FML/]: Found a minecraft related file at C:\Users\Administrator\.gradle\caches\minecraft\deobfedDeps\providedDummy.jar, examining for mod candidates
+[19:22:46] [Client thread/DEBUG] [FML/]: Found a minecraft related directory at C:\Users\Administrator\.gradle\caches\minecraft\net\minecraftforge\forge\1.9-12.16.0.1865-1.9\start, examining for mod candidates
+[19:22:46] [Client thread/DEBUG] [FML/]: Minecraft jar mods loaded successfully
+[19:22:46] [Client thread/INFO] [FML/]: Found 0 mods from the command line. Injecting into mod discoverer
+[19:22:46] [Client thread/INFO] [FML/]: Searching C:\Users\Administrator\Desktop\MCD\EM3R50N-RealisticDrops\mods for mods
+[19:22:46] [Client thread/DEBUG] [FML/]: Examining directory bin for potential mods
+[19:22:46] [Client thread/DEBUG] [FML/]: Found an mcmod.info file in directory bin
+[19:22:46] [Client thread/TRACE] [FML/]: Recursing into package assets
+[19:22:46] [Client thread/TRACE] [FML/]: Recursing into package assets.realism
+[19:22:46] [Client thread/TRACE] [FML/]: Recursing into package assets.realism.blockstates
+[19:22:46] [Client thread/TRACE] [FML/]: Recursing into package assets.realism.lang
+[19:22:46] [Client thread/TRACE] [FML/]: Recursing into package assets.realism.models
+[19:22:46] [Client thread/TRACE] [FML/]: Recursing into package assets.realism.models.block
+[19:22:46] [Client thread/TRACE] [FML/]: Recursing into package assets.realism.models.item
+[19:22:46] [Client thread/TRACE] [FML/]: Recursing into package assets.realism.textures
+[19:22:46] [Client thread/TRACE] [FML/]: Recursing into package assets.realism.textures.items
+[19:22:46] [Client thread/TRACE] [FML/]: Recursing into package com
+[19:22:46] [Client thread/TRACE] [FML/]: Recursing into package com.cemerson
+[19:22:46] [Client thread/TRACE] [FML/]: Recursing into package com.cemerson.logicaldrops
+[19:22:46] [Client thread/TRACE] [FML/]: Recursing into package com.cemerson.logicaldrops.block
+[19:22:46] [Client thread/TRACE] [FML/]: Recursing into package com.cemerson.logicaldrops.entity
+[19:22:46] [Client thread/TRACE] [FML/]: Recursing into package com.cemerson.logicaldrops.entity.passive
+[19:22:46] [Client thread/TRACE] [FML/]: Recursing into package com.cemerson.logicaldrops.entity.player
+[19:22:46] [Client thread/TRACE] [FML/]: Recursing into package com.cemerson.logicaldrops.init
+[19:22:46] [Client thread/TRACE] [FML/]: Recursing into package com.cemerson.logicaldrops.items
+[19:22:46] [Client thread/TRACE] [FML/]: Recursing into package com.cemerson.logicaldrops.proxy
+[19:22:46] [Client thread/DEBUG] [FML/]: Identified a mod of type Lnet/minecraftforge/fml/common/Mod; (com.cemerson.logicaldrops.Realism) - loading
+[19:22:46] [Client thread/TRACE] [logicaldrops/]: Parsed dependency info : [] [] []
+[19:22:46] [Client thread/DEBUG] [FML/]: Examining file forgeSrc-1.9-12.16.0.1865-1.9.jar for potential mods
+[19:22:46] [Client thread/DEBUG] [FML/]: The mod container forgeSrc-1.9-12.16.0.1865-1.9.jar appears to be missing an mcmod.info file
+[19:22:47] [Client thread/DEBUG] [FML/]: Examining file oshi-core-1.1.jar for potential mods
+[19:22:47] [Client thread/DEBUG] [FML/]: The mod container oshi-core-1.1.jar appears to be missing an mcmod.info file
+[19:22:47] [Client thread/DEBUG] [FML/]: Examining file jna-3.4.0.jar for potential mods
+[19:22:47] [Client thread/DEBUG] [FML/]: The mod container jna-3.4.0.jar appears to be missing an mcmod.info file
+[19:22:47] [Client thread/DEBUG] [FML/]: Examining file platform-3.4.0.jar for potential mods
+[19:22:47] [Client thread/DEBUG] [FML/]: The mod container platform-3.4.0.jar appears to be missing an mcmod.info file
+[19:22:47] [Client thread/DEBUG] [FML/]: Examining file jline-2.13.jar for potential mods
+[19:22:47] [Client thread/DEBUG] [FML/]: The mod container jline-2.13.jar appears to be missing an mcmod.info file
+[19:22:47] [Client thread/DEBUG] [FML/]: Examining file asm-debug-all-5.0.3.jar for potential mods
+[19:22:47] [Client thread/DEBUG] [FML/]: The mod container asm-debug-all-5.0.3.jar appears to be missing an mcmod.info file
+[19:22:47] [Client thread/DEBUG] [FML/]: Examining file libraryjavasound-20101123.jar for potential mods
+[19:22:47] [Client thread/DEBUG] [FML/]: The mod container libraryjavasound-20101123.jar appears to be missing an mcmod.info file
+[19:22:47] [Client thread/DEBUG] [FML/]: Examining file jansi-1.11.jar for potential mods
+[19:22:47] [Client thread/DEBUG] [FML/]: The mod container jansi-1.11.jar appears to be missing an mcmod.info file
+[19:22:47] [Client thread/DEBUG] [FML/]: Examining file jsr305-2.0.1.jar for potential mods
+[19:22:47] [Client thread/DEBUG] [FML/]: The mod container jsr305-2.0.1.jar appears to be missing an mcmod.info file
+[19:22:47] [Client thread/DEBUG] [FML/]: Examining file compileDummy.jar for potential mods
+[19:22:47] [Client thread/DEBUG] [FML/]: The mod container compileDummy.jar appears to be missing an mcmod.info file
+[19:22:47] [Client thread/DEBUG] [FML/]: Examining file providedDummy.jar for potential mods
+[19:22:47] [Client thread/DEBUG] [FML/]: The mod container providedDummy.jar appears to be missing an mcmod.info file
+[19:22:47] [Client thread/DEBUG] [FML/]: Examining directory start for potential mods
+[19:22:47] [Client thread/DEBUG] [FML/]: No mcmod.info file found in directory start
+[19:22:47] [Client thread/TRACE] [FML/]: Recursing into package net
+[19:22:47] [Client thread/TRACE] [FML/]: Recursing into package net.minecraftforge
+[19:22:47] [Client thread/TRACE] [FML/]: Recursing into package net.minecraftforge.gradle
+[19:22:47] [Client thread/TRACE] [FML/]: Recursing into package net.minecraftforge.gradle.tweakers
+[19:22:47] [Client thread/INFO] [FML/]: Forge Mod Loader has identified 4 mods to load
+[19:22:47] [Client thread/TRACE] [FML/]: Received a system property request ''
+[19:22:47] [Client thread/TRACE] [FML/]: System property request managing the state of 0 mods
+[19:22:47] [Client thread/DEBUG] [FML/]: After merging, found state information for 0 mods
+[19:22:47] [Client thread/DEBUG] [logicaldrops/]: Enabling mod logicaldrops
+[19:22:47] [Client thread/TRACE] [FML/]: Verifying mod requirements are satisfied
+[19:22:47] [Client thread/TRACE] [FML/]: All mod requirements are satisfied
+[19:22:47] [Client thread/TRACE] [FML/]: Sorting mods into an ordered list
+[19:22:47] [Client thread/TRACE] [FML/]: Mod sorting completed successfully
+[19:22:47] [Client thread/DEBUG] [FML/]: Mod sorting data
+[19:22:47] [Client thread/DEBUG] [FML/]: 	logicaldrops(Logical Drops:0.9): bin ()
+[19:22:47] [Client thread/TRACE] [mcp/mcp]: Sending event FMLConstructionEvent to mod mcp
+[19:22:47] [Client thread/TRACE] [mcp/mcp]: Sent event FMLConstructionEvent to mod mcp
+[19:22:47] [Client thread/DEBUG] [FML/]: Bar Step: Construction - Minecraft Coder Pack took 0.007s
+[19:22:47] [Client thread/TRACE] [FML/FML]: Sending event FMLConstructionEvent to mod FML
+[19:22:47] [Client thread/TRACE] [FML/FML]: Mod FML is using network checker : Invoking method checkModLists
+[19:22:47] [Client thread/TRACE] [FML/FML]: Testing mod FML to verify it accepts its own version in a remote connection
+[19:22:47] [Client thread/TRACE] [FML/FML]: The mod FML accepts its own version (8.0.99.99)
+[19:22:47] [Client thread/INFO] [FML/FML]: Attempting connection with missing mods [mcp, FML, Forge, logicaldrops] at CLIENT
+[19:22:47] [Client thread/INFO] [FML/FML]: Attempting connection with missing mods [mcp, FML, Forge, logicaldrops] at SERVER
+[19:22:47] [Client thread/TRACE] [FML/FML]: Sent event FMLConstructionEvent to mod FML
+[19:22:47] [Client thread/DEBUG] [FML/]: Bar Step: Construction - Forge Mod Loader took 0.452s
+[19:22:47] [Client thread/TRACE] [Forge/Forge]: Sending event FMLConstructionEvent to mod Forge
+[19:22:47] [Client thread/TRACE] [FML/Forge]: Mod Forge is using network checker : No network checking performed
+[19:22:47] [Client thread/TRACE] [FML/Forge]: Testing mod Forge to verify it accepts its own version in a remote connection
+[19:22:47] [Client thread/TRACE] [FML/Forge]: The mod Forge accepts its own version (12.16.0.1865)
+[19:22:47] [Client thread/TRACE] [Forge/Forge]: Sent event FMLConstructionEvent to mod Forge
+[19:22:47] [Client thread/DEBUG] [FML/]: Bar Step: Construction - Minecraft Forge took 0.015s
+[19:22:47] [Client thread/TRACE] [logicaldrops/logicaldrops]: Sending event FMLConstructionEvent to mod logicaldrops
+[19:22:47] [Client thread/TRACE] [FML/logicaldrops]: Mod logicaldrops is using network checker : Accepting version 0.9
+[19:22:47] [Client thread/TRACE] [FML/logicaldrops]: Testing mod logicaldrops to verify it accepts its own version in a remote connection
+[19:22:47] [Client thread/TRACE] [FML/logicaldrops]: The mod logicaldrops accepts its own version (0.9)
+[19:22:47] [Client thread/DEBUG] [FML/logicaldrops]: Attempting to inject @SidedProxy classes into logicaldrops
+[19:22:47] [Client thread/TRACE] [logicaldrops/logicaldrops]: Sent event FMLConstructionEvent to mod logicaldrops
+[19:22:47] [Client thread/DEBUG] [FML/]: Bar Step: Construction - Logical Drops took 0.022s
+[19:22:47] [Client thread/DEBUG] [FML/]: Bar Finished: Construction took 0.496s
+[19:22:47] [Client thread/DEBUG] [FML/]: Mod signature data
+[19:22:47] [Client thread/DEBUG] [FML/]:  	Valid Signatures:
+[19:22:47] [Client thread/DEBUG] [FML/]:  	Missing Signatures:
+[19:22:47] [Client thread/DEBUG] [FML/]: 		mcp	(Minecraft Coder Pack	9.19)	minecraft.jar
+[19:22:47] [Client thread/DEBUG] [FML/]: 		FML	(Forge Mod Loader	8.0.99.99)	forgeSrc-1.9-12.16.0.1865-1.9.jar
+[19:22:47] [Client thread/DEBUG] [FML/]: 		Forge	(Minecraft Forge	12.16.0.1865)	forgeSrc-1.9-12.16.0.1865-1.9.jar
+[19:22:47] [Client thread/DEBUG] [FML/]: 		logicaldrops	(Logical Drops	0.9)	bin
+[19:22:47] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - Default took 0.006s
+[19:22:47] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:Forge Mod Loader took 0.015s
+[19:22:47] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:Minecraft Forge took 0.014s
+[19:22:47] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:Logical Drops took 0.003s
+[19:22:48] [Client thread/DEBUG] [FML/]: Bar Finished: Reloading - LanguageManager took 0.039s
+[19:22:48] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - Reloading listeners took 0.040s
+[19:22:48] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resources took 0.077s
+[19:22:48] [Client thread/DEBUG] [Forge Mod Loader/]: Mod Forge Mod Loader is missing a pack.mcmeta file, substituting a dummy one
+[19:22:48] [Client thread/DEBUG] [Minecraft Forge/]: Mod Minecraft Forge is missing a pack.mcmeta file, substituting a dummy one
+[19:22:48] [Client thread/DEBUG] [Logical Drops/]: Mod Logical Drops is missing a pack.mcmeta file, substituting a dummy one
+[19:22:48] [Client thread/INFO] [FML/]: Processing ObjectHolder annotations
+[19:22:48] [Client thread/INFO] [FML/]: Found 418 ObjectHolder annotations
+[19:22:48] [Client thread/INFO] [FML/]: Identifying ItemStackHolder annotations
+[19:22:48] [Client thread/INFO] [FML/]: Found 0 ItemStackHolder annotations
+[19:22:48] [Client thread/TRACE] [mcp/mcp]: Sending event FMLPreInitializationEvent to mod mcp
+[19:22:48] [Client thread/TRACE] [mcp/mcp]: Sent event FMLPreInitializationEvent to mod mcp
+[19:22:48] [Client thread/DEBUG] [FML/]: Bar Step: PreInitialization - Minecraft Coder Pack took 0.002s
+[19:22:48] [Client thread/TRACE] [FML/FML]: Sending event FMLPreInitializationEvent to mod FML
+[19:22:48] [Client thread/TRACE] [FML/FML]: Sent event FMLPreInitializationEvent to mod FML
+[19:22:48] [Client thread/DEBUG] [FML/]: Bar Step: PreInitialization - Forge Mod Loader took 0.025s
+[19:22:48] [Client thread/TRACE] [Forge/Forge]: Sending event FMLPreInitializationEvent to mod Forge
+[19:22:48] [Client thread/INFO] [FML/Forge]: Configured a dormant chunk cache size of 0
+[19:22:48] [Client thread/TRACE] [Forge/Forge]: Sent event FMLPreInitializationEvent to mod Forge
+[19:22:48] [Client thread/DEBUG] [FML/]: Bar Step: PreInitialization - Minecraft Forge took 0.135s
+[19:22:48] [Client thread/TRACE] [logicaldrops/logicaldrops]: Sending event FMLPreInitializationEvent to mod logicaldrops
+[19:22:48] [Client thread/TRACE] [logicaldrops/logicaldrops]: Sent event FMLPreInitializationEvent to mod logicaldrops
+[19:22:48] [Client thread/DEBUG] [FML/]: Bar Step: PreInitialization - Logical Drops took 0.010s
+[19:22:48] [Client thread/DEBUG] [FML/]: Bar Finished: PreInitialization took 0.172s
+[19:22:48] [Client thread/INFO] [FML/]: Applying holder lookups
+[19:22:48] [Client thread/INFO] [FML/]: Holder lookups applied
+[19:22:48] [Client thread/INFO] [FML/]: Injecting itemstacks
+[19:22:48] [Client thread/INFO] [FML/]: Itemstack injection complete
+[19:22:48] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - TextureManager took 0.000s
+[19:22:48] [Forge Version Check/INFO] [ForgeVersionCheck/Forge]: [Forge] Starting version check at http://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
+[19:22:48] [Forge Version Check/DEBUG] [ForgeVersionCheck/Forge]: [Forge] Received version check data:
+{
+  "homepage": "http://files.minecraftforge.net/maven/net/minecraftforge/forge/",
+  "promos": {
+    "1.5.2-latest": "7.8.1.738",
+    "1.5.2-recommended": "7.8.1.737",
+    "1.6.1-latest": "8.9.0.775",
+    "1.6.2-latest": "9.10.1.871",
+    "1.6.2-recommended": "9.10.1.871",
+    "1.6.3-latest": "9.11.0.878",
+    "1.6.4-latest": "9.11.1.1345",
+    "1.6.4-recommended": "9.11.1.1345",
+    "1.7.10-latest": "10.13.4.1614",
+    "1.7.10-latest-1.7.10": "10.13.2.1343",
+    "1.7.10-recommended": "10.13.4.1558",
+    "1.7.2-latest": "10.12.2.1147",
+    "1.7.2-recommended": "10.12.2.1121",
+    "1.8-latest": "11.14.4.1577",
+    "1.8-recommended": "11.14.4.1563",
+    "1.8.8-latest": "11.15.0.1655",
+    "1.8.9-latest": "11.15.1.1855",
+    "1.8.9-recommended": "11.15.1.1722",
+    "1.9-latest": "12.16.0.1865",
+    "latest": "11.15.1.1855",
+    "latest-1.7.10": "10.13.2.1343",
+    "recommended": "11.15.1.1722"
+  }
+}
+[19:22:48] [Forge Version Check/INFO] [ForgeVersionCheck/Forge]: [Forge] Found status: BETA Target: null
+[19:22:50] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - SoundHandler took 1.583s
+[19:22:50] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - FontRenderer took 0.004s
+[19:22:50] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - FontRenderer took 0.003s
+[19:22:50] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - GrassColorReloadListener took 0.056s
+[19:22:50] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - FoliageColorReloadListener took 0.006s
+[19:22:50] [Client thread/DEBUG] [FML/]: Bar Step: Rendering Setup - GL Setup took 0.002s
+[19:22:50] [Client thread/DEBUG] [FML/]: Bar Step: Rendering Setup - Loading Texture Map took 0.008s
+[19:22:50] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - B3DLoader took 0.000s
+[19:22:50] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - OBJLoader took 0.000s
+[19:22:50] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - ModelFluid$FluidLoader took 0.000s
+[19:22:50] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - ItemLayerModel$Loader took 0.000s
+[19:22:50] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - MultiLayerModel$Loader took 0.000s
+[19:22:50] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - ModelDynBucket$LoaderDynBucket took 0.000s
+[19:22:52] [Client thread/DEBUG] [FML/]: Bar Finished: ModelLoader: blocks took 2.291s
+[19:22:53] [Client thread/DEBUG] [FML/]: Bar Finished: ModelLoader: items took 0.778s
+[19:22:53] [Client thread/INFO] [FML/]: Max texture size: 16384
+[19:22:53] [Client thread/DEBUG] [FML/]: Bar Finished: Texture stitching - missingno took 0.001s
+[19:22:53] [Client thread/DEBUG] [FML/]: Bar Finished: Texture creation took 0.002s
+[19:22:53] [Client thread/DEBUG] [FML/]: Bar Finished: Texture mipmap and upload - missingno took 0.000s
+[19:22:54] [Client thread/DEBUG] [FML/]: Bar Finished: ModelLoader: baking took 0.869s
+[19:22:54] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - ModelManager took 4.206s
+[19:22:54] [Client thread/DEBUG] [FML/]: Bar Step: Rendering Setup - Loading Model Manager took 4.305s
+[19:22:55] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - RenderItem took 0.004s
+[19:22:55] [Client thread/DEBUG] [FML/]: Bar Step: Rendering Setup - Loading Item Renderer took 0.291s
+[19:22:55] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - EntityRenderer took 0.000s
+[19:22:55] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - BlockRendererDispatcher took 0.000s
+[19:22:55] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - RenderGlobal took 0.000s
+[19:22:55] [Client thread/DEBUG] [FML/]: Bar Step: Rendering Setup - Loading Entity Renderer took 0.245s
+[19:22:55] [Client thread/DEBUG] [FML/]: Bar Finished: Rendering Setup took 4.850s
+[19:22:55] [Client thread/TRACE] [mcp/mcp]: Sending event FMLInitializationEvent to mod mcp
+[19:22:55] [Client thread/TRACE] [mcp/mcp]: Sent event FMLInitializationEvent to mod mcp
+[19:22:55] [Client thread/DEBUG] [FML/]: Bar Step: Initialization - Minecraft Coder Pack took 0.000s
+[19:22:55] [Client thread/TRACE] [FML/FML]: Sending event FMLInitializationEvent to mod FML
+[19:22:55] [Client thread/TRACE] [FML/FML]: Sent event FMLInitializationEvent to mod FML
+[19:22:55] [Client thread/DEBUG] [FML/]: Bar Step: Initialization - Forge Mod Loader took 0.000s
+[19:22:55] [Client thread/TRACE] [Forge/Forge]: Sending event FMLInitializationEvent to mod Forge
+[19:22:55] [Client thread/TRACE] [Forge/Forge]: Sent event FMLInitializationEvent to mod Forge
+[19:22:55] [Client thread/DEBUG] [FML/]: Bar Step: Initialization - Minecraft Forge took 0.003s
+[19:22:55] [Client thread/TRACE] [logicaldrops/logicaldrops]: Sending event FMLInitializationEvent to mod logicaldrops
+[19:22:55] [Client thread/TRACE] [logicaldrops/logicaldrops]: Sent event FMLInitializationEvent to mod logicaldrops
+[19:22:55] [Client thread/DEBUG] [FML/]: Bar Step: Initialization - Logical Drops took 0.000s
+[19:22:55] [Client thread/DEBUG] [FML/]: Bar Finished: Initialization took 0.004s
+[19:22:55] [Client thread/TRACE] [FML/]: Attempting to deliver 0 IMC messages to mod mcp
+[19:22:55] [Client thread/TRACE] [mcp/mcp]: Sending event IMCEvent to mod mcp
+[19:22:55] [Client thread/TRACE] [mcp/mcp]: Sent event IMCEvent to mod mcp
+[19:22:55] [Client thread/DEBUG] [FML/]: Bar Step: InterModComms$IMC - Minecraft Coder Pack took 0.004s
+[19:22:55] [Client thread/TRACE] [FML/]: Attempting to deliver 0 IMC messages to mod FML
+[19:22:55] [Client thread/TRACE] [FML/FML]: Sending event IMCEvent to mod FML
+[19:22:55] [Client thread/TRACE] [FML/FML]: Sent event IMCEvent to mod FML
+[19:22:55] [Client thread/DEBUG] [FML/]: Bar Step: InterModComms$IMC - Forge Mod Loader took 0.000s
+[19:22:55] [Client thread/TRACE] [FML/]: Attempting to deliver 0 IMC messages to mod Forge
+[19:22:55] [Client thread/TRACE] [Forge/Forge]: Sending event IMCEvent to mod Forge
+[19:22:55] [Client thread/TRACE] [Forge/Forge]: Sent event IMCEvent to mod Forge
+[19:22:55] [Client thread/DEBUG] [FML/]: Bar Step: InterModComms$IMC - Minecraft Forge took 0.001s
+[19:22:55] [Client thread/TRACE] [FML/]: Attempting to deliver 0 IMC messages to mod logicaldrops
+[19:22:55] [Client thread/TRACE] [logicaldrops/logicaldrops]: Sending event IMCEvent to mod logicaldrops
+[19:22:55] [Client thread/TRACE] [logicaldrops/logicaldrops]: Sent event IMCEvent to mod logicaldrops
+[19:22:55] [Client thread/DEBUG] [FML/]: Bar Step: InterModComms$IMC - Logical Drops took 0.001s
+[19:22:55] [Client thread/DEBUG] [FML/]: Bar Finished: InterModComms$IMC took 0.006s
+[19:22:55] [Client thread/INFO] [FML/]: Injecting itemstacks
+[19:22:55] [Client thread/INFO] [FML/]: Itemstack injection complete
+[19:22:55] [Client thread/TRACE] [mcp/mcp]: Sending event FMLPostInitializationEvent to mod mcp
+[19:22:55] [Client thread/TRACE] [mcp/mcp]: Sent event FMLPostInitializationEvent to mod mcp
+[19:22:55] [Client thread/DEBUG] [FML/]: Bar Step: PostInitialization - Minecraft Coder Pack took 0.000s
+[19:22:55] [Client thread/TRACE] [FML/FML]: Sending event FMLPostInitializationEvent to mod FML
+[19:22:55] [Client thread/TRACE] [FML/FML]: Sent event FMLPostInitializationEvent to mod FML
+[19:22:55] [Client thread/DEBUG] [FML/]: Bar Step: PostInitialization - Forge Mod Loader took 0.000s
+[19:22:55] [Client thread/TRACE] [Forge/Forge]: Sending event FMLPostInitializationEvent to mod Forge
+[19:22:55] [Client thread/TRACE] [Forge/Forge]: Sent event FMLPostInitializationEvent to mod Forge
+[19:22:55] [Client thread/DEBUG] [FML/]: Bar Step: PostInitialization - Minecraft Forge took 0.010s
+[19:22:55] [Client thread/TRACE] [logicaldrops/logicaldrops]: Sending event FMLPostInitializationEvent to mod logicaldrops
+[19:22:55] [Client thread/TRACE] [logicaldrops/logicaldrops]: Sent event FMLPostInitializationEvent to mod logicaldrops
+[19:22:55] [Client thread/DEBUG] [FML/]: Bar Step: PostInitialization - Logical Drops took 0.000s
+[19:22:55] [Client thread/DEBUG] [FML/]: Bar Finished: PostInitialization took 0.011s
+[19:22:55] [Client thread/TRACE] [mcp/mcp]: Sending event FMLLoadCompleteEvent to mod mcp
+[19:22:55] [Client thread/TRACE] [mcp/mcp]: Sent event FMLLoadCompleteEvent to mod mcp
+[19:22:55] [Client thread/DEBUG] [FML/]: Bar Step: LoadComplete - Minecraft Coder Pack took 0.000s
+[19:22:55] [Client thread/TRACE] [FML/FML]: Sending event FMLLoadCompleteEvent to mod FML
+[19:22:55] [Client thread/TRACE] [FML/FML]: Sent event FMLLoadCompleteEvent to mod FML
+[19:22:55] [Client thread/DEBUG] [FML/]: Bar Step: LoadComplete - Forge Mod Loader took 0.001s
+[19:22:55] [Client thread/TRACE] [Forge/Forge]: Sending event FMLLoadCompleteEvent to mod Forge
+[19:22:55] [Client thread/DEBUG] [FML/Forge]: Forge RecipeSorter Baking:
+[19:22:55] [Client thread/DEBUG] [FML/Forge]:   16: RecipeEntry("Before", UNKNOWN, )
+[19:22:55] [Client thread/DEBUG] [FML/Forge]:   15: RecipeEntry("minecraft:shaped", SHAPED, net.minecraft.item.crafting.ShapedRecipes) Before: minecraft:shapeless
+[19:22:55] [Client thread/DEBUG] [FML/Forge]:   14: RecipeEntry("forge:shapedore", SHAPED, net.minecraftforge.oredict.ShapedOreRecipe) Before: minecraft:shapeless After: minecraft:shaped
+[19:22:55] [Client thread/DEBUG] [FML/Forge]:   13: RecipeEntry("minecraft:mapextending", SHAPED, net.minecraft.item.crafting.RecipesMapExtending) Before: minecraft:shapeless After: minecraft:shaped
+[19:22:55] [Client thread/DEBUG] [FML/Forge]:   12: RecipeEntry("minecraft:shapeless", SHAPELESS, net.minecraft.item.crafting.ShapelessRecipes) After: minecraft:shaped
+[19:22:55] [Client thread/DEBUG] [FML/Forge]:   11: RecipeEntry("minecraft:repair", SHAPELESS, net.minecraft.item.crafting.RecipeRepairItem) After: minecraft:shapeless
+[19:22:55] [Client thread/DEBUG] [FML/Forge]:   10: RecipeEntry("minecraft:shield_deco", SHAPELESS, net.minecraft.item.crafting.ShieldRecipes$Decoration) After: minecraft:shapeless
+[19:22:55] [Client thread/DEBUG] [FML/Forge]:   9: RecipeEntry("minecraft:armordyes", SHAPELESS, net.minecraft.item.crafting.RecipesArmorDyes) After: minecraft:shapeless
+[19:22:55] [Client thread/DEBUG] [FML/Forge]:   8: RecipeEntry("minecraft:fireworks", SHAPELESS, net.minecraft.item.crafting.RecipeFireworks) After: minecraft:shapeless
+[19:22:55] [Client thread/DEBUG] [FML/Forge]:   7: RecipeEntry("minecraft:pattern_dupe", SHAPELESS, net.minecraft.item.crafting.RecipesBanners$RecipeDuplicatePattern) After: minecraft:shapeless
+[19:22:55] [Client thread/DEBUG] [FML/Forge]:   6: RecipeEntry("minecraft:tippedarrow", SHAPELESS, net.minecraft.item.crafting.RecipeTippedArrow) After: minecraft:shapeless
+[19:22:55] [Client thread/DEBUG] [FML/Forge]:   5: RecipeEntry("minecraft:mapcloning", SHAPELESS, net.minecraft.item.crafting.RecipesMapCloning) After: minecraft:shapeless
+[19:22:55] [Client thread/DEBUG] [FML/Forge]:   4: RecipeEntry("forge:shapelessore", SHAPELESS, net.minecraftforge.oredict.ShapelessOreRecipe) After: minecraft:shapeless
+[19:22:55] [Client thread/DEBUG] [FML/Forge]:   3: RecipeEntry("minecraft:pattern_add", SHAPELESS, net.minecraft.item.crafting.RecipesBanners$RecipeAddPattern) After: minecraft:shapeless
+[19:22:55] [Client thread/DEBUG] [FML/Forge]:   2: RecipeEntry("minecraft:bookcloning", SHAPELESS, net.minecraft.item.crafting.RecipeBookCloning) After: minecraft:shapeless
+[19:22:55] [Client thread/DEBUG] [FML/Forge]:   1: RecipeEntry("After", UNKNOWN, )
+[19:22:55] [Client thread/DEBUG] [FML/Forge]: Sorting recipes
+[19:22:55] [Client thread/TRACE] [Forge/Forge]: Sent event FMLLoadCompleteEvent to mod Forge
+[19:22:55] [Client thread/DEBUG] [FML/]: Bar Step: LoadComplete - Minecraft Forge took 0.011s
+[19:22:55] [Client thread/TRACE] [logicaldrops/logicaldrops]: Sending event FMLLoadCompleteEvent to mod logicaldrops
+[19:22:55] [Client thread/TRACE] [logicaldrops/logicaldrops]: Sent event FMLLoadCompleteEvent to mod logicaldrops
+[19:22:55] [Client thread/DEBUG] [FML/]: Bar Step: LoadComplete - Logical Drops took 0.000s
+[19:22:55] [Client thread/DEBUG] [FML/]: Bar Finished: LoadComplete took 0.012s
+[19:22:55] [Client thread/DEBUG] [FML/]: Freezing block and item id maps
+[19:22:55] [Client thread/INFO] [FML/]: Forge Mod Loader has successfully loaded 4 mods
+[19:22:55] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - Default took 0.000s
+[19:22:55] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:Forge Mod Loader took 0.011s
+[19:22:55] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:Minecraft Forge took 0.009s
+[19:22:55] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:Logical Drops took 0.001s
+[19:22:55] [Client thread/DEBUG] [FML/]: Bar Step: Reloading Texture Manager - minecraft:textures/atlas/blocks.png took 0.000s
+[19:22:55] [Client thread/DEBUG] [FML/]: Bar Step: Reloading Texture Manager - minecraft:textures/font/ascii.png took 0.006s
+[19:22:55] [Client thread/DEBUG] [FML/]: Bar Step: Reloading Texture Manager - minecraft:dynamic/lightMap_1 took 0.000s
+[19:22:55] [Client thread/DEBUG] [FML/]: Bar Step: Reloading Texture Manager - minecraft:textures/misc/forcefield.png took 0.002s
+[19:22:55] [Client thread/DEBUG] [FML/]: Bar Step: Reloading Texture Manager - minecraft:textures/font/ascii_sga.png took 0.004s
+[19:22:55] [Client thread/DEBUG] [FML/]: Bar Finished: Reloading Texture Manager took 0.012s
+[19:22:58] [Client thread/DEBUG] [FML/]: Bar Finished: ModelLoader: blocks took 1.533s
+[19:22:59] [Client thread/DEBUG] [FML/]: Bar Finished: ModelLoader: items took 0.731s
+[19:22:59] [Client thread/INFO] [FML/]: Max texture size: 16384
+[19:22:59] [Client thread/DEBUG] [FML/]: Bar Finished: Texture stitching took 0.118s
+[19:22:59] [Client thread/DEBUG] [FML/]: Bar Finished: Texture stitching took 0.022s
+[19:22:59] [Client thread/DEBUG] [FML/]: Bar Finished: Texture creation took 0.027s
+[19:22:59] [Client thread/DEBUG] [FML/]: Bar Finished: Texture mipmap and upload took 0.249s
+[19:23:00] [Client thread/DEBUG] [FML/]: Bar Finished: ModelLoader: baking took 0.936s
+[19:23:00] [Client thread/DEBUG] [FML/]: Bar Finished: Reloading took 5.382s
+[19:23:00] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - Reloading listeners took 5.382s
+[19:23:00] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resources took 5.403s
+[19:23:00] [Client thread/DEBUG] [Forge Mod Loader/]: Mod Forge Mod Loader is missing a pack.mcmeta file, substituting a dummy one
+[19:23:00] [Client thread/DEBUG] [Minecraft Forge/]: Mod Minecraft Forge is missing a pack.mcmeta file, substituting a dummy one
+[19:23:00] [Client thread/DEBUG] [Logical Drops/]: Mod Logical Drops is missing a pack.mcmeta file, substituting a dummy one
+[19:23:01] [Client thread/DEBUG] [FML/]: Bar Finished: Loading took 15.235s
+[19:23:18] [Server thread/TRACE] [mcp/mcp]: Sending event FMLServerAboutToStartEvent to mod mcp
+[19:23:18] [Server thread/TRACE] [mcp/mcp]: Sent event FMLServerAboutToStartEvent to mod mcp
+[19:23:18] [Server thread/DEBUG] [FML/]: Bar Step: ServerAboutToStart - Minecraft Coder Pack took 0.000s
+[19:23:18] [Server thread/TRACE] [FML/FML]: Sending event FMLServerAboutToStartEvent to mod FML
+[19:23:18] [Server thread/TRACE] [FML/FML]: Sent event FMLServerAboutToStartEvent to mod FML
+[19:23:18] [Server thread/DEBUG] [FML/]: Bar Step: ServerAboutToStart - Forge Mod Loader took 0.000s
+[19:23:18] [Server thread/TRACE] [Forge/Forge]: Sending event FMLServerAboutToStartEvent to mod Forge
+[19:23:18] [Server thread/TRACE] [Forge/Forge]: Sent event FMLServerAboutToStartEvent to mod Forge
+[19:23:18] [Server thread/DEBUG] [FML/]: Bar Step: ServerAboutToStart - Minecraft Forge took 0.000s
+[19:23:18] [Server thread/TRACE] [logicaldrops/logicaldrops]: Sending event FMLServerAboutToStartEvent to mod logicaldrops
+[19:23:18] [Server thread/TRACE] [logicaldrops/logicaldrops]: Sent event FMLServerAboutToStartEvent to mod logicaldrops
+[19:23:18] [Server thread/DEBUG] [FML/]: Bar Step: ServerAboutToStart - Logical Drops took 0.000s
+[19:23:18] [Server thread/DEBUG] [FML/]: Bar Finished: ServerAboutToStart took 0.001s
+[19:23:18] [Server thread/ERROR] [fml.ModTracker/]: This world was saved with mod BiomesOPlenty which appears to be missing, things may not work well
+[19:23:18] [Server thread/ERROR] [fml.ModTracker/]: This world was saved with mod eggs which appears to be missing, things may not work well
+[19:23:18] [Server thread/ERROR] [fml.ModTracker/]: This world was saved with mod realisticdrops which appears to be missing, things may not work well
+[19:23:18] [Server thread/ERROR] [fml.ModTracker/]: This world was saved with mod InfernalMobs which appears to be missing, things may not work well
+[19:23:18] [Server thread/ERROR] [fml.ModTracker/]: This world was saved with mod Roguelike which appears to be missing, things may not work well
+[19:23:18] [Server thread/ERROR] [fml.ModTracker/]: This world was saved with mod AS_Ruins which appears to be missing, things may not work well
+[19:23:18] [Server thread/ERROR] [fml.ModTracker/]: This world was saved with mod AS_UpdateCheck which appears to be missing, things may not work well
+[19:23:18] [Server thread/ERROR] [fml.ModTracker/]: This world was saved with mod XaeroMinimap which appears to be missing, things may not work well
+[19:23:18] [Server thread/INFO] [FML/]: Injecting existing block and item data into this server instance
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:dead_forest
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:prairie
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:snowy_coniferous_forest
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:kelp_forest
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:wetland
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:temperate_rainforest
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:lush_swamp
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:alps
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:shield
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:snowy_forest
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:glacier
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:seasonal_forest
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:outback
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:redwood_forest
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:woodland
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:tropical_island
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:coral_reef
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:origin_island
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:fen
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:mountain_foothills
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:maple_woods
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:chaparral
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:marsh
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:meadow
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:flower_island
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:mystic_grove
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:grove
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:steppe
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:ominous_woods
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:sacred_springs
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:gravel_beach
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:tundra
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:grassland
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:orchard
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:cold_desert
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:flower_field
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:bayou
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:boreal_forest
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:coniferous_forest
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:highland
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:eucalyptus_forest
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:wasteland
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:land_of_lakes
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:mangrove
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:bog
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:moor
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:volcanic_island
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:quagmire
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:mountain_peaks
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:heathland
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:oasis
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:tropical_rainforest
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:dead_swamp
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:xeric_shrubland
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:bamboo_forest
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:overgrown_cliffs
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:shrubland
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:cherry_blossom_grove
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:rainforest
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:crag
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:brushland
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:lavender_fields
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:lush_desert
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:paralysis
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:possession
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:umbran_fence_gate
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:honey
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:leaves_0
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:hellbark_stairs
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:jacaranda_fence_gate
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:hive
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:seaweed
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:eucalyptus_fence_gate
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:bamboo_thatching
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:leaves_5
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:leaves_6
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:leaves_3
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:leaves_4
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:hellbark_fence
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:leaves_1
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:leaves_2
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:umbran_fence
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:sacred_oak_fence_gate
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:cherry_fence_gate
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:redwood_door_block
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:crag_rock
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:flesh
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:willow_fence_gate
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:stone_formations
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:willow_stairs
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:dirt
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:mangrove_door_block
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:mangrove_fence
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:tree_moss
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:eucalyptus_fence
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:magic_door_block
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:pine_door_block
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:terrarium
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:ebony_fence_gate
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:umbran_stairs
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:poison
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:hellbark_door_block
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:log_4
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:mud_brick_block
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:log_3
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:log_2
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:log_1
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:hellbark_fence_gate
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:plant_1
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:plant_0
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:crystal
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:cherry_stairs
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:palm_fence
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:double_wood_slab_1
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:double_wood_slab_0
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:eucalyptus_stairs
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:log_0
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:pine_fence
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:grass
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:dried_sand
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:magic_stairs
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:ebony_fence
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:sacred_oak_stairs
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:mud
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:fir_door_block
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:umbran_door_block
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:magic_fence
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:mahogany_fence_gate
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:turnip_block
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:palm_stairs
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:coral
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:farmland_0
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:farmland_1
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:pine_stairs
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:planks_0
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:hard_ice
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:flower_1
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:flower_0
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:magic_fence_gate
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:blood
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:mangrove_stairs
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:pine_fence_gate
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:mud_brick_stairs
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:sacred_oak_door_block
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:mahogany_door_block
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:ash_block
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:cherry_door_block
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:redwood_fence_gate
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:willow_door_block
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:jacaranda_door_block
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:fir_fence_gate
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:bamboo
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:sand
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:willow_fence
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:gem_block
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:mushroom
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:ethereal_fence_gate
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:double_other_slab
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:waterlily
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:eucalyptus_door_block
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:fir_stairs
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:ebony_stairs
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:sapling_1
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:sapling_2
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:sapling_0
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:ebony_door_block
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:redwood_fence
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:hot_spring_water
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:jacaranda_stairs
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:stone
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:sacred_oak_fence
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:bone_segment
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:ethereal_fence
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:flower_vine
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:gem_ore
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:double_plant
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:ethereal_door_block
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:other_slab
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:mangrove_fence_gate
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:mahogany_fence
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:jacaranda_fence
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:redwood_stairs
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:honey_block
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:mahogany_stairs
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:wood_slab_0
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:cherry_fence
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:wood_slab_1
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:fir_fence
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:biome_block
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:ivy
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:palm_fence_gate
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:ethereal_stairs
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:palm_door_block
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:ebony_door
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:enderporter
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:hellbark_stairs
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:jacaranda_fence_gate
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:magic_door
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:sacred_oak_fence_gate
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:shroompowder
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:wading_boots
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:cherry_fence_gate
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:flesh
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:willow_fence_gate
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:stone_formations
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:mud_brick
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:dirt
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:mangrove_fence
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:crystal_shard
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:tree_moss
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:ambrosia
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:umbran_stairs
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world eggs:item_food_eggs_scrambled
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:mud_chestplate
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:honey_bucket
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:record_corruption
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:mud_leggings
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:mud_boots
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:plant_1
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:plant_0
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:crystal
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:palm_fence
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:mahogany_door
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:mangrove_door
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:ricebowl
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:dried_sand
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:magic_stairs
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:terrestrial_artifact
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:amethyst_sword
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:soul
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:sacred_oak_stairs
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:magic_fence
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:amethyst_axe
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world eggs:item_food_eggs_and_beef
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:sacred_oak_door
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:farmland_0
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:farmland_1
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:brown_dye
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:planks_0
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:hard_ice
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:flower_1
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:flower_0
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:magic_fence_gate
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:mangrove_stairs
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:mud_brick_stairs
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:flower_basket
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:wood_scythe
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:redwood_fence_gate
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:honeycomb
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:mud_shovel
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:fir_fence_gate
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:sand
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world eggs:item_food_eggs_scrambled_cheese
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:gem_block
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:saladveggie
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:saladshroom
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:ethereal_fence_gate
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:mud_sword
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world eggs:item_food_cheese
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:cherry_door
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:waterlily
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:mud_pickaxe
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:fir_stairs
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:hot_spring_water_bucket
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:eucalyptus_door
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:amethyst_leggings
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:gold_scythe
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:redwood_fence
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:amethyst_boots
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:jacaranda_stairs
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:sacred_oak_fence
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:ethereal_fence
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:gem_ore
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:ethereal_door
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:mud_hoe
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:pear
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:iron_scythe
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:other_slab
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world eggs:item_food_eggs_sandwich_fried
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:persimmon
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:mangrove_fence_gate
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:mahogany_fence
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:peach
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world eggs:item_food_eggs_mushroom_omelette
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:honey_block
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:poison_bucket
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:mahogany_stairs
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:dart_blower
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:flax_string
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:fir_fence
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:biome_block
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:ivy
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:palm_fence_gate
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:ethereal_stairs
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:umbran_fence_gate
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:dart
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:gem
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:leaves_0
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:hellbark_door
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:hive
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:seaweed
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:eucalyptus_fence_gate
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:bamboo_thatching
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:leaves_5
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:leaves_6
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:leaves_3
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:leaves_4
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:hellbark_fence
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:leaves_1
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:leaves_2
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:umbran_fence
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:berries
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:crag_rock
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:willow_stairs
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:jar_empty
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:pixie_dust
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:eucalyptus_fence
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:terrarium
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:ebony_fence_gate
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world eggs:item_food_eggs_fried
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:amethyst_pickaxe
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:mud_scythe
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:amethyst_chestplate
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:mud_helmet
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:record_wanderer
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:exotic_flower_band
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:fleshchunk
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:log_4
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:mud_brick_block
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:log_3
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:log_2
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:log_1
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:hellbark_fence_gate
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:cherry_stairs
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:black_dye
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:stone_scythe
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:eucalyptus_stairs
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:log_0
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:pine_fence
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world eggs:item_food_bread
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:grass
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:jar_filled
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:willow_door
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:ebony_fence
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:filled_honeycomb
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:mud
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world eggs:item_food_toast
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:saladfruit
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:amethyst_helmet
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:earth
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:mahogany_fence_gate
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:turnip_block
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:amethyst_scythe
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:palm_stairs
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:coral
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:plain_flower_band
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:fir_door
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:blue_dye
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:diamond_scythe
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:pine_stairs
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world eggs:item_food_eggs_sandwich
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:pine_fence_gate
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:mudball
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:ash_block
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:flippers
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:biome_finder
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:bamboo
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:willow_fence
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:mushroom
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:lush_flower_band
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:ebony_stairs
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:sapling_1
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:sapling_2
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:sapling_0
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:turnip_seeds
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:green_dye
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:dull_flower_band
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:mud_axe
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:ash
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:stone
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:bone_segment
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:palm_door
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:amethyst_hoe
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:flower_vine
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:double_plant
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:amethyst_shovel
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:white_dye
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:umbran_door
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:biome_essence
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:blood_bucket
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:jacaranda_fence
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:redwood_stairs
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:wood_slab_0
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:cherry_fence
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:wood_slab_1
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:pine_door
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:redwood_door
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:jacaranda_door
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:spawn_egg
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world eggs:item_food_eggs_and_bacon
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:ichor
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:turnip
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:pinecone
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:records.corruption
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:entity.pixie.ambient
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:entity.wasp.hurt
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:entity.pixie.hurt
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:records.wanderer
+[19:23:18] [Server thread/INFO] [FML/]: Found a missing id from the world biomesoplenty:entity.wasp.ambient
+[19:23:18] [Server thread/DEBUG] [FML/]: There are 338 mappings missing - attempting a mod remap
+[19:23:18] [Server thread/TRACE] [mcp/mcp]: Sending event FMLMissingMappingsEvent to mod mcp
+[19:23:18] [Server thread/TRACE] [mcp/mcp]: Sent event FMLMissingMappingsEvent to mod mcp
+[19:23:18] [Server thread/DEBUG] [FML/]: Bar Step: MissingMappings - Minecraft Coder Pack took 0.000s
+[19:23:18] [Server thread/TRACE] [FML/FML]: Sending event FMLMissingMappingsEvent to mod FML
+[19:23:18] [Server thread/TRACE] [FML/FML]: Sent event FMLMissingMappingsEvent to mod FML
+[19:23:18] [Server thread/DEBUG] [FML/]: Bar Step: MissingMappings - Forge Mod Loader took 0.000s
+[19:23:18] [Server thread/TRACE] [Forge/Forge]: Sending event FMLMissingMappingsEvent to mod Forge
+[19:23:18] [Server thread/TRACE] [Forge/Forge]: Sent event FMLMissingMappingsEvent to mod Forge
+[19:23:18] [Server thread/DEBUG] [FML/]: Bar Step: MissingMappings - Minecraft Forge took 0.000s
+[19:23:18] [Server thread/TRACE] [logicaldrops/logicaldrops]: Sending event FMLMissingMappingsEvent to mod logicaldrops
+[19:23:18] [Server thread/TRACE] [logicaldrops/logicaldrops]: Sent event FMLMissingMappingsEvent to mod logicaldrops
+[19:23:18] [Server thread/DEBUG] [FML/]: Bar Step: MissingMappings - Logical Drops took 0.000s
+[19:23:18] [Server thread/DEBUG] [FML/]: Bar Finished: MissingMappings took 0.001s
+[19:23:18] [Server thread/ERROR] [FML/]: There are unidentified mappings in this world - we are going to attempt to process anyway
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: eggs:item_food_eggs_scrambled, id 4295
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: eggs:item_food_eggs_and_beef, id 4300
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: eggs:item_food_eggs_scrambled_cheese, id 4296
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: eggs:item_food_cheese, id 4303
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: eggs:item_food_eggs_sandwich_fried, id 4305
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: eggs:item_food_eggs_mushroom_omelette, id 4304
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: eggs:item_food_eggs_fried, id 4297
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: eggs:item_food_bread, id 4299
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: eggs:item_food_toast, id 4301
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: eggs:item_food_eggs_sandwich, id 4302
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: eggs:item_food_eggs_and_bacon, id 4298
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:umbran_fence_gate, id 289
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:honey, id 338
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:leaves_0, id 242
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:hellbark_stairs, id 262
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:jacaranda_fence_gate, id 299
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:hive, id 229
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:seaweed, id 321
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:eucalyptus_fence_gate, id 302
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:bamboo_thatching, id 232
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:leaves_5, id 247
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:leaves_6, id 248
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:leaves_3, id 245
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:leaves_4, id 246
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:hellbark_fence, id 282
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:leaves_1, id 243
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:leaves_2, id 244
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:umbran_fence, id 273
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:sacred_oak_fence_gate, id 287
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:cherry_fence_gate, id 288
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:redwood_door_block, id 311
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:crag_rock, id 218
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:flesh, id 224
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:willow_fence_gate, id 296
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:stone_formations, id 319
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:willow_stairs, id 260
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:dirt, id 214
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:mangrove_door_block, id 309
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:mangrove_fence, id 277
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:tree_moss, id 336
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:eucalyptus_fence, id 286
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:magic_door_block, id 308
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:pine_door_block, id 313
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:terrarium, id 337
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:ebony_fence_gate, id 301
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:umbran_stairs, id 252
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:poison, id 340
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:hellbark_door_block, id 314
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:log_4, id 241
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:mud_brick_block, id 233
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:log_3, id 240
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:log_2, id 239
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:log_1, id 238
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:hellbark_fence_gate, id 298
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:plant_1, id 329
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:plant_0, id 328
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:crystal, id 225
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:cherry_stairs, id 251
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:palm_fence, id 278
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:double_wood_slab_1, id 270
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:double_wood_slab_0, id 268
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:eucalyptus_stairs, id 266
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:log_0, id 237
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:pine_fence, id 281
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:grass, id 213
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:dried_sand, id 219
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:magic_stairs, id 256
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:ebony_fence, id 285
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:sacred_oak_stairs, id 250
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:mud, id 222
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:fir_door_block, id 306
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:umbran_door_block, id 305
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:magic_fence, id 276
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:mahogany_fence_gate, id 300
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:turnip_block, id 324
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:palm_stairs, id 258
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:coral, id 320
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:farmland_0, id 215
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:farmland_1, id 216
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:pine_stairs, id 261
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:planks_0, id 249
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:hard_ice, id 220
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:flower_1, id 333
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:flower_0, id 332
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:magic_fence_gate, id 292
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:blood, id 339
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:mangrove_stairs, id 257
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:pine_fence_gate, id 297
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:mud_brick_stairs, id 234
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:sacred_oak_door_block, id 303
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:mahogany_door_block, id 316
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:ash_block, id 221
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:cherry_door_block, id 304
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:redwood_fence_gate, id 295
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:willow_door_block, id 312
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:jacaranda_door_block, id 315
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:fir_fence_gate, id 290
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:bamboo, id 323
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:sand, id 223
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:willow_fence, id 280
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:gem_block, id 228
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:mushroom, id 331
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:ethereal_fence_gate, id 291
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:double_other_slab, id 236
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:waterlily, id 322
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:eucalyptus_door_block, id 318
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:fir_stairs, id 253
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:ebony_stairs, id 265
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:sapling_1, id 326
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:sapling_2, id 327
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:sapling_0, id 325
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:ebony_door_block, id 317
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:redwood_fence, id 279
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:hot_spring_water, id 341
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:jacaranda_stairs, id 263
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:stone, id 217
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:sacred_oak_fence, id 271
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:bone_segment, id 231
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:ethereal_fence, id 275
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:flower_vine, id 334
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:gem_ore, id 227
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:double_plant, id 330
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:ethereal_door_block, id 307
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:other_slab, id 235
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:mangrove_fence_gate, id 293
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:mahogany_fence, id 284
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:jacaranda_fence, id 283
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:redwood_stairs, id 259
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:honey_block, id 230
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:mahogany_stairs, id 264
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:wood_slab_0, id 267
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:cherry_fence, id 272
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:wood_slab_1, id 269
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:fir_fence, id 274
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:biome_block, id 226
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:ivy, id 335
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:palm_fence_gate, id 294
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:ethereal_stairs, id 254
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified block: biomesoplenty:palm_door_block, id 310
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:ebony_door, id 4196
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:enderporter, id 4291
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:hellbark_stairs, id 4143
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:jacaranda_fence_gate, id 4178
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:magic_door, id 4187
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:sacred_oak_fence_gate, id 4166
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:shroompowder, id 4234
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:wading_boots, id 4254
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:cherry_fence_gate, id 4167
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:flesh, id 4107
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:willow_fence_gate, id 4175
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:stone_formations, id 4198
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:mud_brick, id 4239
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:dirt, id 4097
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:mangrove_fence, id 4156
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:crystal_shard, id 4244
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:tree_moss, id 4215
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:ambrosia, id 4235
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:umbran_stairs, id 4134
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:mud_chestplate, id 4261
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:honey_bucket, id 4217
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:record_corruption, id 4293
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:mud_leggings, id 4262
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:mud_boots, id 4263
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:plant_1, id 4208
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:plant_0, id 4207
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:crystal, id 4108
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:palm_fence, id 4157
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:mahogany_door, id 4195
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:mangrove_door, id 4188
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:ricebowl, id 4230
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:dried_sand, id 4102
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:magic_stairs, id 4137
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:terrestrial_artifact, id 4243
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:amethyst_sword, id 4277
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:soul, id 4248
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:sacred_oak_stairs, id 4132
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:magic_fence, id 4155
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:amethyst_axe, id 4270
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:sacred_oak_door, id 4182
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:farmland_0, id 4098
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:farmland_1, id 4099
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:brown_dye, id 4250
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:planks_0, id 4131
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:hard_ice, id 4103
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:flower_1, id 4212
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:flower_0, id 4211
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:magic_fence_gate, id 4171
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:mangrove_stairs, id 4138
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:mud_brick_stairs, id 4117
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:flower_basket, id 4289
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:wood_scythe, id 4279
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:redwood_fence_gate, id 4174
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:honeycomb, id 4231
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:mud_shovel, id 4273
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:fir_fence_gate, id 4169
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:sand, id 4106
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:gem_block, id 4111
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:saladveggie, id 4228
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:saladshroom, id 4229
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:ethereal_fence_gate, id 4170
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:mud_sword, id 4274
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:cherry_door, id 4183
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:waterlily, id 4201
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:mud_pickaxe, id 4269
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:fir_stairs, id 4135
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:hot_spring_water_bucket, id 4220
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:eucalyptus_door, id 4197
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:amethyst_leggings, id 4266
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:gold_scythe, id 4282
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:redwood_fence, id 4158
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:amethyst_boots, id 4267
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:jacaranda_stairs, id 4144
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:sacred_oak_fence, id 4150
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:ethereal_fence, id 4154
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:gem_ore, id 4110
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:ethereal_door, id 4186
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:mud_hoe, id 4272
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:pear, id 4222
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:iron_scythe, id 4281
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:other_slab, id 4118
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:persimmon, id 4224
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:mangrove_fence_gate, id 4172
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:mahogany_fence, id 4163
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:peach, id 4223
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:honey_block, id 4113
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:poison_bucket, id 4219
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:mahogany_stairs, id 4145
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:dart_blower, id 4286
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:flax_string, id 4237
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:fir_fence, id 4153
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:biome_block, id 4109
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:ivy, id 4214
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:palm_fence_gate, id 4173
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:ethereal_stairs, id 4136
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:umbran_fence_gate, id 4168
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:dart, id 4285
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:gem, id 4242
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:leaves_0, id 4124
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:hellbark_door, id 4193
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:hive, id 4112
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:seaweed, id 4200
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:eucalyptus_fence_gate, id 4181
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:bamboo_thatching, id 4115
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:leaves_5, id 4129
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:leaves_6, id 4130
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:leaves_3, id 4127
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:leaves_4, id 4128
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:hellbark_fence, id 4161
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:leaves_1, id 4125
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:leaves_2, id 4126
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:umbran_fence, id 4152
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:berries, id 4221
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:crag_rock, id 4101
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:willow_stairs, id 4141
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:jar_empty, id 4287
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:pixie_dust, id 4246
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:eucalyptus_fence, id 4165
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:terrarium, id 4216
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:ebony_fence_gate, id 4180
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:amethyst_pickaxe, id 4271
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:mud_scythe, id 4278
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:amethyst_chestplate, id 4265
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:mud_helmet, id 4260
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:record_wanderer, id 4292
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:exotic_flower_band, id 4258
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:fleshchunk, id 4241
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:log_4, id 4123
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:mud_brick_block, id 4116
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:log_3, id 4122
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:log_2, id 4121
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:log_1, id 4120
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:hellbark_fence_gate, id 4177
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:cherry_stairs, id 4133
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:black_dye, id 4253
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:stone_scythe, id 4280
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:eucalyptus_stairs, id 4147
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:log_0, id 4119
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:pine_fence, id 4160
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:grass, id 4096
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:jar_filled, id 4288
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:willow_door, id 4191
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:ebony_fence, id 4164
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:filled_honeycomb, id 4232
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:mud, id 4105
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:saladfruit, id 4227
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:amethyst_helmet, id 4264
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:earth, id 4236
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:mahogany_fence_gate, id 4179
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:turnip_block, id 4203
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:amethyst_scythe, id 4284
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:palm_stairs, id 4139
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:coral, id 4199
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:plain_flower_band, id 4256
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:fir_door, id 4185
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:blue_dye, id 4249
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:diamond_scythe, id 4283
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:pine_stairs, id 4142
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:pine_fence_gate, id 4176
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:mudball, id 4238
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:ash_block, id 4104
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:flippers, id 4255
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:biome_finder, id 4290
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:bamboo, id 4202
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:willow_fence, id 4159
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:mushroom, id 4210
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:lush_flower_band, id 4257
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:ebony_stairs, id 4146
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:sapling_1, id 4205
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:sapling_2, id 4206
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:sapling_0, id 4204
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:turnip_seeds, id 4225
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:green_dye, id 4251
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:dull_flower_band, id 4259
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:mud_axe, id 4268
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:ash, id 4240
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:stone, id 4100
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:bone_segment, id 4114
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:palm_door, id 4189
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:amethyst_hoe, id 4275
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:flower_vine, id 4213
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:double_plant, id 4209
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:amethyst_shovel, id 4276
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:white_dye, id 4252
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:umbran_door, id 4184
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:biome_essence, id 4245
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:blood_bucket, id 4218
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:jacaranda_fence, id 4162
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:redwood_stairs, id 4140
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:wood_slab_0, id 4148
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:cherry_fence, id 4151
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:wood_slab_1, id 4149
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:pine_door, id 4192
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:redwood_door, id 4190
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:jacaranda_door, id 4194
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:spawn_egg, id 4294
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:ichor, id 4247
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:turnip, id 4226
+[19:23:18] [Server thread/ERROR] [FML/]: Unidentified item: biomesoplenty:pinecone, id 4233
+[19:23:21] [Server thread/INFO] [FML/]: World backup created at C:\Users\Administrator\Desktop\MCD\EM3R50N-RealisticDrops\saves\EM3R50N-LogicalDrops.1.9-0.9-20160427-192321.zip.
+[19:23:21] [Server thread/WARN] [FML/]: This world contains block and item mappings that may cause world breakage
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 289 named as biomesoplenty:umbran_fence_gate with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 338 named as biomesoplenty:honey with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 242 named as biomesoplenty:leaves_0 with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 262 named as biomesoplenty:hellbark_stairs with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 299 named as biomesoplenty:jacaranda_fence_gate with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 229 named as biomesoplenty:hive with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 321 named as biomesoplenty:seaweed with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 302 named as biomesoplenty:eucalyptus_fence_gate with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 232 named as biomesoplenty:bamboo_thatching with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 247 named as biomesoplenty:leaves_5 with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 248 named as biomesoplenty:leaves_6 with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 245 named as biomesoplenty:leaves_3 with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 246 named as biomesoplenty:leaves_4 with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 282 named as biomesoplenty:hellbark_fence with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 243 named as biomesoplenty:leaves_1 with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 244 named as biomesoplenty:leaves_2 with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 273 named as biomesoplenty:umbran_fence with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 287 named as biomesoplenty:sacred_oak_fence_gate with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 288 named as biomesoplenty:cherry_fence_gate with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 311 named as biomesoplenty:redwood_door_block with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 218 named as biomesoplenty:crag_rock with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 224 named as biomesoplenty:flesh with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 296 named as biomesoplenty:willow_fence_gate with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 319 named as biomesoplenty:stone_formations with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 260 named as biomesoplenty:willow_stairs with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 214 named as biomesoplenty:dirt with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 309 named as biomesoplenty:mangrove_door_block with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 277 named as biomesoplenty:mangrove_fence with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 336 named as biomesoplenty:tree_moss with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 286 named as biomesoplenty:eucalyptus_fence with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 308 named as biomesoplenty:magic_door_block with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 313 named as biomesoplenty:pine_door_block with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 337 named as biomesoplenty:terrarium with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 301 named as biomesoplenty:ebony_fence_gate with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 252 named as biomesoplenty:umbran_stairs with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 340 named as biomesoplenty:poison with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 314 named as biomesoplenty:hellbark_door_block with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 241 named as biomesoplenty:log_4 with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 233 named as biomesoplenty:mud_brick_block with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 240 named as biomesoplenty:log_3 with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 239 named as biomesoplenty:log_2 with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 238 named as biomesoplenty:log_1 with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 298 named as biomesoplenty:hellbark_fence_gate with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 329 named as biomesoplenty:plant_1 with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 328 named as biomesoplenty:plant_0 with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 225 named as biomesoplenty:crystal with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 251 named as biomesoplenty:cherry_stairs with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 278 named as biomesoplenty:palm_fence with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 270 named as biomesoplenty:double_wood_slab_1 with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 268 named as biomesoplenty:double_wood_slab_0 with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 266 named as biomesoplenty:eucalyptus_stairs with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 237 named as biomesoplenty:log_0 with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 281 named as biomesoplenty:pine_fence with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 213 named as biomesoplenty:grass with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 219 named as biomesoplenty:dried_sand with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 256 named as biomesoplenty:magic_stairs with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 285 named as biomesoplenty:ebony_fence with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 250 named as biomesoplenty:sacred_oak_stairs with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 222 named as biomesoplenty:mud with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 306 named as biomesoplenty:fir_door_block with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 305 named as biomesoplenty:umbran_door_block with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 276 named as biomesoplenty:magic_fence with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 300 named as biomesoplenty:mahogany_fence_gate with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 324 named as biomesoplenty:turnip_block with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 258 named as biomesoplenty:palm_stairs with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 320 named as biomesoplenty:coral with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 215 named as biomesoplenty:farmland_0 with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 216 named as biomesoplenty:farmland_1 with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 261 named as biomesoplenty:pine_stairs with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 249 named as biomesoplenty:planks_0 with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 220 named as biomesoplenty:hard_ice with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 333 named as biomesoplenty:flower_1 with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 332 named as biomesoplenty:flower_0 with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 292 named as biomesoplenty:magic_fence_gate with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 339 named as biomesoplenty:blood with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 257 named as biomesoplenty:mangrove_stairs with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 297 named as biomesoplenty:pine_fence_gate with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 234 named as biomesoplenty:mud_brick_stairs with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 303 named as biomesoplenty:sacred_oak_door_block with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 316 named as biomesoplenty:mahogany_door_block with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 221 named as biomesoplenty:ash_block with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 304 named as biomesoplenty:cherry_door_block with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 295 named as biomesoplenty:redwood_fence_gate with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 312 named as biomesoplenty:willow_door_block with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 315 named as biomesoplenty:jacaranda_door_block with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 290 named as biomesoplenty:fir_fence_gate with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 323 named as biomesoplenty:bamboo with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 223 named as biomesoplenty:sand with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 280 named as biomesoplenty:willow_fence with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 228 named as biomesoplenty:gem_block with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 331 named as biomesoplenty:mushroom with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 291 named as biomesoplenty:ethereal_fence_gate with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 236 named as biomesoplenty:double_other_slab with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 322 named as biomesoplenty:waterlily with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 318 named as biomesoplenty:eucalyptus_door_block with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 253 named as biomesoplenty:fir_stairs with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 265 named as biomesoplenty:ebony_stairs with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 326 named as biomesoplenty:sapling_1 with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 327 named as biomesoplenty:sapling_2 with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 325 named as biomesoplenty:sapling_0 with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 317 named as biomesoplenty:ebony_door_block with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 279 named as biomesoplenty:redwood_fence with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 341 named as biomesoplenty:hot_spring_water with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 263 named as biomesoplenty:jacaranda_stairs with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 217 named as biomesoplenty:stone with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 271 named as biomesoplenty:sacred_oak_fence with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 231 named as biomesoplenty:bone_segment with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 275 named as biomesoplenty:ethereal_fence with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 334 named as biomesoplenty:flower_vine with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 227 named as biomesoplenty:gem_ore with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 330 named as biomesoplenty:double_plant with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 307 named as biomesoplenty:ethereal_door_block with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 235 named as biomesoplenty:other_slab with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 293 named as biomesoplenty:mangrove_fence_gate with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 284 named as biomesoplenty:mahogany_fence with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 283 named as biomesoplenty:jacaranda_fence with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 259 named as biomesoplenty:redwood_stairs with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 230 named as biomesoplenty:honey_block with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 264 named as biomesoplenty:mahogany_stairs with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 267 named as biomesoplenty:wood_slab_0 with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 272 named as biomesoplenty:cherry_fence with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 269 named as biomesoplenty:wood_slab_1 with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 274 named as biomesoplenty:fir_fence with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 226 named as biomesoplenty:biome_block with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 335 named as biomesoplenty:ivy with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 294 named as biomesoplenty:palm_fence_gate with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 254 named as biomesoplenty:ethereal_stairs with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/DEBUG] [FML/]: Replacing id 310 named as biomesoplenty:palm_door_block with air block. If the mod becomes available again later, it can reload here
+[19:23:21] [Server thread/TRACE] [mcp/mcp]: Sending event FMLModIdMappingEvent to mod mcp
+[19:23:21] [Server thread/TRACE] [mcp/mcp]: Sent event FMLModIdMappingEvent to mod mcp
+[19:23:21] [Server thread/DEBUG] [FML/]: Bar Step: ModIdMapping - Minecraft Coder Pack took 0.000s
+[19:23:21] [Server thread/TRACE] [FML/FML]: Sending event FMLModIdMappingEvent to mod FML
+[19:23:21] [Server thread/TRACE] [FML/FML]: Sent event FMLModIdMappingEvent to mod FML
+[19:23:21] [Server thread/DEBUG] [FML/]: Bar Step: ModIdMapping - Forge Mod Loader took 0.000s
+[19:23:21] [Server thread/TRACE] [Forge/Forge]: Sending event FMLModIdMappingEvent to mod Forge
+[19:23:21] [Server thread/TRACE] [Forge/Forge]: Sent event FMLModIdMappingEvent to mod Forge
+[19:23:21] [Server thread/DEBUG] [FML/]: Bar Step: ModIdMapping - Minecraft Forge took 0.000s
+[19:23:21] [Server thread/TRACE] [logicaldrops/logicaldrops]: Sending event FMLModIdMappingEvent to mod logicaldrops
+[19:23:21] [Server thread/TRACE] [logicaldrops/logicaldrops]: Sent event FMLModIdMappingEvent to mod logicaldrops
+[19:23:21] [Server thread/DEBUG] [FML/]: Bar Step: ModIdMapping - Logical Drops took 0.001s
+[19:23:21] [Server thread/DEBUG] [FML/]: Bar Finished: ModIdMapping took 0.002s
+[19:23:21] [Server thread/INFO] [FML/]: Applying holder lookups
+[19:23:21] [Server thread/INFO] [FML/]: Holder lookups applied
+[19:23:21] [Server thread/DEBUG] [FML/]: Loading persistent fluid defaults from world
+[19:23:21] [Server thread/DEBUG] [FML/]: The fluid minecraft:lava has been selected as the default fluid for lava
+[19:23:21] [Server thread/DEBUG] [FML/]: The fluid minecraft:water has been selected as the default fluid for water
+[19:23:21] [Server thread/ERROR] [FML/]: The fluid blood (specified as BiomesOPlenty:blood) is missing from this instance - it will be removed
+[19:23:21] [Server thread/ERROR] [FML/]: The fluid hot_spring_water (specified as BiomesOPlenty:hot_spring_water) is missing from this instance - it will be removed
+[19:23:21] [Server thread/ERROR] [FML/]: The fluid poison (specified as BiomesOPlenty:poison) is missing from this instance - it will be removed
+[19:23:21] [Server thread/ERROR] [FML/]: The fluid honey (specified as BiomesOPlenty:honey) is missing from this instance - it will be removed
+[19:23:21] [Server thread/INFO] [FML/]: Loading dimension 0 (EM3R50N-LogicalDrops.1.9-0.9) (net.minecraft.server.integrated.IntegratedServer@2c48531d)
+[19:23:21] [Server thread/INFO] [FML/]: Loading dimension 1 (EM3R50N-LogicalDrops.1.9-0.9) (net.minecraft.server.integrated.IntegratedServer@2c48531d)
+[19:23:21] [Server thread/INFO] [FML/]: Loading dimension -1 (EM3R50N-LogicalDrops.1.9-0.9) (net.minecraft.server.integrated.IntegratedServer@2c48531d)
+[19:23:22] [Server thread/TRACE] [mcp/mcp]: Sending event FMLServerStartingEvent to mod mcp
+[19:23:22] [Server thread/TRACE] [mcp/mcp]: Sent event FMLServerStartingEvent to mod mcp
+[19:23:22] [Server thread/DEBUG] [FML/]: Bar Step: ServerStarting - Minecraft Coder Pack took 0.000s
+[19:23:22] [Server thread/TRACE] [FML/FML]: Sending event FMLServerStartingEvent to mod FML
+[19:23:22] [Server thread/TRACE] [FML/FML]: Sent event FMLServerStartingEvent to mod FML
+[19:23:22] [Server thread/DEBUG] [FML/]: Bar Step: ServerStarting - Forge Mod Loader took 0.000s
+[19:23:22] [Server thread/TRACE] [Forge/Forge]: Sending event FMLServerStartingEvent to mod Forge
+[19:23:22] [Server thread/TRACE] [Forge/Forge]: Sent event FMLServerStartingEvent to mod Forge
+[19:23:22] [Server thread/DEBUG] [FML/]: Bar Step: ServerStarting - Minecraft Forge took 0.003s
+[19:23:22] [Server thread/TRACE] [logicaldrops/logicaldrops]: Sending event FMLServerStartingEvent to mod logicaldrops
+[19:23:22] [Server thread/TRACE] [logicaldrops/logicaldrops]: Sent event FMLServerStartingEvent to mod logicaldrops
+[19:23:22] [Server thread/DEBUG] [FML/]: Bar Step: ServerStarting - Logical Drops took 0.000s
+[19:23:22] [Server thread/DEBUG] [FML/]: Bar Finished: ServerStarting took 0.004s
+[19:23:22] [Server thread/TRACE] [mcp/mcp]: Sending event FMLServerStartedEvent to mod mcp
+[19:23:22] [Server thread/TRACE] [mcp/mcp]: Sent event FMLServerStartedEvent to mod mcp
+[19:23:22] [Server thread/DEBUG] [FML/]: Bar Step: ServerStarted - Minecraft Coder Pack took 0.001s
+[19:23:22] [Server thread/TRACE] [FML/FML]: Sending event FMLServerStartedEvent to mod FML
+[19:23:22] [Server thread/TRACE] [FML/FML]: Sent event FMLServerStartedEvent to mod FML
+[19:23:22] [Server thread/DEBUG] [FML/]: Bar Step: ServerStarted - Forge Mod Loader took 0.000s
+[19:23:22] [Server thread/TRACE] [Forge/Forge]: Sending event FMLServerStartedEvent to mod Forge
+[19:23:22] [Server thread/TRACE] [Forge/Forge]: Sent event FMLServerStartedEvent to mod Forge
+[19:23:22] [Server thread/DEBUG] [FML/]: Bar Step: ServerStarted - Minecraft Forge took 0.000s
+[19:23:22] [Server thread/TRACE] [logicaldrops/logicaldrops]: Sending event FMLServerStartedEvent to mod logicaldrops
+[19:23:22] [Server thread/TRACE] [logicaldrops/logicaldrops]: Sent event FMLServerStartedEvent to mod logicaldrops
+[19:23:22] [Server thread/DEBUG] [FML/]: Bar Step: ServerStarted - Logical Drops took 0.000s
+[19:23:22] [Server thread/DEBUG] [FML/]: Bar Finished: ServerStarted took 0.002s
+[19:23:23] [Netty Local Client IO #0/TRACE] [FML/]: Handshake channel activating
+[19:23:23] [Netty Local Client IO #0/DEBUG] [FML/]: FMLHandshakeClientState: null->FMLHandshakeClientState$1:START
+[19:23:23] [Netty Local Client IO #0/DEBUG] [FML/]:   Next: HELLO
+[19:23:23] [Netty Server IO #1/TRACE] [FML/]: Handshake channel activating
+[19:23:23] [Netty Server IO #1/DEBUG] [FML/]: FMLHandshakeServerState: null->FMLHandshakeServerState$1:START
+[19:23:23] [Netty Server IO #1/DEBUG] [FML/]:   Next: HELLO
+[19:23:23] [Netty Local Client IO #0/DEBUG] [FML/]: Server FML protocol version 2, 4 byte dimension received 0
+[19:23:23] [Netty Local Client IO #0/DEBUG] [FML/]: FMLHandshakeClientState: $ServerHello->FMLHandshakeClientState$2:HELLO
+[19:23:23] [Netty Local Client IO #0/INFO] [FML/]: Server protocol version 2
+[19:23:23] [Netty Local Client IO #0/DEBUG] [FML/]: Received override dimension 0
+[19:23:23] [Netty Server IO #1/DEBUG] [FML/]: FMLHandshakeServerState: $ClientHello->FMLHandshakeServerState$2:HELLO
+[19:23:23] [Netty Server IO #1/INFO] [FML/]: Client protocol version 2
+[19:23:23] [Netty Server IO #1/DEBUG] [FML/]:   Next: HELLO
+[19:23:23] [Netty Local Client IO #0/DEBUG] [FML/]:   Next: WAITINGSERVERDATA
+[19:23:23] [Netty Server IO #1/DEBUG] [FML/]: FMLHandshakeServerState: $ModList:4 mods->FMLHandshakeServerState$2:HELLO
+[19:23:23] [Netty Server IO #1/INFO] [FML/]: Client attempting to join with 4 mods : FML@8.0.99.99,logicaldrops@0.9,Forge@12.16.0.1865,mcp@9.19
+[19:23:23] [Netty Server IO #1/DEBUG] [FML/]:   Next: WAITINGCACK
+[19:23:23] [Netty Local Client IO #0/DEBUG] [FML/]: FMLHandshakeClientState: $ModList:4 mods->FMLHandshakeClientState$3:WAITINGSERVERDATA
+[19:23:23] [Netty Local Client IO #0/DEBUG] [FML/]:   Next: PENDINGCOMPLETE
+[19:23:23] [Netty Server IO #1/DEBUG] [FML/]: FMLHandshakeServerState: $HandshakeAck:{2}->FMLHandshakeServerState$3:WAITINGCACK
+[19:23:23] [Netty Local Client IO #0/DEBUG] [FML/]: FMLHandshakeClientState: $HandshakeAck:{2}->FMLHandshakeClientState$5:PENDINGCOMPLETE
+[19:23:23] [Netty Local Client IO #0/DEBUG] [FML/]:   Next: COMPLETE
+[19:23:23] [Netty Server IO #1/DEBUG] [FML/]:   Next: COMPLETE
+[19:23:23] [Netty Server IO #1/DEBUG] [FML/]: FMLHandshakeServerState: $HandshakeAck:{4}->FMLHandshakeServerState$4:COMPLETE
+[19:23:23] [Netty Local Client IO #0/DEBUG] [FML/]: The fluid minecraft:lava has been selected as the default fluid for lava
+[19:23:23] [Netty Local Client IO #0/DEBUG] [FML/]: The fluid minecraft:water has been selected as the default fluid for water
+[19:23:23] [Netty Server IO #1/DEBUG] [FML/]:   Next: DONE
+[19:23:23] [Netty Local Client IO #0/DEBUG] [FML/]: FMLHandshakeClientState: $HandshakeAck:{3}->FMLHandshakeClientState$6:COMPLETE
+[19:23:23] [Netty Server IO #1/DEBUG] [FML/]: FMLHandshakeServerState: $HandshakeAck:{5}->FMLHandshakeServerState$5:DONE
+[19:23:23] [Netty Local Client IO #0/DEBUG] [FML/]:   Next: DONE
+[19:23:23] [Netty Server IO #1/DEBUG] [FML/]:   Next: DONE
+[19:23:23] [Netty Local Client IO #0/INFO] [FML/]: [Netty Local Client IO #0] Client side modded connection established
+[19:23:23] [Server thread/INFO] [FML/]: [Server thread] Server side modded connection established
+[19:23:23] [Client thread/DEBUG] [FML/]: Overriding dimension: using 0
+[19:23:26] [Server thread/DEBUG] [FML/]: Gathering id map for writing to world save EM3R50N-LogicalDrops.1.9-0.9
+[19:23:40] [Server thread/DEBUG] [FML/]: Gathering id map for writing to world save EM3R50N-LogicalDrops.1.9-0.9
+[19:23:40] [Server thread/TRACE] [mcp/mcp]: Sending event FMLServerStoppingEvent to mod mcp
+[19:23:40] [Server thread/TRACE] [mcp/mcp]: Sent event FMLServerStoppingEvent to mod mcp
+[19:23:40] [Server thread/DEBUG] [FML/]: Bar Step: ServerStopping - Minecraft Coder Pack took 0.000s
+[19:23:40] [Server thread/TRACE] [FML/FML]: Sending event FMLServerStoppingEvent to mod FML
+[19:23:40] [Server thread/TRACE] [FML/FML]: Sent event FMLServerStoppingEvent to mod FML
+[19:23:40] [Server thread/DEBUG] [FML/]: Bar Step: ServerStopping - Forge Mod Loader took 0.000s
+[19:23:40] [Server thread/TRACE] [Forge/Forge]: Sending event FMLServerStoppingEvent to mod Forge
+[19:23:40] [Server thread/TRACE] [Forge/Forge]: Sent event FMLServerStoppingEvent to mod Forge
+[19:23:40] [Server thread/DEBUG] [FML/]: Bar Step: ServerStopping - Minecraft Forge took 0.000s
+[19:23:40] [Server thread/TRACE] [logicaldrops/logicaldrops]: Sending event FMLServerStoppingEvent to mod logicaldrops
+[19:23:40] [Server thread/TRACE] [logicaldrops/logicaldrops]: Sent event FMLServerStoppingEvent to mod logicaldrops
+[19:23:40] [Server thread/DEBUG] [FML/]: Bar Step: ServerStopping - Logical Drops took 0.000s
+[19:23:40] [Server thread/DEBUG] [FML/]: Bar Finished: ServerStopping took 0.001s
+[19:23:40] [Server thread/DEBUG] [FML/]: Gathering id map for writing to world save EM3R50N-LogicalDrops.1.9-0.9
+[19:23:40] [Server thread/INFO] [FML/]: Unloading dimension 0
+[19:23:40] [Server thread/INFO] [FML/]: Unloading dimension -1
+[19:23:40] [Server thread/INFO] [FML/]: Unloading dimension 1
+[19:23:40] [Server thread/DEBUG] [FML/]: Reverting to frozen data state.
+[19:23:40] [Server thread/TRACE] [mcp/mcp]: Sending event FMLModIdMappingEvent to mod mcp
+[19:23:40] [Server thread/TRACE] [mcp/mcp]: Sent event FMLModIdMappingEvent to mod mcp
+[19:23:40] [Server thread/DEBUG] [FML/]: Bar Step: ModIdMapping - Minecraft Coder Pack took 0.000s
+[19:23:40] [Server thread/TRACE] [FML/FML]: Sending event FMLModIdMappingEvent to mod FML
+[19:23:40] [Server thread/TRACE] [FML/FML]: Sent event FMLModIdMappingEvent to mod FML
+[19:23:40] [Server thread/DEBUG] [FML/]: Bar Step: ModIdMapping - Forge Mod Loader took 0.000s
+[19:23:40] [Server thread/TRACE] [Forge/Forge]: Sending event FMLModIdMappingEvent to mod Forge
+[19:23:40] [Server thread/TRACE] [Forge/Forge]: Sent event FMLModIdMappingEvent to mod Forge
+[19:23:40] [Server thread/DEBUG] [FML/]: Bar Step: ModIdMapping - Minecraft Forge took 0.000s
+[19:23:40] [Server thread/TRACE] [logicaldrops/logicaldrops]: Sending event FMLModIdMappingEvent to mod logicaldrops
+[19:23:40] [Server thread/TRACE] [logicaldrops/logicaldrops]: Sent event FMLModIdMappingEvent to mod logicaldrops
+[19:23:40] [Server thread/DEBUG] [FML/]: Bar Step: ModIdMapping - Logical Drops took 0.000s
+[19:23:40] [Server thread/DEBUG] [FML/]: Bar Finished: ModIdMapping took 0.001s
+[19:23:40] [Server thread/INFO] [FML/]: Applying holder lookups
+[19:23:40] [Server thread/INFO] [FML/]: Holder lookups applied
+[19:23:40] [Server thread/DEBUG] [FML/]: Frozen state restored.
+[19:23:40] [Server thread/TRACE] [mcp/mcp]: Sending event FMLServerStoppedEvent to mod mcp
+[19:23:40] [Server thread/TRACE] [mcp/mcp]: Sent event FMLServerStoppedEvent to mod mcp
+[19:23:40] [Server thread/DEBUG] [FML/]: Bar Step: ServerStopped - Minecraft Coder Pack took 0.000s
+[19:23:40] [Server thread/TRACE] [FML/FML]: Sending event FMLServerStoppedEvent to mod FML
+[19:23:40] [Server thread/TRACE] [FML/FML]: Sent event FMLServerStoppedEvent to mod FML
+[19:23:40] [Server thread/DEBUG] [FML/]: Bar Step: ServerStopped - Forge Mod Loader took 0.000s
+[19:23:40] [Server thread/TRACE] [Forge/Forge]: Sending event FMLServerStoppedEvent to mod Forge
+[19:23:40] [Server thread/TRACE] [Forge/Forge]: Sent event FMLServerStoppedEvent to mod Forge
+[19:23:40] [Server thread/DEBUG] [FML/]: Bar Step: ServerStopped - Minecraft Forge took 0.000s
+[19:23:40] [Server thread/TRACE] [logicaldrops/logicaldrops]: Sending event FMLServerStoppedEvent to mod logicaldrops
+[19:23:40] [Server thread/TRACE] [logicaldrops/logicaldrops]: Sent event FMLServerStoppedEvent to mod logicaldrops
+[19:23:40] [Server thread/DEBUG] [FML/]: Bar Step: ServerStopped - Logical Drops took 0.000s
+[19:23:40] [Server thread/DEBUG] [FML/]: Bar Finished: ServerStopped took 0.001s

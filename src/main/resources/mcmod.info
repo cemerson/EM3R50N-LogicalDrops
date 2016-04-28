@@ -1,7 +1,7 @@
 [
 {
-  "modid": "realisticdrops",
-  "name": "Realistic Drops",
+  "modid": "logicaldrops",
+  "name": "Logical Drops",
   "description": "Adjusts some things to make the Survival mode a bit more realistic.",
   "version": "0.9",
   "mcversion": "1.9",
