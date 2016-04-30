@@ -27,7 +27,7 @@ public class RealismItem extends Item {
 	@Override
 	public void addInformation(ItemStack stack, EntityPlayer playerIn, List<String> tooltip, boolean advanced) {
 		// TODO Auto-generated method stub		
-		tooltip.add("\u00A7o\u00A78Mod: Realism!");
+		tooltip.add("\u00A7o\u00A78Mod: LogicalDrops!");
 		stack.setStackDisplayName(displayName);
 		super.addInformation(stack, playerIn, tooltip, advanced);
 	}

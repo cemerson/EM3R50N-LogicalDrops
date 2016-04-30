@@ -23,8 +23,8 @@ public class RealismItems {
 	
 		//GameRegistry.register(item_bone_cow);
 	
-//		EntityRegistry.registerModEntity(RealismCow.class, "Realism Cow", 1, Reference.MOD_ID, 128, 1, false);
-//		// EntityRegistry.registerModEntity(RealismCow.class, "Realism Cow", 1, null, 128, 1, false, 0, 0);
+//		EntityRegistry.registerModEntity(RealismCow.class, "LogicalDrops Cow", 1, Reference.MOD_ID, 128, 1, false);
+//		// EntityRegistry.registerModEntity(RealismCow.class, "LogicalDrops Cow", 1, null, 128, 1, false, 0, 0);
 //						        		
 //        MinecraftForge.EVENT_BUS.register(new EntityLivingHandler());		
 		

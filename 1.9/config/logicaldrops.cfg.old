@@ -1,0 +1,62 @@
+# Configuration file
+
+general {
+    I:BlazeFireChargeMax=16
+    I:BlazeFireChargeMin=12
+    I:BlazeRodMax=12
+    I:BlazeRodMin=6
+    I:ChickenFeatherMax=20
+    I:ChickenFeatherMin=10
+    I:ChickenMeatMax=4
+    I:ChickenMeatMin=2
+    I:CowBoneMax=12
+    I:CowBoneMin=6
+    I:CowMeatMax=64
+    I:CowMeatMin=48
+    I:CreeperWoolMax=2
+    I:CreeperWoolMin=0
+
+    #  [default: true]
+    B:DropHeadAlwaysCreeper=false
+
+    #  [default: true]
+    B:DropHeadAlwaysSkeleton=false
+
+    #  [default: true]
+    B:DropHeadAlwaysWitherSkeleton=false
+
+    #  [default: true]
+    B:DropHeadAlwaysZombie=false
+    I:EndermanPearlMax=2
+    I:EndermanPearlMin=1
+    I:EndermanWoolCount=2
+    I:PigMeatMax=3
+    I:PigMeatMin=1
+    I:PigZombiePorkchopMax=3
+    I:PigZombiePorkchopMin=1
+    I:RabbitFootMax=1
+    I:RabbitFootMin=0
+    I:RabbitHideMax=0
+    I:RabbitHideMin=1
+    I:RabbitMeatMax=1
+    I:RabbitMeatMin=2
+    I:SheepBoneMax=6
+    I:SheepBoneMin=2
+    I:SheepMeatMax=12
+    I:SheepMeatMin=6
+    I:SkeletonBonesMax=8
+    I:SkeletonBonesMin=2
+    I:SpiderStringMax=3
+    I:SpiderStringMin=1
+    I:SpiderWebMax=3
+    I:SpiderWebMin=0
+    I:WitchBonesMax=2
+    I:WitchBonesMin=0
+    I:WitchWoolCount=2
+    I:WitherCoalMax=6
+    I:WitherCoalMin=1
+    I:ZombieBonesMax=4
+    I:ZombieBonesMin=0
+}
+
+
