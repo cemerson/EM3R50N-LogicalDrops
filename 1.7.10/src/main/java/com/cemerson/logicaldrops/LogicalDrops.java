@@ -76,6 +76,10 @@ public class LogicalDrops {
     public static int intCowBoneMin;
     public static int intEndermanWoolCount;
     public static int intWitchWoolCount;
+    public static int intBowEnemiesArrowMax;
+    public static int intBowEnemiesArrowMin;
+    public static int intHeadDropPercentChance;
+    
     public static Boolean boolWitherSkeletonAlwaysDropHead; 
     public static Boolean boolSkeletonAlwaysDropHead;
     public static Boolean boolCreeperAlwaysDropHead;
@@ -115,9 +119,7 @@ public class LogicalDrops {
     
     public static void syncConfig() {
         
-        // configFile.load();
-        //		EtFuturum.enableDragonRespawn = configBoolean("Dragon respawning", true, EtFuturum.enableDragonRespawn);
-    	
+        
         intCowMeatMax = configFile.get(Configuration.CATEGORY_GENERAL, "CowMeatMax", 16).getInt();
         intCowMeatMin = configFile.get(Configuration.CATEGORY_GENERAL, "CowMeatMin", 10).getInt();
         intSheepMeatMax = configFile.get(Configuration.CATEGORY_GENERAL, "SheepMeatMax", 10).getInt();
@@ -148,21 +150,24 @@ public class LogicalDrops {
         intWitherCoalMin = configFile.get(Configuration.CATEGORY_GENERAL, "WitherCoalMin", 1).getInt();
         intWitchBonesMax = configFile.get(Configuration.CATEGORY_GENERAL, "WitchBonesMax", 2).getInt();
         intWitchBonesMin = configFile.get(Configuration.CATEGORY_GENERAL, "WitchBonesMin", 0).getInt();
-        intSkeletonBonesMax = configFile.get(Configuration.CATEGORY_GENERAL, "SkeletonBonesMax", 8).getInt();
-        intSkeletonBonesMin = configFile.get(Configuration.CATEGORY_GENERAL, "SkeletonBonesMin", 2).getInt();
-        intZombieBonesMax = configFile.get(Configuration.CATEGORY_GENERAL, "ZombieBonesMax", 4).getInt();
+        intSkeletonBonesMax = configFile.get(Configuration.CATEGORY_GENERAL, "SkeletonBonesMax", 4).getInt();
+        intSkeletonBonesMin = configFile.get(Configuration.CATEGORY_GENERAL, "SkeletonBonesMin", 0).getInt();
+        intZombieBonesMax = configFile.get(Configuration.CATEGORY_GENERAL, "ZombieBonesMax", 3).getInt();
         intZombieBonesMin = configFile.get(Configuration.CATEGORY_GENERAL, "ZombieBonesMin", 0).getInt();
         intPigZombiePorkchopMax = configFile.get(Configuration.CATEGORY_GENERAL, "PigZombiePorkchopMax", 3).getInt();
         intPigZombiePorkchopMin = configFile.get(Configuration.CATEGORY_GENERAL, "PigZombiePorkchopMin", 1).getInt();
-        intSheepBoneMax = configFile.get(Configuration.CATEGORY_GENERAL, "SheepBoneMax", 6).getInt();
-        intSheepBoneMin = configFile.get(Configuration.CATEGORY_GENERAL, "SheepBoneMin", 2).getInt();
+        intSheepBoneMax = configFile.get(Configuration.CATEGORY_GENERAL, "SheepBoneMax", 3).getInt();
+        intSheepBoneMin = configFile.get(Configuration.CATEGORY_GENERAL, "SheepBoneMin", 1).getInt();
         intEndermanPearlMax = configFile.get(Configuration.CATEGORY_GENERAL, "EndermanPearlMax", 2).getInt();
         intEndermanPearlMin = configFile.get(Configuration.CATEGORY_GENERAL, "EndermanPearlMin", 1).getInt();
-        intCowBoneMax = configFile.get(Configuration.CATEGORY_GENERAL, "CowBoneMax", 12).getInt();
-        intCowBoneMin = configFile.get(Configuration.CATEGORY_GENERAL, "CowBoneMin", 6).getInt();
+        intCowBoneMax = configFile.get(Configuration.CATEGORY_GENERAL, "CowBoneMax", 8).getInt();
+        intCowBoneMin = configFile.get(Configuration.CATEGORY_GENERAL, "CowBoneMin", 4).getInt();
+        intBowEnemiesArrowMax = configFile.get(Configuration.CATEGORY_GENERAL, "BowEnemiesArrowMax", 12).getInt();
+        intBowEnemiesArrowMin = configFile.get(Configuration.CATEGORY_GENERAL, "BowEnemiesArrowMin", 4).getInt();               
         
         intEndermanWoolCount = configFile.get(Configuration.CATEGORY_GENERAL, "EndermanWoolCount", 2).getInt();
         intWitchWoolCount = configFile.get(Configuration.CATEGORY_GENERAL, "WitchWoolCount", 2).getInt();
+        intHeadDropPercentChance = configFile.get(Configuration.CATEGORY_GENERAL, "HeadDropPercentChance", 20).getInt(); 
 
         boolWitherSkeletonAlwaysDropHead = configFile.getBoolean("WitherSkeletonAlwaysDropHead", Configuration.CATEGORY_GENERAL, true, ""); 
         boolSkeletonAlwaysDropHead = configFile.getBoolean("SkeletonAlwaysDropHead", Configuration.CATEGORY_GENERAL, true, "");

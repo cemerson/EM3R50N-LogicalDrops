@@ -7,9 +7,11 @@ import com.cemerson.logicaldrops.LogicalDrops;
 import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import net.minecraft.client.Minecraft;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.monster.EntityBlaze;
 import net.minecraft.entity.monster.EntityCreeper;
 import net.minecraft.entity.monster.EntityEnderman;
+import net.minecraft.entity.monster.EntityMob;
 import net.minecraft.entity.monster.EntityPigZombie;
 import net.minecraft.entity.monster.EntitySkeleton;
 import net.minecraft.entity.monster.EntitySpider;
@@ -23,6 +25,7 @@ import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
+import net.minecraft.item.ItemBow;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ChatComponentTranslation;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
@@ -136,8 +139,16 @@ public class RealisticEntityBehaviorHandler {
     
     private void dropZombieStuff(LivingDeathEvent event, ItemStack headToDrop){     
          event.entityLiving.dropItem(Items.bone,  getRandom(LogicalDrops.intZombieBonesMin,LogicalDrops.intZombieBonesMax));        
-         if(LogicalDrops.boolZombieAlwaysDropHead) event.entityLiving.entityDropItem(headToDrop, 0); // .dropItemWithOffset(Items.skull, 1, 2); //Items.skull, 1, 2); // .dropItem(Items.skull, size) Blocks.skull.getBlock.getBlockById() Items.skull., 1); //144
+         if(LogicalDrops.boolZombieAlwaysDropHead && skullRandomDropSuccess()) event.entityLiving.entityDropItem(headToDrop, 0); // .dropItemWithOffset(Items.skull, 1, 2); //Items.skull, 1, 2); // .dropItem(Items.skull, size) Blocks.skull.getBlock.getBlockById() Items.skull., 1); //144
+         enemyBowCheck(event.entityLiving);
     }
+    
+	private Boolean skullRandomDropSuccess(){
+		Boolean willDrop = false;
+		int percentChanceSkullDrops = (100-LogicalDrops.intHeadDropPercentChance); // 60  100-60
+		willDrop = (getRandom(1,100) >= percentChanceSkullDrops);
+		return willDrop;
+	}    
     
     // PIG
     @SubscribeEvent
@@ -181,7 +192,7 @@ public class RealisticEntityBehaviorHandler {
             event.entityLiving.entityDropItem(greenWool,getRandom(LogicalDrops.intCreeperWoolMin,LogicalDrops.intCreeperWoolMax));
             
             ItemStack creeperHead = new ItemStack(Items.skull, 1, 4);                                                               
-            if(LogicalDrops.boolCreeperAlwaysDropHead) event.entityLiving.entityDropItem(creeperHead,1);                           
+            if(LogicalDrops.boolCreeperAlwaysDropHead && skullRandomDropSuccess()) event.entityLiving.entityDropItem(creeperHead,1);                           
         }               
     }
 
@@ -212,12 +223,13 @@ public class RealisticEntityBehaviorHandler {
             if(isWitherSkeleton){
                 // do stuff!
                 ItemStack witherHead = new ItemStack(Items.skull, 1, 1);                                                
-                if(LogicalDrops.boolSkeletonAlwaysDropHead) event.entityLiving.entityDropItem(witherHead,1); // wither skull!
+                if(LogicalDrops.boolSkeletonAlwaysDropHead && skullRandomDropSuccess()) event.entityLiving.entityDropItem(witherHead,1); // wither skull!
                 event.entityLiving.dropItem(Items.coal,getRandom(LogicalDrops.intWitherCoalMin,LogicalDrops.intWitherCoalMax)); // 3 coal!
             }else{
-                if(LogicalDrops.boolWitherSkeletonAlwaysDropHead) event.entityLiving.dropItem(Items.skull, 1);
+                if(LogicalDrops.boolWitherSkeletonAlwaysDropHead && skullRandomDropSuccess()) event.entityLiving.dropItem(Items.skull, 1);
             }           
-            event.entityLiving.dropItem(Items.bone, getRandom(LogicalDrops.intSkeletonBonesMin,LogicalDrops.intSkeletonBonesMax)); // skeletons? hello.. more than 2 bones please!?                        
+            event.entityLiving.dropItem(Items.bone, getRandom(LogicalDrops.intSkeletonBonesMin,LogicalDrops.intSkeletonBonesMax)); // skeletons? hello.. more than 2 bones please!?
+            enemyBowCheck(event.entityLiving);            
         }               
         
         // add spider riding to drop saddle?
@@ -238,6 +250,19 @@ public class RealisticEntityBehaviorHandler {
             event.entityLiving.entityDropItem(blazeCharges,1);
         }               
     }
+    
+    // sadly this won't work in 1.7.10 ... no bows yet?    
+	public void enemyBowCheck(EntityLivingBase enemy){
+//        try{
+//    		EntityMob mob = (EntityMob) enemy;
+//    		Item mobWeapon = mob.getHeldItem().getItem();
+//    		Boolean enemyHasBow = (mobWeapon instanceof ItemBow);		
+//    		if(enemyHasBow) enemy.dropItem(Items.arrow, getRandom(LogicalDrops.intBowEnemiesArrowMin,LogicalDrops.intBowEnemiesArrowMax));
+//        }
+//        catch(StackOverflowError e){
+//            // System.err.println("ouch!");
+//        }        		
+	}    
     
     // SPIDER
     @SubscribeEvent

@@ -6,3 +6,8 @@
 	- http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/modification-development/1437440-forge-advanced-config-file-add-custom-property
 * Add saddle drops for spider/jockey mobs?
 
+##2016050x updates
+* arrow logic added (defaults 6/1)
+* skull drop now boolean + random % value
+* 
+

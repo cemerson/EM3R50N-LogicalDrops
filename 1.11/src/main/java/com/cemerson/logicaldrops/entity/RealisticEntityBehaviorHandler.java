@@ -5,6 +5,7 @@ import java.util.Random;
 import com.cemerson.logicaldrops.LogicalDrops;
 
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.EnumCreatureType;
 import net.minecraft.entity.IRangedAttackMob;
 import net.minecraft.entity.monster.EntityBlaze;
 import net.minecraft.entity.monster.EntityCreeper;
@@ -14,6 +15,7 @@ import net.minecraft.entity.monster.EntityPigZombie;
 import net.minecraft.entity.monster.EntitySkeleton;
 import net.minecraft.entity.monster.EntitySpider;
 import net.minecraft.entity.monster.EntityWitch;
+import net.minecraft.entity.monster.EntityWitherSkeleton;
 import net.minecraft.entity.monster.EntityZombie;
 import net.minecraft.entity.passive.EntityChicken;
 import net.minecraft.entity.passive.EntityCow;
@@ -31,6 +33,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.potion.PotionType;
 import net.minecraft.potion.PotionUtils;
 import net.minecraft.util.EnumHand;
+import net.minecraft.world.chunk.Chunk.EnumCreateEntityType;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
@@ -55,8 +58,8 @@ public class RealisticEntityBehaviorHandler {
 			//String chatMsg = "LogicalDrops.intCowMeatMax=" + LogicalDrops.intCowMeatMax;        		
 			//Minecraft.getMinecraft().thePlayer.addChatMessage(new TextComponentString(chatMsg));
 				
-			event.getEntityLiving().dropItem(Items.bone, getRandom(LogicalDrops.intCowBoneMin,LogicalDrops.intCowBoneMax)); 
-			event.getEntityLiving().dropItem(Items.beef, getRandom(LogicalDrops.intCowMeatMin,LogicalDrops.intCowMeatMax)); // 30 lbs steaks super minimum!
+			event.getEntityLiving().dropItem(Items.BONE, getRandom(LogicalDrops.intCowBoneMin,LogicalDrops.intCowBoneMax)); 
+			event.getEntityLiving().dropItem(Items.BEEF, getRandom(LogicalDrops.intCowMeatMin,LogicalDrops.intCowMeatMax)); // 30 lbs steaks super minimum!
 		}				
 	}
 	
@@ -68,11 +71,11 @@ public class RealisticEntityBehaviorHandler {
 		 Boolean isNotServerWorld = (!event.getEntity().worldObj.isRemote);
 		if((event.getEntityLiving() instanceof EntityEnderman) && (isNotServerWorld))
 		{			
-			event.getEntityLiving().dropItem(Items.ender_pearl, getRandom(LogicalDrops.intEndermanPearlMin,LogicalDrops.intEndermanPearlMax));
-			ItemStack blackWool = new ItemStack(Blocks.wool, 1, 15); // black wool																
+			event.getEntityLiving().dropItem(Items.ENDER_PEARL, getRandom(LogicalDrops.intEndermanPearlMin,LogicalDrops.intEndermanPearlMax));
+			ItemStack blackWool = new ItemStack(Blocks.WOOL, 1, 15); // black wool																
 			event.getEntityLiving().entityDropItem(blackWool,LogicalDrops.intEndermanWoolCount);
-			PotionType potionType = PotionTypes.night_vision;
-			ItemStack potionStack = (ItemStack) PotionUtils.addPotionToItemStack(new ItemStack(Items.potionitem), potionType);
+			PotionType potionType = PotionTypes.NIGHT_VISION;
+			ItemStack potionStack = (ItemStack) PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), potionType);
 			event.getEntityLiving().entityDropItem(potionStack,1);			
 		}				
 	}	
@@ -83,8 +86,8 @@ public class RealisticEntityBehaviorHandler {
 		 Boolean isNotServerWorld = (!event.getEntity().worldObj.isRemote);
 		if((event.getEntityLiving() instanceof EntityChicken) && (isNotServerWorld))
 		{
-			event.getEntityLiving().dropItem(Items.feather, getRandom(LogicalDrops.intChickenFeatherMin,LogicalDrops.intChickenFeatherMax));
-			event.getEntityLiving().dropItem(Items.chicken, getRandom(LogicalDrops.intChickenMeatMin,LogicalDrops.intChickenMeatMax));
+			event.getEntityLiving().dropItem(Items.FEATHER, getRandom(LogicalDrops.intChickenFeatherMin,LogicalDrops.intChickenFeatherMax));
+			event.getEntityLiving().dropItem(Items.CHICKEN, getRandom(LogicalDrops.intChickenMeatMin,LogicalDrops.intChickenMeatMax));
 		}				
 	}	
 	
@@ -94,8 +97,8 @@ public class RealisticEntityBehaviorHandler {
 		 Boolean isNotServerWorld = (!event.getEntity().worldObj.isRemote);
 		if((event.getEntityLiving() instanceof EntitySheep) && (isNotServerWorld))
 		{
-			event.getEntityLiving().dropItem(Items.bone, getRandom(LogicalDrops.intSheepBoneMin,LogicalDrops.intSheepBoneMax));
-			event.getEntityLiving().dropItem(Items.mutton, getRandom(LogicalDrops.intSheepMeatMin,LogicalDrops.intSheepMeatMax)); // 40 lbs LOW average			
+			event.getEntityLiving().dropItem(Items.BONE, getRandom(LogicalDrops.intSheepBoneMin,LogicalDrops.intSheepBoneMax));
+			event.getEntityLiving().dropItem(Items.MUTTON, getRandom(LogicalDrops.intSheepMeatMin,LogicalDrops.intSheepMeatMax)); // 40 lbs LOW average			
 		}				
 	}		
 	
@@ -110,12 +113,12 @@ public class RealisticEntityBehaviorHandler {
 			 ItemStack zombieHead;
 			 if((event.getEntityLiving() instanceof EntityPigZombie)){
 				 // plain skull
-				zombieHead = new ItemStack(Items.skull, 1);
-				event.getEntityLiving().dropItem(Items.porkchop, getRandom(LogicalDrops.intPigZombiePorkchopMin,LogicalDrops.intPigZombiePorkchopMax));
+				zombieHead = new ItemStack(Items.SKULL, 1);
+				event.getEntityLiving().dropItem(Items.PORKCHOP, getRandom(LogicalDrops.intPigZombiePorkchopMin,LogicalDrops.intPigZombiePorkchopMax));
 				dropZombieStuff(event, zombieHead);
 			 }else if((event.getEntityLiving() instanceof EntityZombie)){
 				 // zombie head
-				zombieHead = new ItemStack(Items.skull, 1, 2);							
+				zombieHead = new ItemStack(Items.SKULL, 1, 2);							
 				// zombie shirt/pants
 //				ItemStack stackShirt = new ItemStack(Items.leather_chestplate, 1);
 //				((ItemArmor) stackShirt.getItem()).setColor(stackShirt, 2651799); //15790320);			
@@ -129,7 +132,7 @@ public class RealisticEntityBehaviorHandler {
 	}		
 	
 	private void dropZombieStuff(LivingDeathEvent event, ItemStack headToDrop){		
-		 event.getEntityLiving().dropItem(Items.bone,  getRandom(LogicalDrops.intZombieBonesMin,LogicalDrops.intZombieBonesMax));		 
+		 event.getEntityLiving().dropItem(Items.BONE,  getRandom(LogicalDrops.intZombieBonesMin,LogicalDrops.intZombieBonesMax));		 
 		 if(LogicalDrops.boolZombieAlwaysDropHead && skullRandomDropSuccess()){
 			 event.getEntityLiving().entityDropItem(headToDrop, 0); // .dropItemWithOffset(Items.skull, 1, 2); //Items.skull, 1, 2); // .dropItem(Items.skull, size) Blocks.skull.getBlock.getBlockById() Items.skull., 1); //144
 		 }
@@ -150,7 +153,7 @@ public class RealisticEntityBehaviorHandler {
 		 Boolean isNotServerWorld = (!event.getEntity().worldObj.isRemote);
 		if((event.getEntityLiving() instanceof EntityPig) && (isNotServerWorld))
 		{
-			event.getEntityLiving().dropItem(Items.porkchop, getRandom(LogicalDrops.intPigMeatMin,LogicalDrops.intPigMeatMax)); // pigs have TONS of mean IRL!						
+			event.getEntityLiving().dropItem(Items.PORKCHOP, getRandom(LogicalDrops.intPigMeatMin,LogicalDrops.intPigMeatMax)); // pigs have TONS of mean IRL!						
 		}				
 	}
 	
@@ -161,11 +164,11 @@ public class RealisticEntityBehaviorHandler {
 		 Boolean isNotServerWorld = (!event.getEntity().worldObj.isRemote);
 		if((event.getEntityLiving() instanceof EntityWitch) && (isNotServerWorld))
 		{
-			ItemStack purpleWool = new ItemStack(Blocks.wool, 1, 10); // purple wool																
+			ItemStack purpleWool = new ItemStack(Blocks.WOOL, 1, 10); // purple wool																
 			event.getEntityLiving().entityDropItem(purpleWool, LogicalDrops.intWitchWoolCount);			
 					
-			PotionType witchPotionType = PotionTypes.healing;
-			ItemStack healPotionStack = (ItemStack) PotionUtils.addPotionToItemStack(new ItemStack(Items.potionitem), witchPotionType);
+			PotionType witchPotionType = PotionTypes.HEALING;
+			ItemStack healPotionStack = (ItemStack) PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), witchPotionType);
 			event.getEntityLiving().entityDropItem(healPotionStack,1);
 			
 //			ItemBook boo
@@ -175,7 +178,7 @@ public class RealisticEntityBehaviorHandler {
 //			ItemStack healPotionStack = (ItemStack) PotionUtils.addPotionToItemStack(new ItemStack(Items.potionitem), witchPotionType);
 //			event.getEntityLiving().entityDropItem(healPotionStack,1);			
 		
-			event.getEntityLiving().dropItem(Items.bone, getRandom(LogicalDrops.intWitchBonesMin,LogicalDrops.intWitchBonesMax)); // human, 8 bones
+			event.getEntityLiving().dropItem(Items.BONE, getRandom(LogicalDrops.intWitchBonesMin,LogicalDrops.intWitchBonesMax)); // human, 8 bones
 			
 		}				
 	}	
@@ -187,11 +190,11 @@ public class RealisticEntityBehaviorHandler {
 		 Boolean isNotServerWorld = (!event.getEntity().worldObj.isRemote);
 		if((event.getEntityLiving() instanceof EntityCreeper) && (isNotServerWorld))
 		{
-			event.getEntityLiving().entityDropItem(new ItemStack(Blocks.tnt),1); // TNT!
-			ItemStack greenWool = new ItemStack(Blocks.wool, 1, 5);																
+			event.getEntityLiving().entityDropItem(new ItemStack(Blocks.TNT),1); // TNT!
+			ItemStack greenWool = new ItemStack(Blocks.WOOL, 1, 5);																
 			event.getEntityLiving().entityDropItem(greenWool,getRandom(LogicalDrops.intCreeperWoolMin,LogicalDrops.intCreeperWoolMax));
 			
-			ItemStack creeperHead = new ItemStack(Items.skull, 1, 4);																
+			ItemStack creeperHead = new ItemStack(Items.SKULL, 1, 4);																
 			if(LogicalDrops.boolCreeperAlwaysDropHead && skullRandomDropSuccess()) event.getEntityLiving().entityDropItem(creeperHead,1);							
 		}				
 	}
@@ -216,19 +219,9 @@ public class RealisticEntityBehaviorHandler {
 	{					
 		 Boolean isNotServerWorld = (!event.getEntity().worldObj.isRemote);		 
 		if((event.getEntityLiving() instanceof EntitySkeleton) && (isNotServerWorld))
-		{
-			EntitySkeleton skel = (EntitySkeleton) event.getEntityLiving();// Boolean isWitherSkeleton = event.getEntityLiving().getSke
-			Boolean isWitherSkeleton = (skel.getSkeletonType() == 1);			
-			// how to get bow if has one?
-			if(isWitherSkeleton){
-				// do stuff!
-				ItemStack witherHead = new ItemStack(Items.skull, 1, 1); 												
-				if(LogicalDrops.boolSkeletonAlwaysDropHead && skullRandomDropSuccess()) event.getEntityLiving().entityDropItem(witherHead,1); // wither skull!
-				event.getEntityLiving().dropItem(Items.coal,getRandom(LogicalDrops.intWitherCoalMin,LogicalDrops.intWitherCoalMax)); // 3 coal!
-			}else{
-				if(LogicalDrops.boolWitherSkeletonAlwaysDropHead && skullRandomDropSuccess()) event.getEntityLiving().dropItem(Items.skull, 1);
-			}			
-			event.getEntityLiving().dropItem(Items.bone, getRandom(LogicalDrops.intSkeletonBonesMin,LogicalDrops.intSkeletonBonesMax)); // skeletons? hello.. more than 2 bones please!?
+		{			
+			if(LogicalDrops.boolWitherSkeletonAlwaysDropHead && skullRandomDropSuccess()) event.getEntityLiving().dropItem(Items.SKULL, 1);						
+			event.getEntityLiving().dropItem(Items.BONE, getRandom(LogicalDrops.intSkeletonBonesMin,LogicalDrops.intSkeletonBonesMax)); // skeletons? hello.. more than 2 bones please!?
 			
 			enemyBowCheck(event.getEntityLiving()); 											
 		}				
@@ -237,12 +230,29 @@ public class RealisticEntityBehaviorHandler {
 		///summon Spider ~ ~ ~ {Passengers:[{id:Skeleton}]}
 	}	
 	
+	// WITHER SKELETONS
+	@SubscribeEvent
+	public void playerKilledWitherSkeleton(LivingDeathEvent event)
+	{					
+		Boolean isNotServerWorld = (!event.getEntity().worldObj.isRemote);		 
+		if((event.getEntityLiving() instanceof EntityWitherSkeleton) && (isNotServerWorld))
+		{		
+			ItemStack witherHead = new ItemStack(Items.SKULL, 1, 1); 												
+			if(LogicalDrops.boolSkeletonAlwaysDropHead && skullRandomDropSuccess()) event.getEntityLiving().entityDropItem(witherHead,1); // wither skull!
+			event.getEntityLiving().dropItem(Items.COAL,getRandom(LogicalDrops.intWitherCoalMin,LogicalDrops.intWitherCoalMax)); // 3 coal!
+			event.getEntityLiving().dropItem(Items.BONE, getRandom(LogicalDrops.intSkeletonBonesMin,LogicalDrops.intSkeletonBonesMax)); // skeletons? hello.. more than 2 bones please!?
+			
+			enemyBowCheck(event.getEntityLiving()); 											
+		}						
+	}		
+	
 	public void enemyBowCheck(EntityLivingBase enemy){
         try{
     		EntityMob mob = (EntityMob) enemy;
-    		Item mobWeapon = mob.getHeldItem(mob.getActiveHand().MAIN_HAND).getItem();
+    		mob.getActiveHand();
+			Item mobWeapon = mob.getHeldItem(EnumHand.MAIN_HAND).getItem();
     		Boolean enemyHasBow = (mobWeapon instanceof ItemBow);		
-    		if(enemyHasBow) enemy.dropItem(Items.arrow, getRandom(LogicalDrops.intBowEnemiesArrowMin,LogicalDrops.intBowEnemiesArrowMax));
+    		if(enemyHasBow) enemy.dropItem(Items.ARROW, getRandom(LogicalDrops.intBowEnemiesArrowMin,LogicalDrops.intBowEnemiesArrowMax));
         } catch (Exception e) {        
             // System.err.println("ouch!");
         }        		
@@ -256,8 +266,8 @@ public class RealisticEntityBehaviorHandler {
 		 Boolean isNotServerWorld = (!event.getEntity().worldObj.isRemote);
 		if((event.getEntityLiving() instanceof EntityBlaze) && (isNotServerWorld))
 		{			
-			ItemStack blazeRods = new ItemStack(Items.blaze_rod,getRandom(LogicalDrops.intBlazeRodMin,LogicalDrops.intBlazeRodMax));																
-			ItemStack blazeCharges = new ItemStack(Items.fire_charge, getRandom(LogicalDrops.intBlazeFireChargeMin,LogicalDrops.intBlazeFireChargeMax));			
+			ItemStack blazeRods = new ItemStack(Items.BLAZE_ROD,getRandom(LogicalDrops.intBlazeRodMin,LogicalDrops.intBlazeRodMax));																
+			ItemStack blazeCharges = new ItemStack(Items.FIRE_CHARGE, getRandom(LogicalDrops.intBlazeFireChargeMin,LogicalDrops.intBlazeFireChargeMax));			
 			event.getEntityLiving().entityDropItem(blazeRods,1);			
 			event.getEntityLiving().entityDropItem(blazeCharges,1);
 		}				
@@ -272,11 +282,11 @@ public class RealisticEntityBehaviorHandler {
 		{			
 			//TODO: web not dropping			
 			// ItemStack spiderWebs = new ItemStack(Blocks.web, 1);
-			ItemBlock spiderWeb = (ItemBlock) ItemBlock.getItemFromBlock(Blocks.web);
+			ItemBlock spiderWeb = (ItemBlock) ItemBlock.getItemFromBlock(Blocks.WEB);
 			int numberOfWebs = getRandom(LogicalDrops.intSpiderWebMin,LogicalDrops.intSpiderWebMax);
 			int numberOfString = getRandom(LogicalDrops.intSpiderStringMin,LogicalDrops.intSpiderStringMax);
 			event.getEntityLiving().dropItem(spiderWeb,numberOfWebs);			
-			event.getEntityLiving().dropItem(Items.string, numberOfString);
+			event.getEntityLiving().dropItem(Items.STRING, numberOfString);
 		}				
 	}	
 
@@ -287,9 +297,9 @@ public class RealisticEntityBehaviorHandler {
 		 Boolean isNotServerWorld = (!event.getEntity().worldObj.isRemote);
 		if((event.getEntityLiving() instanceof EntityRabbit) && (isNotServerWorld))
 		{						
-			event.getEntityLiving().dropItem(Items.rabbit_foot, getRandom(LogicalDrops.intRabbitFootMin,LogicalDrops.intRabbitFootMax));
-			event.getEntityLiving().dropItem(Items.rabbit_hide, getRandom(LogicalDrops.intRabbitHideMin,LogicalDrops.intRabbitHideMax));
-			event.getEntityLiving().dropItem(Items.rabbit, getRandom(LogicalDrops.intRabbitMeatMin,LogicalDrops.intRabbitMeatMax));
+			event.getEntityLiving().dropItem(Items.RABBIT_FOOT, getRandom(LogicalDrops.intRabbitFootMin,LogicalDrops.intRabbitFootMax));
+			event.getEntityLiving().dropItem(Items.RABBIT_HIDE, getRandom(LogicalDrops.intRabbitHideMin,LogicalDrops.intRabbitHideMax));
+			event.getEntityLiving().dropItem(Items.RABBIT, getRandom(LogicalDrops.intRabbitMeatMin,LogicalDrops.intRabbitMeatMax));
 		}				
 	}	
 		
