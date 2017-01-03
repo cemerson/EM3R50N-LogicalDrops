@@ -1,0 +1,16 @@
+[
+{
+  "modid": "logicaldrops",
+  "name": "Logical Drops",
+  "description": "Adjusts some things to make the Survival mode a bit more realistic.",
+  "version": "0.9.4",
+  "mcversion": "1.9",
+  "url": "TBD",
+  "updateUrl": "",
+  "authorList": ["EM3R50N"],
+  "credits": "MrCrayfish's awesome mod tutorials! (mrcrayfish.com)",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
