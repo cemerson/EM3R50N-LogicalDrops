@@ -32,7 +32,6 @@ public class LogicalDropsGuiFactory implements IModGuiFactory {
 	  public void initialize(Minecraft minecraftInstance) {
 	  }
 
-	  @Override
 	  public Class<? extends GuiScreen> mainConfigGuiClass() {
 	    return LogicalDropsConfigGUI.class;
 	  }
@@ -49,8 +48,7 @@ public class LogicalDropsGuiFactory implements IModGuiFactory {
 //	  }
 	  
 	  	  
-	   @Override
-	    public RuntimeOptionGuiHandler getHandlerFor(RuntimeOptionCategoryElement element)
+	   public <RuntimeOptionGuiHandler> RuntimeOptionGuiHandler getHandlerFor(RuntimeOptionCategoryElement element)
 	    {
 //	        return new RuntimeOptionGuiHandler() {
 //	            @Override
