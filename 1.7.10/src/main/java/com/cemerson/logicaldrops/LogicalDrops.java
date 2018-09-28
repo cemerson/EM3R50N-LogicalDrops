@@ -34,6 +34,8 @@ public class LogicalDrops {
      
     public static int intCowMeatMax;
     public static int intCowMeatMin;
+    public static int intCowLeatherMax;
+    public static int intCowLeatherMin;    
     public static int intSheepMeatMax;
     public static int intSheepMeatMin;
     public static int intPigMeatMax;
@@ -56,8 +58,8 @@ public class LogicalDrops {
     public static int intBlazeFireChargeMin;
     public static int intBlazeRodMax;
     public static int intBlazeRodMin;
-    public static int intCreeperWoolMax;
-    public static int intCreeperWoolMin;
+    // public static int intCreeperWoolMax;
+    // public static int intCreeperWoolMin;
     public static int intWitherCoalMax;
     public static int intWitherCoalMin;
     public static int intWitchBonesMax;
@@ -79,6 +81,13 @@ public class LogicalDrops {
     public static int intBowEnemiesArrowMax;
     public static int intBowEnemiesArrowMin;
     public static int intHeadDropPercentChance;
+    
+    public static int intHorseBoneMin;
+    public static int intHorseBoneMax;
+    public static int intHorseMeatMax;
+    public static int intHorseMeatMin;
+    public static int intHorseLeatherMax;
+    public static int intHorseLeatherMin;
     
     public static Boolean boolWitherSkeletonAlwaysDropHead; 
     public static Boolean boolSkeletonAlwaysDropHead;
@@ -144,8 +153,8 @@ public class LogicalDrops {
         intBlazeFireChargeMin = configFile.get(Configuration.CATEGORY_GENERAL, "BlazeFireChargeMin", 1).getInt();
         intBlazeRodMax = configFile.get(Configuration.CATEGORY_GENERAL, "BlazeRodMax", 3).getInt();
         intBlazeRodMin = configFile.get(Configuration.CATEGORY_GENERAL, "BlazeRodMin", 1).getInt();
-        intCreeperWoolMax = configFile.get(Configuration.CATEGORY_GENERAL, "CreeperWoolMax", 2).getInt();
-        intCreeperWoolMin = configFile.get(Configuration.CATEGORY_GENERAL, "CreeperWoolMin", 0).getInt();
+        //intCreeperWoolMax = configFile.get(Configuration.CATEGORY_GENERAL, "CreeperWoolMax", 2).getInt();
+        //intCreeperWoolMin = configFile.get(Configuration.CATEGORY_GENERAL, "CreeperWoolMin", 0).getInt();
         intWitherCoalMax = configFile.get(Configuration.CATEGORY_GENERAL, "WitherCoalMax", 6).getInt();
         intWitherCoalMin = configFile.get(Configuration.CATEGORY_GENERAL, "WitherCoalMin", 1).getInt();
         intWitchBonesMax = configFile.get(Configuration.CATEGORY_GENERAL, "WitchBonesMax", 2).getInt();
@@ -161,7 +170,17 @@ public class LogicalDrops {
         intEndermanPearlMax = configFile.get(Configuration.CATEGORY_GENERAL, "EndermanPearlMax", 2).getInt();
         intEndermanPearlMin = configFile.get(Configuration.CATEGORY_GENERAL, "EndermanPearlMin", 1).getInt();
         intCowBoneMax = configFile.get(Configuration.CATEGORY_GENERAL, "CowBoneMax", 8).getInt();
-        intCowBoneMin = configFile.get(Configuration.CATEGORY_GENERAL, "CowBoneMin", 4).getInt();
+        intCowBoneMin = configFile.get(Configuration.CATEGORY_GENERAL, "CowBoneMin", 4).getInt();                
+        intCowLeatherMax = configFile.get(Configuration.CATEGORY_GENERAL, "CowLeatherMax", 12).getInt();
+        intCowLeatherMin = configFile.get(Configuration.CATEGORY_GENERAL, "CowLeatherMin", 8).getInt();
+        
+        intHorseMeatMax = configFile.get(Configuration.CATEGORY_GENERAL, "HorseMeatMax", 16).getInt();
+        intHorseMeatMin = configFile.get(Configuration.CATEGORY_GENERAL, "HorseMeatMin", 10).getInt();        
+        intHorseBoneMax = configFile.get(Configuration.CATEGORY_GENERAL, "HorseBoneMax", 8).getInt();
+        intHorseBoneMin = configFile.get(Configuration.CATEGORY_GENERAL, "HorseBoneMin", 4).getInt();
+        intHorseLeatherMax = configFile.get(Configuration.CATEGORY_GENERAL, "HorseLeatherMax", 12).getInt();
+        intHorseLeatherMin = configFile.get(Configuration.CATEGORY_GENERAL, "HorseLeatherMin", 8).getInt();        
+                       
         intBowEnemiesArrowMax = configFile.get(Configuration.CATEGORY_GENERAL, "BowEnemiesArrowMax", 12).getInt();
         intBowEnemiesArrowMin = configFile.get(Configuration.CATEGORY_GENERAL, "BowEnemiesArrowMin", 4).getInt();               
         

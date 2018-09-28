@@ -1,85 +1,100 @@
 package com.cemerson.logicaldrops.init;
 
 import com.cemerson.logicaldrops.Reference;
+import com.cemerson.logicaldrops.util.CraftingHelper;
 
-import net.minecraftforge.fml.common.registry.ForgeRegistries;
-import net.minecraft.item.Item.ToolMaterial;
-import net.minecraftforge.client.model.ModelLoader;
-import net.minecraftforge.common.util.EnumHelper;
-
-// import net.minecraftforge.common.crafting.CraftingHelper;
-
-import jline.internal.Log;
-import net.minecraft.block.Block;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import net.minecraft.block.BlockFlower.EnumFlowerType;
+import net.minecraft.block.material.Material;
+import net.minecraft.entity.passive.EntityWolf;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.IRecipe;
-import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.util.NonNullList;
-import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.client.event.ModelRegistryEvent;
+import net.minecraft.nbt.NBTBase;
+import net.minecraft.nbt.NBTTagString;
 import net.minecraftforge.event.RegistryEvent;
-// 
-import net.minecraftforge.fml.common.Loader;
-import net.minecraftforge.fml.common.ModContainer;
-import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import net.minecraftforge.fml.common.registry.GameRegistry;
-import net.minecraftforge.oredict.ShapedOreRecipe;
-import net.minecraftforge.oredict.ShapelessOreRecipe;
-import net.minecraftforge.registries.IForgeRegistry;
 
-
-import net.minecraft.init.PotionTypes;
-import net.minecraft.potion.PotionType;
-import net.minecraft.potion.PotionUtils;
-
-public class LogicalRecipes {
-	
-	//public static RealismItem item_bone_cow;
-		
-	public static void init(){			
-//		// item_food_eggs_mushroom_omelette = (RealismItem) new RealismItem(20,1.0F,false,"Mushroom & Cheese Omelette",false).setUnlocalizedName("item_food_eggs_mushroom_omelette").setRegistryName("item_food_eggs_mushroom_omelette").setMaxStackSize(8);
-//		item_bone_cow = (RealismItem) new RealismItem("Cow Bone")
-//							.setRegistryName("item_bone_cow")
-//							.setUnlocalizedName("item_bone_cow")
-//							.setMaxStackSize(64);									
-	}
-	
-	public static void register(){	
-		//GameRegistry.register(item_bone_cow);
-	
-//		EntityRegistry.registerModEntity(RealismCow.class, "LogicalDrops Cow", 1, Reference.MOD_ID, 128, 1, false);
-//		// EntityRegistry.registerModEntity(RealismCow.class, "LogicalDrops Cow", 1, null, 128, 1, false, 0, 0);
-						        		
-//        MinecraftForge.EVENT_BUS.register(new EntityLivingHandler());		
-		
-//		// GameRegistry.register(item_food_eggs_sandwich_fried);			
-//		GameRegistry.addShapelessRecipe(new ItemStack(Items.flint), 
-//				new Object[]{
-//						Blocks.gravel,Blocks.gravel,Blocks.gravel,						
-//						Blocks.gravel,Blocks.gravel,Blocks.gravel});		
-				
-// 			GameRegistry.addSmelting(item_food_bread, new ItemStack(item_food_toast), 2.0F);
-	}
-	
-	public static void registerRenders(){				
-		//registerRender(item_bone_cow);
-	}
-	
-	public static void registerRender(Item item){
+public class LogicalRecipes{
+	public static void registerRecipes(RegistryEvent.Register<IRecipe> event){
 						
-		Minecraft.getMinecraft()
-		.getRenderItem()
-		.getItemModelMesher()
-		.func_178086_a(item, 0, new ModelResourceLocation(
-				Reference.MOD_ID + ":" + item.getTranslationKey().substring(5),
-				"inventory"));		
+	    // 3 string from wool
+	    CraftingHelper.addShapeless(event, new ItemStack(Items.STRING,3), 
+				new Object[]{
+						Blocks.field_150325_L});
 				
+		// DYE RECIPES
+	    ItemStack orangeDye = new ItemStack(Items.field_151100_aR,1,14);
+	    ItemStack greenDye = new ItemStack(Items.field_151100_aR,1,2);		
+	    ItemStack blackDye = new ItemStack(Items.field_151100_aR,1,0);	    
+	    ItemStack grayLightDye  = new ItemStack(Items.field_151100_aR,1,7);
+	    ItemStack grayDye = new ItemStack(Items.field_151100_aR,1,8);	     	   
+	    ItemStack pinkDye = new ItemStack(Items.field_151100_aR,1,9);
+	    ItemStack redDye = new ItemStack(Items.field_151100_aR,1,1);
+	    ItemStack limeDye =  new ItemStack(Items.field_151100_aR,1,10);
+	    ItemStack brownDye =  new ItemStack(Items.field_151100_aR,1,3);
+	    ItemStack blueDye =  new ItemStack(Items.field_151100_aR,1,4);
+	    ItemStack blueLightDye =  new ItemStack(Items.field_151100_aR,1,12);
+	    ItemStack charcoal = new ItemStack(Items.COAL,1,1);
+	    ItemStack yellowDye =  new ItemStack(Items.field_151100_aR,1,11);
+	    ItemStack purpleDye =  new ItemStack(Items.field_151100_aR,1,5);
+	    ItemStack cyanDye =  new ItemStack(Items.field_151100_aR,1,6);
+	    ItemStack purpleLightDye =  new ItemStack(Items.field_151100_aR,1,13);
+	    ItemStack boneMeal =  new ItemStack(Items.field_151100_aR,1,15);
+	    		
+	    // Black Dye from coal/charcoal
+	    CraftingHelper.addShapeless(event, blackDye,new Object[]{Items.COAL});  
+	    CraftingHelper.addShapeless(event, blackDye,new Object[]{charcoal});	    
+	    	    
+	    // green dye from lilypad 
+	    CraftingHelper.addShapeless(event, greenDye,new Object[]{Blocks.field_150392_bi});
+	    
+	    // DYE COLOR MIXING!
+	    // blue
+	    CraftingHelper.addShapeless(event, blueDye,new Object[]{blackDye,blueLightDye});
+	    // pink
+	    CraftingHelper.addShapeless(event, pinkDye,new Object[]{redDye,boneMeal});
+	    CraftingHelper.addShapeless(event, pinkDye,new Object[]{boneMeal,purpleLightDye});	    
+	    // cyan/teal
+	    CraftingHelper.addShapeless(event, cyanDye,new Object[]{blueDye,limeDye});
+	    // light purple
+	    CraftingHelper.addShapeless(event, purpleLightDye,new Object[]{purpleDye,boneMeal});
+	    CraftingHelper.addShapeless(event, purpleLightDye,new Object[]{pinkDye,blueLightDye});
+	    CraftingHelper.addShapeless(event, purpleLightDye,new Object[]{redDye,blueLightDye});
+	    CraftingHelper.addShapeless(event, purpleLightDye,new Object[]{pinkDye,blueLightDye});
+	    //green
+	    CraftingHelper.addShapeless(event, greenDye,new Object[]{yellowDye,blueDye});
+	    // gray
+	    CraftingHelper.addShapeless(event, grayDye,new Object[]{blackDye,boneMeal});
+	    CraftingHelper.addShapeless(event, grayDye,new Object[]{blackDye,grayLightDye});
+	    // light gray
+	    CraftingHelper.addShapeless(event, grayLightDye,new Object[]{blackDye,boneMeal,boneMeal});
+	    CraftingHelper.addShapeless(event, grayLightDye,new Object[]{grayLightDye,boneMeal});
+	    // brown
+	    CraftingHelper.addShapeless(event, brownDye,new Object[]{orangeDye,blackDye});
+	    // green
+	    CraftingHelper.addShapeless(event, greenDye,new Object[]{blackDye,limeDye});	   
+	    // blue light
+	    CraftingHelper.addShapeless(event, blueLightDye,new Object[]{boneMeal,blueDye});	    
+	    // purple
+	    CraftingHelper.addShapeless(event, purpleDye,new Object[]{purpleLightDye,blackDye});
+	    CraftingHelper.addShapeless(event, purpleDye,new Object[]{pinkDye,blueDye});
+	    // lime dye
+	    CraftingHelper.addShapeless(event, limeDye,new Object[]{greenDye,boneMeal});
+	    CraftingHelper.addShapeless(event, limeDye,new Object[]{blueLightDye,yellowDye});
+	    // orange
+	    CraftingHelper.addShapeless(event, orangeDye,new Object[]{redDye,yellowDye});
+	    // brown
+	    
+	    
+	    // recipe to make saddle 
+	    CraftingHelper.addShapeless(event, new ItemStack(Items.SADDLE), 
+				new Object[]{
+						Items.LEATHER,Items.LEATHER,Items.LEATHER,Items.LEATHER,
+						Items.IRON_INGOT,Items.IRON_INGOT,
+						Items.STRING,Items.STRING,Items.STRING});
+	    
+	    
 	}
 	
-
 }

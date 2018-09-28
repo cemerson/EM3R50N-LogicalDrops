@@ -1,0 +1,133 @@
+#PARSE_ESCAPES
+#TITLES
+gui.config.mainscreen.title=Logical Drops: Settings
+gui.config.toggles.title=Logical Drops: Global Toggles
+gui.config.values.title=Logical Drops: Humanoid/Other
+gui.config.valuesla.title=Logical Drops: Large Animals
+gui.config.valuesma.title=Logical Drops: Medium Animals
+gui.config.valuessa.title=Logical Drops: Small Animals
+
+
+#TOOLTIPS
+gui.config.category.toggles.tooltip=General Mod Settings
+gui.config.category.values.tooltip=Adjust settings for Humanoid and Related Mobs
+gui.config.category.valuesla.tooltip=Adjust settings for Large Animals
+gui.config.category.valuesma.tooltip=Adjust settings for Medium Animals
+gui.config.category.valuessa.tooltip=Adjust settings for Small Animals
+
+#SETTING NAMES
+gui.config.setting.AnvilBreakChancePercent=Anvil Break Chance (0/100%)
+gui.config.setting.BabyAnimalMinutesToAdult=Baby Animal Minutes-To-Adult
+gui.config.setting.AllowCustomHeadDrops=Allow Custom Head Drops
+gui.config.setting.HeadDropPercentChance=Head Drop Chance (0/100%)
+gui.config.setting.WitherSkeletonCanDropHead=CanDropHead: Wither Skeleton
+gui.config.setting.SkeletonCanDropHead=CanDropHead: Skeleton
+gui.config.setting.CreeperCanDropHead=CanDropHead: Creeper
+gui.config.setting.ZombieCanDropHead=CanDropHead: Zombie
+gui.config.setting.PreventDoubleVanillaDrops=Prevent Double Vanilla Drops
+gui.config.setting.IronGolemIngotsMin=Min Iron Ingots from Iron Golem
+gui.config.setting.IronGolemIngotsMax=Max Iron Ingots from Iron Golem
+gui.config.setting.BlazeFireChargeMax=Max FireCharge from Blaze
+gui.config.setting.BlazeFireChargeMin=Min FireCharge from Blaze
+gui.config.setting.BlazeRodMax=Max Blaze Rod from Blaze
+gui.config.setting.BlazeRodMin=Min Blaze Rod from Blaze
+gui.config.setting.CreeperLeavesMax=Max Leaves from Creeper
+gui.config.setting.CreeperLeavesMin=Min Leaves from Creeper
+gui.config.setting.WitherCoalMax=Max Coal from Wither Skeleton
+gui.config.setting.WitherCoalMin=Min Coal from Wither Skeleton
+gui.config.setting.HumanoidBonesMax=Max Bones from Humanoid
+gui.config.setting.HumanoidBonesMin=Min Bones from Humanoid
+gui.config.setting.PigZombiePorkchopMax=Max Porkchop from PigZombie
+gui.config.setting.PigZombiePorkchopMin=Min Porkchop from PigZombie
+gui.config.setting.EndermanPearlMax=Max Pearl from Enderman
+gui.config.setting.EndermanPearlMin=Min Pearl from Enderman
+gui.config.setting.EndermanPotionMax=Max Potion from Enderman
+gui.config.setting.BowEnemiesArrowMax=Max Arrows from Skeletons w/Bows
+gui.config.setting.BowEnemiesArrowMin=Min Arrows from Skeletons w/Bows
+gui.config.setting.EndermanWoolCount=EndermanWoolCount
+gui.config.setting.WitchMaxPotionCount=WitchMaxPotionCount
+gui.config.setting.WitchMaxEmeraldCount=WitchMaxEmeraldCount
+gui.config.setting.WitchWoolCount=WitchWoolCount
+gui.config.setting.LargeAnimalBoneMax=LargeAnimalBoneMax
+gui.config.setting.LargeAnimalBoneMin=LargeAnimalBoneMin
+gui.config.setting.LargeAnimalMeatMax=LargeAnimalMeatMax
+gui.config.setting.LargeAnimalMeatMin=LargeAnimalMeatMin
+gui.config.setting.LargeAnimalHideMax=LargeAnimalHideMax
+gui.config.setting.LargeAnimalHideMin=LargeAnimalHideMin
+gui.config.setting.MediumAnimalMeatMax=MediumAnimalMeatMax
+gui.config.setting.MediumAnimalMeatMin=MediumAnimalMeatMin
+gui.config.setting.MediumAnimalBoneMax=MediumAnimalBoneMax
+gui.config.setting.MediumAnimalBoneMin=MediumAnimalBoneMin
+gui.config.setting.SpiderWebMax=SpiderWebMax
+gui.config.setting.SpiderWebMin=SpiderWebMin
+gui.config.setting.SpiderStringMax=SpiderStringMax
+gui.config.setting.SpiderStringMin=SpiderStringMin
+gui.config.setting.SmallAnimalMeatMax=SmallAnimalMeatMax
+gui.config.setting.SmallAnimalMeatMin=SmallAnimalMeatMin
+gui.config.setting.SmallAnimalHideMax=SmallAnimalHideMax
+gui.config.setting.SmallAnimalHideMin=SmallAnimalHideMin
+gui.config.setting.SmallAnimalBoneCount=SmallAnimalBoneCount
+gui.config.setting.ChickenFeatherMax=ChickenFeatherMax
+gui.config.setting.ChickenFeatherMin=ChickenFeatherMin
+gui.config.setting.RabbitFootMax=RabbitFootMax
+gui.config.setting.RabbitFootMin=RabbitFootMin
+
+
+#OPTION TOOLTIPS
+gui.config.comment.AnvilBreakChancePercent=Anvils should take FAR longer to break! This sets the % chance the anvil might get damaged (increases over time). Set to 0 for an anvil that never breaks!
+gui.config.comment.BabyAnimalMinutesToAdult=Baby animals should take far longer to grow up! Vanilla Minecraft is ~7 minutes but 20 minutes or longer seems more realistic.
+gui.config.comment.AllowCustomHeadDrops=Should non-vanilla heads drop sometimes? (Pig Zombie, Enderman, Villager and Blaze)
+gui.config.comment.HeadDropPercentChance=Percent chance a head (skull) might drop off qualifying mobs (skeletons, zombies, etc)
+gui.config.comment.WitherSkeletonCanDropHead=Can WitherSkeletons sometimes drop their heads
+gui.config.comment.SkeletonCanDropHead=Can Skeletons sometimes drop their heads
+gui.config.comment.CreeperCanDropHead=Can Creepers sometimes drop their heads
+gui.config.comment.ZombieCanDropHead=Can Zombies sometimes drop their heads
+gui.config.comment.PreventDoubleVanillaDrops=Allow Logical Drops to override some vanilla drops (beef, leather, bones etc).
+gui.config.comment.IronGolemIngotsMin=Minimum number oer Iron Ingots an Iron Golem should drop
+gui.config.comment.IronGolemIngotsMax=Maximum number oer Iron Ingots an Iron Golem should drop
+gui.config.comment.BlazeFireChargeMax=Max possible BlazeFireCharges per drop
+gui.config.comment.BlazeFireChargeMin=Min possible BlazeFireCharges per drop
+gui.config.comment.BlazeRodMax=Max possible BlazeRods per drop
+gui.config.comment.BlazeRodMin=Min possible BlazeRods per drop
+gui.config.comment.CreeperLeavesMax=Max possible CreeperLeavess per drop
+gui.config.comment.CreeperLeavesMin=Min possible CreeperLeavess per drop
+gui.config.comment.WitherCoalMax=Max possible WitherCoals per drop
+gui.config.comment.WitherCoalMin=Min possible WitherCoals per drop
+gui.config.comment.HumanoidBonesMax=Max possible HumanoidBoness per drop
+gui.config.comment.HumanoidBonesMin=Min possible HumanoidBoness per drop
+gui.config.comment.PigZombiePorkchopMax=Max possible PigZombiePorkchops per drop
+gui.config.comment.PigZombiePorkchopMin=Min possible PigZombiePorkchops per drop
+gui.config.comment.EndermanPearlMax=Max possible EndermanPearls per drop
+gui.config.comment.EndermanPearlMin=Min possible EndermanPearls per drop
+gui.config.comment.EndermanPotionMax=Max possible EndermanPotions per drop
+gui.config.comment.BowEnemiesArrowMax=Max possible BowEnemiesArrows per drop
+gui.config.comment.BowEnemiesArrowMin=Min possible BowEnemiesArrows per drop
+gui.config.comment.EndermanWoolCount=How many Black Wool should Enderman drop
+gui.config.comment.WitchMaxPotionCount=Max number of potions Witch can drop
+gui.config.comment.WitchMaxEmeraldCount=Max number of Emeralds a Witch can drop
+gui.config.comment.WitchWoolCount=How many Purple Wool Witch should drop
+gui.config.comment.LargeAnimalBoneMax=Max possible LargeAnimalBones per drop
+gui.config.comment.LargeAnimalBoneMin=Min possible LargeAnimalBones per drop
+gui.config.comment.LargeAnimalMeatMax=Max possible LargeAnimalMeats per drop
+gui.config.comment.LargeAnimalMeatMin=Min possible LargeAnimalMeats per drop
+gui.config.comment.LargeAnimalHideMax=Max possible LargeAnimalHides per drop
+gui.config.comment.LargeAnimalHideMin=Min possible LargeAnimalHides per drop
+gui.config.comment.MediumAnimalMeatMax=Max possible MediumAnimalMeats per drop
+gui.config.comment.MediumAnimalMeatMin=Min possible MediumAnimalMeats per drop
+gui.config.comment.MediumAnimalBoneMax=Max possible MediumAnimalBones per drop
+gui.config.comment.MediumAnimalBoneMin=Min possible MediumAnimalBones per drop
+gui.config.comment.SpiderWebMax=Max possible SpiderWebs per drop
+gui.config.comment.SpiderWebMin=Min possible SpiderWebs per drop
+gui.config.comment.SpiderStringMax=Max possible SpiderStrings per drop
+gui.config.comment.SpiderStringMin=Min possible SpiderStrings per drop
+gui.config.comment.SmallAnimalMeatMax=Max possible SmallAnimalMeats per drop
+gui.config.comment.SmallAnimalMeatMin=Min possible SmallAnimalMeats per drop
+gui.config.comment.SmallAnimalHideMax=Max possible SmallAnimalHides per drop
+gui.config.comment.SmallAnimalHideMin=Min possible SmallAnimalHides per drop
+gui.config.comment.SmallAnimalBoneCount=Value setting for SmallAnimalBoneCount
+gui.config.comment.ChickenFeatherMax=Max possible ChickenFeathers per drop
+gui.config.comment.ChickenFeatherMin=Min possible ChickenFeathers per drop
+gui.config.comment.RabbitFootMax=Max possible RabbitFeet per drop
+gui.config.comment.RabbitFootMin=Min possible RabbitFeet per drop
+
+

@@ -19,6 +19,7 @@ import net.minecraft.entity.monster.EntityWitch;
 import net.minecraft.entity.monster.EntityZombie;
 import net.minecraft.entity.passive.EntityChicken;
 import net.minecraft.entity.passive.EntityCow;
+import net.minecraft.entity.passive.EntityHorse;
 import net.minecraft.entity.passive.EntityPig;
 import net.minecraft.entity.passive.EntitySheep;
 import net.minecraft.init.Blocks;
@@ -41,7 +42,19 @@ import net.minecraftforge.event.entity.living.LivingDeathEvent;
 public class RealisticEntityBehaviorHandler {
     
 	public boolean etFuturumInstalled = Loader.isModLoaded("etfuturum"); //Loader.isModLoaded("Et Futurum"); //EtFuturumPlugin.isLoaded();
-                
+
+    @SubscribeEvent
+    public void playerKilledHorse(LivingDeathEvent event)
+    {                   
+         Boolean isNotServerWorld = (!event.entity.worldObj.isRemote);
+        if((event.entityLiving instanceof EntityHorse) && (isNotServerWorld))
+        { 
+        	event.entityLiving.dropItem(Items.leather, getRandom(LogicalDrops.intHorseLeatherMin,LogicalDrops.intHorseLeatherMax));
+        	event.entityLiving.dropItem(Items.bone, getRandom(LogicalDrops.intHorseBoneMin,LogicalDrops.intHorseBoneMax)); 
+            event.entityLiving.dropItem(Items.beef, getRandom(LogicalDrops.intHorseMeatMin,LogicalDrops.intHorseMeatMax)); // 30 lbs steaks super minimum!
+        }               
+    }
+	
     @SubscribeEvent
     public void playerKilledCow(LivingDeathEvent event)
     {                   
@@ -50,7 +63,7 @@ public class RealisticEntityBehaviorHandler {
         {
             //String chatMsg = "LogicalDrops.intCowMeatMax=" + LogicalDrops.intCowMeatMax;              
             //Minecraft.getMinecraft().thePlayer.addChatMessage(new TextComponentString(chatMsg));
-                
+    		event.entityLiving.dropItem(Items.leather, getRandom(LogicalDrops.intCowLeatherMin,LogicalDrops.intCowLeatherMax));                
             event.entityLiving.dropItem(Items.bone, getRandom(LogicalDrops.intCowBoneMin,LogicalDrops.intCowBoneMax)); 
             event.entityLiving.dropItem(Items.beef, getRandom(LogicalDrops.intCowMeatMin,LogicalDrops.intCowMeatMax)); // 30 lbs steaks super minimum!
         }               
@@ -81,6 +94,7 @@ public class RealisticEntityBehaviorHandler {
         {
             event.entityLiving.dropItem(Items.feather, getRandom(LogicalDrops.intChickenFeatherMin,LogicalDrops.intChickenFeatherMax));
             event.entityLiving.dropItem(Items.chicken, getRandom(LogicalDrops.intChickenMeatMin,LogicalDrops.intChickenMeatMax));
+            event.entityLiving.dropItem(Items.bone, 1);
         }               
     }   
     
@@ -157,7 +171,8 @@ public class RealisticEntityBehaviorHandler {
          Boolean isNotServerWorld = (!event.entity.worldObj.isRemote);
         if((event.entityLiving instanceof EntityPig) && (isNotServerWorld))
         {
-            event.entityLiving.dropItem(Items.porkchop, getRandom(LogicalDrops.intPigMeatMin,LogicalDrops.intPigMeatMax)); // pigs have TONS of mean IRL!                      
+            event.entityLiving.dropItem(Items.porkchop, getRandom(LogicalDrops.intPigMeatMin,LogicalDrops.intPigMeatMax)); // pigs have TONS of mean IRL!
+            event.entityLiving.dropItem(Items.bone, 1);
         }               
     }
     
@@ -187,9 +202,12 @@ public class RealisticEntityBehaviorHandler {
          Boolean isNotServerWorld = (!event.entity.worldObj.isRemote);
         if((event.entityLiving instanceof EntityCreeper) && (isNotServerWorld))
         {
-            event.entityLiving.entityDropItem(new ItemStack(Blocks.tnt),1); // TNT!
-            ItemStack greenWool = new ItemStack(Blocks.wool, 1, 5);                                                             
-            event.entityLiving.entityDropItem(greenWool,getRandom(LogicalDrops.intCreeperWoolMin,LogicalDrops.intCreeperWoolMax));
+            // event.entityLiving.entityDropItem(new ItemStack(Blocks.tnt),1); // TNT!
+            //ItemStack greenWool = new ItemStack(Blocks.wool, 1, 5);                                                             
+            //event.entityLiving.entityDropItem(greenWool,getRandom(LogicalDrops.intCreeperWoolMin,LogicalDrops.intCreeperWoolMax));
+        	
+        	ItemStack leaves = new ItemStack(Blocks.leaves, 1, 5);                                                             
+            event.entityLiving.entityDropItem(leaves,3);
             
             ItemStack creeperHead = new ItemStack(Items.skull, 1, 4);                                                               
             if(LogicalDrops.boolCreeperAlwaysDropHead && skullRandomDropSuccess()) event.entityLiving.entityDropItem(creeperHead,1);                           
@@ -312,9 +330,9 @@ public class RealisticEntityBehaviorHandler {
         // int randomNum = rand.nextInt((high - low) + low)-1;
         
         //DEBUG
-      String chatMsg = "randomNum = (" + randomNum + ")";             
+      // String chatMsg = "randomNum = (" + randomNum + ")";             
 //      Minecraft.getMinecraft().thePlayer.addChatMessage(new TextComponentString(chatMsg));
-      Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentTranslation(chatMsg));
+      // Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentTranslation(chatMsg));
       
 
         
