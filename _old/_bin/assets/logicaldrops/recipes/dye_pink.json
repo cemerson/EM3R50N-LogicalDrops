@@ -1,0 +1,28 @@
+{
+	"type": "minecraft:crafting_shaped",
+	
+	"pattern":
+	[
+		"BMRD",
+		"",
+		""
+	],
+	
+	"key":
+	{
+		"BM":
+		{
+			"item":"minecraft:bone_meal"
+		},
+		"RD":
+		{
+			"item":["minecraft:dye",1]
+		}
+		
+	},
+	
+	"result":
+	{
+		"item":["minecraft:dye",11]
+	}
+}

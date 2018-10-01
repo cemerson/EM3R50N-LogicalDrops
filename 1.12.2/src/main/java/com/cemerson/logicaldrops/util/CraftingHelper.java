@@ -3,7 +3,7 @@ package com.cemerson.logicaldrops.util;
 import java.util.List;
 
 import com.cemerson.logicaldrops.Reference;
-import com.cemerson.logicaldrops.items.RealismItem;
+// import com.cemerson.logicaldrops.items.RealismItem;
 
 // import jline.internal.Log;
 import net.minecraft.block.Block;
@@ -95,6 +95,11 @@ public class CraftingHelper {
 	public static void addShapeless(RegistryEvent.Register<IRecipe> event, ItemStack output, Object... inputs) {
 		addRecipe(event, j++, new ShapelessRecipes(MODID + ":" + j, output, createInput(inputs)));
 	}
+	
+	public static void addShapeless(int outputStackCount, RegistryEvent.Register<IRecipe> event, ItemStack output, Object... inputs) {
+		output.setCount(outputStackCount);
+		addRecipe(event, j++, new ShapelessRecipes(MODID + ":" + j, output, createInput(inputs)));
+	}	
 
 	public static void addShapeless(RegistryEvent.Register<IRecipe> event, Item output, Object... inputs) {
 		addShapeless(event, new ItemStack(output), inputs);

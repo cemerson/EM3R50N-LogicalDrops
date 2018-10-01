@@ -4,7 +4,7 @@ import java.util.Set;
 
 import com.cemerson.logicaldrops.config.LDConfig;
 import com.cemerson.logicaldrops.entity.RealisticEntityBehaviorHandler;
-import com.cemerson.logicaldrops.init.LogicalRecipes;
+// import com.cemerson.logicaldrops.init.LogicalRecipes;
 import com.cemerson.logicaldrops.proxy.CommonProxy;
 
 import net.minecraftforge.client.event.GuiOpenEvent;
@@ -50,13 +50,12 @@ public class LogicalDrops {
          
     @EventHandler
     public void preInit(FMLPreInitializationEvent event){       
-        
-    	
+            	
     	LDConfig.preInit();
     	       
         MinecraftForge.EVENT_BUS.register(instance);         
         MinecraftForge.EVENT_BUS.register(new RealisticEntityBehaviorHandler());        
-        MinecraftForge.EVENT_BUS.register(new RegisterEventHandler());
+        // MinecraftForge.EVENT_BUS.register(new RegisterEventHandler());
         
         LDConfig.clientPreInit();
     }

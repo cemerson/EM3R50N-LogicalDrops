@@ -23,6 +23,8 @@ public class LDConfig {
 	
 	private static Configuration config = null;
 	
+	public static Boolean playerIsInBed = false;
+		
 	public static final String CATEGORY_TOGGLES = "toggles";
 	public static final String CATEGORY_VALUES = "values";
 	public static final String CATEGORY_VALUESLA = "valuesla";
@@ -34,10 +36,12 @@ public class LDConfig {
     public static Boolean boolWitherSkeletonCanDropHead; 
     public static Boolean boolSkeletonCanDropHead;
     public static Boolean boolCreeperCanDropHead;
+    public static Boolean boolCreeperExplodesOnFireAttack;
     public static Boolean boolZombieCanDropHead;
     public static Boolean boolAllowCustomHeadDrops;	
 
 	// INTS
+    public static int intItemsToCookDuringSleep;
 	public static int intBabyAnimalMinutesToAdult;
 	public static int intAnvilBreakChancePercent;
 	public static int intLargeAnimalBoneMax;
@@ -84,7 +88,7 @@ public class LDConfig {
 	public static int intBowEnemiesArrowMin;
 	public static int intEndermanWoolCount;
 	public static int intWitchMaxPotionCount;
-	public static int intWitchMaxEmeraldCount;
+	public static int intWitchEmerlandChance;
 	public static int intWitchWoolCount;
 	public static int intHeadDropPercentChance	;
 
@@ -125,6 +129,9 @@ public class LDConfig {
 		
 			
 		// TOGGLES
+		Property propItemsToCookDuringSleep = config.get(CATEGORY_TOGGLES,I18n.format("gui.config.setting.ItemsToCookDuringSleep"), 32);
+		propItemsToCookDuringSleep.setLanguageKey("gui.config.toggles.ItemsToCookDuringSleep");
+		propItemsToCookDuringSleep.setComment(I18n.format("gui.config.comment.ItemsToCookDuringSleep"));
 		Property propAnvilBreakChancePercent = config.get(CATEGORY_TOGGLES,I18n.format("gui.config.setting.AnvilBreakChancePercent"), 0);
 			propAnvilBreakChancePercent.setLanguageKey("gui.config.toggles.AnvilBreakChancePercent");
 			propAnvilBreakChancePercent.setComment(I18n.format("gui.config.comment.AnvilBreakChancePercent"));
@@ -145,9 +152,16 @@ public class LDConfig {
         Property propSkeletonCanDropHead = config.get(CATEGORY_TOGGLES,I18n.format("gui.config.setting.SkeletonCanDropHead"), true);
     	propSkeletonCanDropHead.setLanguageKey("gui.config.toggles.skeletonCanDropHead");
     	propSkeletonCanDropHead.setComment(I18n.format("gui.config.comment.SkeletonCanDropHead"));
-        Property propCreeperCanDropHead = config.get(CATEGORY_TOGGLES,I18n.format("gui.config.setting.CreeperCanDropHead"), true);
+            	
+    	Property propCreeperExplodesOnFireAttack = config.get(CATEGORY_TOGGLES,I18n.format("gui.config.setting.CreeperExplodesOnFireAttack"), false);
+    	propCreeperExplodesOnFireAttack.setLanguageKey("gui.config.toggles.CreeperExplodesOnFireAttack");
+    	propCreeperExplodesOnFireAttack.setComment(I18n.format("gui.config.comment.CreeperExplodesOnFireAttack"));
+    	
+    	
+    	Property propCreeperCanDropHead = config.get(CATEGORY_TOGGLES,I18n.format("gui.config.setting.CreeperCanDropHead"), true);
     	propCreeperCanDropHead.setLanguageKey("gui.config.toggles.creeperCanDropHead");
     	propCreeperCanDropHead.setComment(I18n.format("gui.config.comment.CreeperCanDropHead"));
+    	
         Property propZombieCanDropHead = config.get(CATEGORY_TOGGLES,I18n.format("gui.config.setting.ZombieCanDropHead"), false);
     	propZombieCanDropHead.setLanguageKey("gui.config.toggles.zombieCanDropHead");
     	propZombieCanDropHead.setComment(I18n.format("gui.config.comment.ZombieCanDropHead"));
@@ -221,14 +235,12 @@ public class LDConfig {
 		Property propWitchMaxPotionCount = config.get(CATEGORY_VALUES,I18n.format("gui.config.setting.WitchMaxPotionCount"), 1);
 			propWitchMaxPotionCount.setLanguageKey("gui.config.toggles.WitchMaxPotionCount");
 			propWitchMaxPotionCount.setComment(I18n.format("gui.config.comment.WitchMaxPotionCount"));
-		Property propWitchMaxEmeraldCount = config.get(CATEGORY_VALUES,I18n.format("gui.config.setting.WitchMaxEmeraldCount"), 1);
-			propWitchMaxEmeraldCount.setLanguageKey("gui.config.toggles.WitchMaxEmeraldCount");
-			propWitchMaxEmeraldCount.setComment(I18n.format("gui.config.comment.WitchMaxEmeraldCount"));
+		Property propWitchEmerlandChance = config.get(CATEGORY_VALUES,I18n.format("gui.config.setting.WitchEmerlandChance"), 25);
+			propWitchEmerlandChance.setLanguageKey("gui.config.toggles.WitchEmerlandChance");
+			propWitchEmerlandChance.setComment(I18n.format("gui.config.comment.WitchEmerlandChance"));
 		Property propWitchWoolCount = config.get(CATEGORY_VALUES,I18n.format("gui.config.setting.WitchWoolCount"), 2);
 			propWitchWoolCount.setLanguageKey("gui.config.toggles.WitchWoolCount");
 			propWitchWoolCount.setComment(I18n.format("gui.config.comment.WitchWoolCount"));
-
-
 		Property propLargeAnimalBoneMax = config.get(CATEGORY_VALUESLA,I18n.format("gui.config.setting.LargeAnimalBoneMax"), 10);
 			propLargeAnimalBoneMax.setLanguageKey("gui.config.toggles.LargeAnimalBoneMax");
 			propLargeAnimalBoneMax.setComment(I18n.format("gui.config.comment.LargeAnimalBoneMax"));
@@ -308,15 +320,17 @@ public class LDConfig {
 		List<String> propertyOrderToggles = new ArrayList<String>();
 
 		// propertyOrder.add(propTest1.getName());
-		// propertyOrder.add(propTest2.getName());
-		propertyOrderToggles.add(propPreventDoubleVanillaDrops.getName());
+		// propertyOrder.add(propTest2.getName());				
+		propertyOrderToggles.add(propItemsToCookDuringSleep.getName());		
 		propertyOrderToggles.add(propAnvilBreakChancePercent.getName());
-		propertyOrderToggles.add(propBabyAnimalMinutesToAdult.getName());		
-		propertyOrderToggles.add(propAllowCustomHeadDrops.getName());
+		propertyOrderToggles.add(propPreventDoubleVanillaDrops.getName());
+		propertyOrderToggles.add(propBabyAnimalMinutesToAdult.getName());
 		propertyOrderToggles.add(propHeadDropPercentChance.getName());
+		propertyOrderToggles.add(propAllowCustomHeadDrops.getName());		
 		propertyOrderToggles.add(propWitherSkeletonCanDropHead.getName());
 		propertyOrderToggles.add(propSkeletonCanDropHead.getName());
 		propertyOrderToggles.add(propCreeperCanDropHead.getName());
+		propertyOrderToggles.add(propCreeperExplodesOnFireAttack.getName());
 		propertyOrderToggles.add(propZombieCanDropHead.getName());
 		
 		
@@ -344,7 +358,7 @@ public class LDConfig {
 		propertyOrderValues.add(propBowEnemiesArrowMin.getName());
 		propertyOrderValues.add(propEndermanWoolCount.getName());
 		propertyOrderValues.add(propWitchMaxPotionCount.getName());
-		propertyOrderValues.add(propWitchMaxEmeraldCount.getName());
+		propertyOrderValues.add(propWitchEmerlandChance.getName());
 		propertyOrderValues.add(propWitchWoolCount.getName());
 		
 
@@ -385,15 +399,17 @@ public class LDConfig {
 		
 		if(readFieldsFromConfig){
 			// test1 = propTest1.getInt();
-			// test2 = propTest2.getInt();
+			// test2 = propTest2.getInt();		
 
 			boolAllowCustomHeadDrops = propAllowCustomHeadDrops.getBoolean();
 			boolWitherSkeletonCanDropHead = propWitherSkeletonCanDropHead.getBoolean();
 			boolSkeletonCanDropHead = propSkeletonCanDropHead.getBoolean();
 			boolCreeperCanDropHead = propCreeperCanDropHead.getBoolean();
+			boolCreeperExplodesOnFireAttack = propCreeperExplodesOnFireAttack.getBoolean();
 			boolZombieCanDropHead = propZombieCanDropHead.getBoolean();
 			boolPreventDoubleVanillaDrops = propPreventDoubleVanillaDrops.getBoolean();
 
+			intItemsToCookDuringSleep = propItemsToCookDuringSleep.getInt();
 			intBabyAnimalMinutesToAdult = propBabyAnimalMinutesToAdult.getInt();
 			intAnvilBreakChancePercent = propAnvilBreakChancePercent.getInt();
 			intLargeAnimalBoneMax = propLargeAnimalBoneMax.getInt();
@@ -440,7 +456,7 @@ public class LDConfig {
 			intBowEnemiesArrowMin = propBowEnemiesArrowMin.getInt();
 			intEndermanWoolCount = propEndermanWoolCount.getInt();
 			intWitchMaxPotionCount = propWitchMaxPotionCount.getInt();
-			intWitchMaxEmeraldCount = propWitchMaxEmeraldCount.getInt();
+			intWitchEmerlandChance = propWitchEmerlandChance.getInt();
 			intWitchWoolCount = propWitchWoolCount.getInt();
 			intHeadDropPercentChance = propHeadDropPercentChance.getInt();
 
@@ -455,9 +471,11 @@ public class LDConfig {
 		propWitherSkeletonCanDropHead.set(boolWitherSkeletonCanDropHead);
 		propSkeletonCanDropHead.set(boolSkeletonCanDropHead);
 		propCreeperCanDropHead.set(boolCreeperCanDropHead);
+		propCreeperExplodesOnFireAttack.set(boolCreeperExplodesOnFireAttack);
 		propZombieCanDropHead.set(boolZombieCanDropHead);
 		propPreventDoubleVanillaDrops.set(boolPreventDoubleVanillaDrops);
 
+		propItemsToCookDuringSleep.set(intItemsToCookDuringSleep);
 		propBabyAnimalMinutesToAdult.set(intBabyAnimalMinutesToAdult);
 		propAnvilBreakChancePercent.set(intAnvilBreakChancePercent);
 		propLargeAnimalBoneMax.set(intLargeAnimalBoneMax);
@@ -504,7 +522,7 @@ public class LDConfig {
 		propBowEnemiesArrowMin.set(intBowEnemiesArrowMin);
 		propEndermanWoolCount.set(intEndermanWoolCount);
 		propWitchMaxPotionCount.set(intWitchMaxPotionCount);
-		propWitchMaxEmeraldCount.set(intWitchMaxEmeraldCount);
+		propWitchEmerlandChance.set(intWitchEmerlandChance);
 		propWitchWoolCount.set(intWitchWoolCount);
 		propHeadDropPercentChance.set(intHeadDropPercentChance);
 		

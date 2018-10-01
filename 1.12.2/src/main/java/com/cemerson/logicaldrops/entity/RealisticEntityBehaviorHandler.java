@@ -8,11 +8,15 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Random;
+import java.util.function.Predicate;
+import java.util.stream.Collectors;
+
+import org.jline.utils.Log;
 
 import com.cemerson.logicaldrops.LogicalDrops;
 import com.cemerson.logicaldrops.config.LDConfig;
 
-import jline.internal.Log;
+// import jline.internal.Log;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockAnvil;
 import net.minecraft.block.BlockFalling;
@@ -24,15 +28,19 @@ import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.ai.EntityAIBase;
 import net.minecraft.entity.item.EntityFallingBlock;
 import net.minecraft.entity.item.EntityItem;
+import net.minecraft.entity.item.EntityMinecartFurnace;
 import net.minecraft.entity.monster.EntityBlaze;
 import net.minecraft.entity.monster.EntityCreeper;
 import net.minecraft.entity.monster.EntityEnderman;
+import net.minecraft.entity.monster.EntityHusk;
 import net.minecraft.entity.monster.EntityIronGolem;
 import net.minecraft.entity.monster.EntityMob;
 import net.minecraft.entity.monster.EntityPigZombie;
 import net.minecraft.entity.monster.EntityPolarBear;
 import net.minecraft.entity.monster.EntitySkeleton;
 import net.minecraft.entity.monster.EntitySpider;
+import net.minecraft.entity.monster.EntityStray;
+import net.minecraft.entity.monster.EntityVindicator;
 import net.minecraft.entity.monster.EntityWitch;
 import net.minecraft.entity.monster.EntityWitherSkeleton;
 import net.minecraft.entity.monster.EntityZombie;
@@ -55,6 +63,7 @@ import net.minecraft.entity.passive.EntityWolf;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.init.PotionTypes;
+import net.minecraft.inventory.ContainerFurnace;
 import net.minecraft.item.EnumDyeColor;
 //import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
@@ -68,6 +77,7 @@ import net.minecraft.nbt.NBTTagString;
 import net.minecraft.potion.PotionType;
 import net.minecraft.potion.PotionUtils;
 import net.minecraft.util.EnumHand;
+import net.minecraft.world.World;
 import net.minecraftforge.event.AnvilUpdateEvent;
 import net.minecraftforge.event.entity.EntityEvent;
 import net.minecraftforge.event.entity.EntityJoinWorldEvent;
@@ -76,7 +86,10 @@ import net.minecraftforge.event.entity.living.LivingDeathEvent;
 import net.minecraftforge.event.entity.living.LivingDropsEvent;
 import net.minecraftforge.event.entity.living.LivingEvent;
 import net.minecraftforge.event.entity.player.AnvilRepairEvent;
+import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
+import net.minecraftforge.event.entity.player.PlayerSleepInBedEvent;
+import net.minecraftforge.event.entity.player.PlayerWakeUpEvent;
 import net.minecraftforge.event.world.BlockEvent;
 import net.minecraftforge.event.world.BlockEvent.NeighborNotifyEvent;
 import net.minecraftforge.event.world.BlockEvent.PlaceEvent;
@@ -85,6 +98,7 @@ import net.minecraftforge.fml.common.registry.VillagerRegistry.VillagerCareer;
 import net.minecraftforge.fml.common.registry.VillagerRegistry.VillagerProfession;
 
 import net.minecraft.tileentity.TileEntity;
+import net.minecraft.tileentity.TileEntityFurnace;
 import net.minecraft.util.EnumFacing;
 import net.minecraftforge.common.ForgeHooks;
 import net.minecraftforge.common.capabilities.Capability;
@@ -153,6 +167,79 @@ public class RealisticEntityBehaviorHandler {
 //          }           
 //      }
 //  }
+  
+	private void cookItemsWhileSleeping(PlayerEvent event){ 
+		
+		if(LDConfig.playerIsInBed == null || !LDConfig.playerIsInBed) return;
+		
+		Boolean hasItemsLeftToCook = true;
+		Boolean hasFuel = false;
+		
+		
+		Predicate<TileEntity> justFurnace = tile -> tile instanceof TileEntityFurnace;
+	       List<TileEntity> tiles = event.getEntityPlayer().getEntityWorld().loadedTileEntityList.stream().filter(justFurnace).collect(Collectors.<TileEntity> toList()); // removeIf(justFurnace);
+	    	
+	       for(int tf=0;tf<tiles.size();tf++){
+	    	   int intItemsActuallyCookedDuringSleep = 0;
+	    	   
+	    	   TileEntityFurnace nextF = (TileEntityFurnace)tiles.get(tf);
+	    	   hasItemsLeftToCook = (nextF.getStackInSlot(0).getCount() > 0);
+    		   ItemStack fuel = nextF.getStackInSlot(1);	    	   
+	    	   hasFuel = (fuel.getCount() > 0);
+	    	   int startingFuelCount = fuel.getCount();
+	    	   
+	    	   if(hasFuel && hasItemsLeftToCook){
+	    		   int itemsStillInFurnace = nextF.getStackInSlot(0).getCount();
+	    		   int actualItemCountToCook = Math.min(LDConfig.intItemsToCookDuringSleep, itemsStillInFurnace);
+	    		   int speedBurningTime = 0;
+	    		   
+
+	    		   int burnTimeForFuel = TileEntityFurnace.getItemBurnTime(fuel);
+	    		   int fuelItemsUsedUp = 0;
+	    		   String fuelType = fuel.getItem().getRegistryName().toString();
+	    		   String cookItemType = nextF.getStackInSlot(0).getItem().getRegistryName().toString();
+	    		   
+	    		   for(int cc=0;cc<actualItemCountToCook;cc++){ 
+
+	    			   if(hasFuel && hasItemsLeftToCook){	    				   
+	    				   speedBurningTime += 200;
+	    				   
+	    				   if(speedBurningTime > burnTimeForFuel){
+	    					nextF.getStackInSlot(1).setCount( nextF.getStackInSlot(1).getCount()-1 );
+	    					fuelItemsUsedUp ++;
+	    				   }
+	    				   
+	    				   // generate cooked item!
+	    				   nextF.smeltItem(); //.func_145949_j();
+	    				   
+	    				   intItemsActuallyCookedDuringSleep ++;  // Log.info("furnace(" + tf + "." + cc + " isburning(" + nextF.isBurning() + ") speedBurningTime:" + speedBurningTime + " | number of fuel removed(" + fuelItemsUsedUp + ")");
+	    				   
+		    			   hasItemsLeftToCook = (nextF.getStackInSlot(0).getCount() > 0);
+		    			   hasFuel = (nextF.getStackInSlot(1).getCount() > 0);  // Log.info("...Furnace(" + tf + ") cook item(" + cc + ") cooking update[fbt:" + nextF.getField(0) + ", cbt:" + nextF.getField(1) + ", ct:" + nextF.getField(2) + ", tct:" + nextF.getField(3) + "]");
+	    			   }	    			   	    			  
+	    		   }
+	    		   Log.info(".. LogicalDrops: Furnace #(" + tf + ") cooked (" + intItemsActuallyCookedDuringSleep + " " + cookItemType + ") while player slept using up (" + fuelItemsUsedUp + "/" + startingFuelCount + ") items of fuel(" + fuelType + ").");	    		   
+	    	   }
+	    	   
+	       }					     
+	}
+	
+	
+    @SubscribeEvent
+    public void FurnanceTest(PlayerSleepInBedEvent event){    	
+    	if(LDConfig.playerIsInBed == null || !LDConfig.playerIsInBed){
+    		LDConfig.playerIsInBed = true;
+    		// Log.info("player in bed!..");
+    	}    	
+    }	
+    
+    @SubscribeEvent
+    public void FurnanceTest(PlayerWakeUpEvent event){
+    	if(LDConfig.playerIsInBed != null && LDConfig.playerIsInBed){
+    		cookItemsWhileSleeping(event); 
+    		LDConfig.playerIsInBed = false;
+    	}    	  	    	        
+    }
     
     
     //AnvilRepairEvent. You can get the "current anvil" from the opened container(event.getEntityPlayer().openContainer). It is likely an instance of ContainerRepair(although it might not be in case of modded anvils so you have to account for that). ContainerRepair has a selfPosition field you can use to get the position of the anvil.
@@ -164,6 +251,8 @@ public class RealisticEntityBehaviorHandler {
         float fbreakChance = Float.parseFloat(breakChancePercent);                      
         event.setBreakChance(fbreakChance); // Log.info("LogicalDrops: Anvil Chance to break:" + fbreakChance + "%");
     }
+
+   
     
     @SubscribeEvent
     public void checkLivingEvent(EntityJoinWorldEvent event){
@@ -187,7 +276,7 @@ public class RealisticEntityBehaviorHandler {
                 
                 int entityAge = EA.getGrowingAge();
                 int entityId = event.getEntity().getEntityId();
-                String etype = event.getEntity().getEntityData().getTypeName(entityId);                  
+                // String etype = event.getEntity().getEntityData(). getTypeName(entityId);                  
         
                 // String strDate = new SimpleDateFormat("yyyy.MM.dd HH:mm:ss").format(new Date());
                 // Log.info("******EntityJoinWorldEvent: " + etype + "(" + entityId + ") ALMOST ADULT!  | DATE:" + strDate + "*** (age:" + entityAge + ") [modifiedGrowingAge:" + modifiedGrowingAge + "]");            
@@ -288,7 +377,7 @@ public class RealisticEntityBehaviorHandler {
             
             else if((event.getEntityLiving() instanceof EntitySquid)){
                 
-                ItemStack blackDye = new ItemStack(Items.field_151100_aR,1,0);
+                ItemStack blackDye = new ItemStack(Items.DYE,1,0);
                 blackDye.setCount(getRandom(2,6));
                 if(blackDye.getCount() > 0) event.getEntityLiving().entityDropItem(blackDye, 0);
                 
@@ -378,7 +467,7 @@ public class RealisticEntityBehaviorHandler {
                         //event.getEntityLiving().entityDropItem(meat, 0);                  
                         
                         PotionType potionType = GetRandomPotionType(); // PotionTypes.HEALING;
-                        ItemStack potionStack = (ItemStack) PotionUtils.addPotionToItemStack(new ItemStack(Items.POTION), potionType);
+                        ItemStack potionStack = (ItemStack) PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), potionType);
                         int potionCount = getRandom(1,3);
                         potionStack.setCount(potionCount);
                         event.getEntityLiving().entityDropItem(potionStack, 0);
@@ -398,7 +487,7 @@ public class RealisticEntityBehaviorHandler {
                 
                 
                 // all villagers drop bones/skull
-                ItemStack skellieHead = new ItemStack(Items.field_151144_bL, 1, 0);
+                ItemStack skellieHead = new ItemStack(Items.SKULL, 1, 0);
                 skellieHead.setCount(1);            
                 dropHumanRemains(event);
             }         
@@ -455,10 +544,16 @@ public class RealisticEntityBehaviorHandler {
             // ENDERMAN
             else if((event.getEntityLiving() instanceof EntityEnderman))
             {           
-                if(LDConfig.intEndermanPearlMax > 0) event.getEntityLiving().func_145779_a(Items.ENDER_PEARL, getRandom(LDConfig.intEndermanPearlMin,LDConfig.intEndermanPearlMax));
-                ItemStack blackWool = new ItemStack(Blocks.field_150325_L, 1, 15); // black wool
+                                
+                int enderPearlCount = getRandom(LDConfig.intEndermanPearlMin,LDConfig.intEndermanPearlMax);
+                ItemStack enderPearl = new ItemStack(Items.ENDER_PEARL,0);
+                enderPearl.setCount(enderPearlCount);
+                                
+                ItemStack blackWool = new ItemStack(Blocks.WOOL, 1, 15); // black wool
                 blackWool.setCount(LDConfig.intEndermanWoolCount);
                 event.getEntityLiving().entityDropItem(blackWool,0);
+                
+                if(enderPearlCount > 0) event.getEntityLiving().entityDropItem(enderPearl, 0);
                 
                 if(LDConfig.intEndermanPotionMax > 0){
                     
@@ -468,7 +563,7 @@ public class RealisticEntityBehaviorHandler {
                     if(!LivingEntityIsOnFire(event)){
                         potionStack = null;
                         PotionType potionType = PotionTypes.NIGHT_VISION;
-                        potionStack = (ItemStack) PotionUtils.addPotionToItemStack(new ItemStack(Items.POTION), potionType);
+                        potionStack = (ItemStack) PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), potionType);
                     }
                     
                     potionStack.setCount(getRandom(0,LDConfig.intEndermanPotionMax));
@@ -493,12 +588,7 @@ public class RealisticEntityBehaviorHandler {
                 // ItemStack bones = new ItemStack(Items.BONE,0);
                 ItemStack meat = new ItemStack(Items.CHICKEN,0);
                 ItemStack feathers = new ItemStack(Items.FEATHER,0);               
-                
-                if(LivingEntityIsOnFire(event)){
-                    meat = new ItemStack(Items.COOKED_CHICKEN,0);
-                    featherCount = 0;
-                }
-                                
+                                              
                 boneCount = LDConfig.intSmallAnimalBoneCount;
                 
                 if(!AgeableEntityIsAdult((EntityAgeable)event.getEntity())){
@@ -506,6 +596,11 @@ public class RealisticEntityBehaviorHandler {
                     meatCount = 0; //getRandom(0,LDConfig.intSmallAnimalMeatMin); // 30 lbs steaks super minimum!
                     featherCount = getRandom(0,LDConfig.intChickenFeatherMin);
                 }
+               
+                if(LivingEntityIsOnFire(event)){
+                    meat = new ItemStack(Items.COOKED_CHICKEN,0);
+                    featherCount = 0;
+                }                
                 
                 meat.setCount(meatCount);           
                 feathers.setCount(featherCount);                
@@ -590,9 +685,9 @@ public class RealisticEntityBehaviorHandler {
             // WITCH
             else if((event.getEntityLiving() instanceof EntityWitch))
             {
-                ItemStack witchWool = new ItemStack(Blocks.field_150325_L, 1, 10); // purple wool
+                ItemStack witchWool = new ItemStack(Blocks.WOOL, 1, 10); // purple wool
                 if(LivingEntityIsOnFire(event)){
-                    witchWool = new ItemStack(Blocks.field_150325_L, 1, 15); // black because burning!
+                    witchWool = new ItemStack(Blocks.WOOL, 1, 15); // black because burning!
                     // purpleWool.getOrCreateChildTag("display").setString("Name","Burned Wool");                   
                 }
                 witchWool.setCount(LDConfig.intWitchWoolCount);
@@ -600,20 +695,28 @@ public class RealisticEntityBehaviorHandler {
                         
 
                 ItemStack healPotionStack = new ItemStack(Items.GLASS_BOTTLE,0);
+                PotionType witchPotionType = null;
                 
                 // if burning, no wool and glass bottle
-                if(!LivingEntityIsOnFire(event)){
-                    healPotionStack     = null;
-                    PotionType witchPotionType = GetRandomPotionType();                    
-                    healPotionStack = (ItemStack) PotionUtils.addPotionToItemStack(new ItemStack(Items.POTION), witchPotionType);                   
+                if(!LivingEntityIsOnFire(event)){                    
+                    witchPotionType = GetRandomPotionType();                    
+                    healPotionStack = (ItemStack) PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), witchPotionType);                   
                 }
-                healPotionStack.setCount(getRandom(0,LDConfig.intWitchMaxPotionCount));
+                int potionCount = getRandom(0,LDConfig.intWitchMaxPotionCount);
+                healPotionStack.setCount(potionCount);
                 
-                ItemStack emeralds = new ItemStack(Items.EMERALD,0);
-                emeralds.setCount(getRandom(0,LDConfig.intWitchMaxEmeraldCount));
+                int emeraldChance = getRandom(0,100);
+                if(emeraldChance <= LDConfig.intWitchEmerlandChance){
+                    int emeraldCount = 1;
+                    ItemStack emeralds = new ItemStack(Items.EMERALD,0);
+                    emeralds.setCount(emeraldCount);
+                    if(emeraldCount > 0) event.getEntityLiving().entityDropItem(emeralds,0);                	
+                };
+
+                Log.info(witchPotionType.getRegistryName().toString());
                 
-                event.getEntityLiving().entityDropItem(emeralds,0);
-                event.getEntityLiving().entityDropItem(healPotionStack,0);
+                
+                if(potionCount > 0) event.getEntityLiving().entityDropItem(healPotionStack,0);
                 
             //          ItemBook boo
             //          Enchantment ench = new Enchantment();
@@ -650,30 +753,51 @@ public class RealisticEntityBehaviorHandler {
                 // greenWool.setCount(getRandom(LDConfig.intCreeperWoolMin,LDConfig.intCreeperWoolMax));
                 // if(LDConfig.intCreeperWoolMax > 0) event.getEntityLiving()
                 //  .entityDropItem(greenWool,0);
+            	
+            	if(LivingEntityIsOnFire(event)){
+            		
+            		// explode if fire death
+            		if(LDConfig.boolCreeperExplodesOnFireAttack){
+            			EntityCreeper C = (EntityCreeper)event.getEntityLiving();            		            		
+                		// C.spawnExplosionParticle();
+                		World W = event.getEntityLiving().getEntityWorld();            		
+                		boolean flag = net.minecraftforge.event.ForgeEventFactory.getMobGriefingEvent(C.world, C);            		
+                		W.createExplosion(C, C.posX, C.posY, C.posZ, 3 * 2.0F, flag);
+            		}            		
+            		
+            	}else{
+                    ItemStack leaves = new ItemStack(Blocks.LEAVES, 1, 0);
+                    leaves.setCount(getRandom(LDConfig.intCreeperLeavesMin,LDConfig.intCreeperLeavesMax));
+                    if(LDConfig.intCreeperLeavesMax > 0) event.getEntityLiving().entityDropItem(leaves ,0);
+                    ItemStack gunp = new ItemStack(Items.GUNPOWDER,0);
+                    gunp.setCount(getRandom(1,2));
+                    event.getEntityLiving().entityDropItem(gunp,0);                    
+            	}
                 
-                ItemStack gunp = new ItemStack(Items.GUNPOWDER,0);
-                gunp.setCount(getRandom(1,2));
-                event.getEntityLiving().entityDropItem(gunp,0);
                 
-                ItemStack creeperHead = new ItemStack(Items.field_151144_bL, 1, 4);
+                ItemStack creeperHead = new ItemStack(Items.SKULL, 1, 4);
                 creeperHead.setCount(1);
                 if(LDConfig.boolCreeperCanDropHead && skullRandomDropSuccess()) event.getEntityLiving()
                 .entityDropItem(creeperHead,0);
                 
-                ItemStack leaves = new ItemStack(Blocks.field_150362_t, 1, 0);
-                leaves.setCount(getRandom(LDConfig.intCreeperLeavesMin,LDConfig.intCreeperLeavesMax));
-                if(LDConfig.intCreeperLeavesMax > 0) event.getEntityLiving().entityDropItem(leaves ,0);         
-            }               
 
-            // SKELETON
-            else if((event.getEntityLiving() instanceof EntitySkeleton))
+                
+                
+            }            
+            
+
+            // SKELETON / STRAY / VINDICATOR
+            else if(
+            		(event.getEntityLiving() instanceof EntitySkeleton) ||
+            		(event.getEntityLiving() instanceof EntityStray) ||
+            		(event.getEntityLiving() instanceof EntityVindicator)
+            		)
             {           
                 
 //              String armors = event.getEntityLiving().getArmorInventoryList().toString();             
 //              Log.info("skeleton armors? {" + armors + "}");
-
                         
-                ItemStack skellieHead = new ItemStack(Items.field_151144_bL, 1, 0);
+                ItemStack skellieHead = new ItemStack(Items.SKULL, 1, 0);
                 skellieHead.setCount(1);
                 
                 // ItemStack bones = new ItemStack(Items.BONE,0);
@@ -690,7 +814,7 @@ public class RealisticEntityBehaviorHandler {
             // WITHERSKELETON
             else if((event.getEntityLiving() instanceof EntityWitherSkeleton))
             {       
-                ItemStack witherHead = new ItemStack(Items.field_151144_bL, 1, 1);
+                ItemStack witherHead = new ItemStack(Items.SKULL, 1, 1);
                 witherHead.setCount(1);
                 
                 ItemStack coal = new ItemStack(Items.COAL,0);
@@ -737,11 +861,11 @@ public class RealisticEntityBehaviorHandler {
             {           
                 //TODO: web not dropping            
                 // ItemStack spiderWebs = new ItemStack(Blocks.web, 1);
-                ItemBlock spiderWeb = (ItemBlock) ItemBlock.getItemFromBlock(Blocks.field_150321_G);
+                ItemBlock spiderWeb = (ItemBlock) ItemBlock.getItemFromBlock(Blocks.WEB);
                 int numberOfWebs = getRandom(LDConfig.intSpiderWebMin,LDConfig.intSpiderWebMax);
                 int numberOfString = getRandom(LDConfig.intSpiderStringMin,LDConfig.intSpiderStringMax);
                 
-                ItemStack webs = new ItemStack(Blocks.field_150321_G,0);
+                ItemStack webs = new ItemStack(Blocks.WEB,0);
                 webs.setCount(numberOfWebs);
                 ItemStack strings = new ItemStack(Items.STRING,0);
                 strings.setCount(numberOfString); 
@@ -812,9 +936,17 @@ public class RealisticEntityBehaviorHandler {
             // ZOMBIE
             else if((event.getEntityLiving() instanceof EntityZombie))
             {
+            	
+//            	if((event.getEntityLiving() instanceof EntityHusk)){
+//            		ItemStack dirt = new ItemStack(Items.DYE,1,3);
+//            		dirt.setCount(getRandom(0,2));
+//            		event.getEntityLiving().entityDropItem(dirt, 0);
+//            	}
+            	
                  // zombie head
                 ItemStack zombieHead;
-                zombieHead = new ItemStack(Items.field_151144_bL, 1, 2);                            
+                
+                zombieHead = new ItemStack(Items.SKULL, 1, 2);
                 // zombie shirt/pants
                 //              ItemStack stackShirt = new ItemStack(Items.leather_chestplate, 1);
                 //              ((ItemArmor) stackShirt.getItem()).setColor(stackShirt, 2651799); //15790320);          
@@ -914,11 +1046,13 @@ public class RealisticEntityBehaviorHandler {
             break;
         case 8:
             
-            if(str > 60){
-                pt = PotionTypes.LONG_SLOWNESS;
-            }else{
-                pt = PotionTypes.SLOWNESS;
-            }
+//            if(str > 60){
+//                pt = PotionTypes.LONG_SLOWNESS;
+//            }else{
+//                pt = PotionTypes.SLOWNESS;
+//            }
+//            
+            pt = PotionTypes.SLOWNESS;
             break;
         case 9:
             
@@ -1031,7 +1165,7 @@ public class RealisticEntityBehaviorHandler {
             crop = new ItemStack(Items.BEETROOT_SEEDS,0);           
             break;      
         case 5:                                 
-            crop = new ItemStack(Items.field_151100_aR, 1, 3); // cocobean?            
+            crop = new ItemStack(Items.DYE, 1, 3); // cocobean?            
             break;                  
         case 6:
             crop = new ItemStack(Items.MELON_SEEDS,0);          
@@ -1156,13 +1290,25 @@ public class RealisticEntityBehaviorHandler {
             if(LDConfig.boolZombieCanDropHead && skullRandomDropSuccess()) head = GetCustomHead("MHF_PigZombie","Pig Zombie Skull");
             
         }else if((event.getEntityLiving() instanceof EntityZombie)){
-            if(LDConfig.boolZombieCanDropHead && skullRandomDropSuccess()) head = new ItemStack(Items.field_151144_bL, 1, 2);
+        	// reg zombie
+            if(LDConfig.boolZombieCanDropHead && skullRandomDropSuccess()){
+                if(event.getEntityLiving() instanceof EntityHusk){
+                	// String huskSkullOwnerString = "{Id:\"1abe147b-ea7a-470c-8e74-16ce8fed6cb6\",Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDY3NGM2M2M4ZGI1ZjRjYTYyOGQ2OWEzYjFmOGEzNmUyOWQ4ZmQ3NzVlMWE2YmRiNmNhYmI0YmU0ZGIxMjEifX19\"}";
+                	// head = GetCustomHead("1abe147b-ea7a-470c-8e74-16ce8fed6cb6","Husk Skull");
+                	//https://minecraft-heads.com/custom/monsters/3245-husk
+                	// for now normal skull
+                	head = new ItemStack(Items.SKULL, 1, 0);
+                }else{
+                	head = new ItemStack(Items.SKULL, 1, 2);	
+                }
+            	
+            }
             
         }else if((event.getEntityLiving() instanceof EntityWitherSkeleton)){            
-            if (LDConfig.boolWitherSkeletonCanDropHead && skullRandomDropSuccess()) head = new ItemStack(Items.field_151144_bL, 1, 1);
+            if (LDConfig.boolWitherSkeletonCanDropHead && skullRandomDropSuccess()) head = new ItemStack(Items.SKULL, 1, 1);
         
         }else if((event.getEntityLiving() instanceof EntitySkeleton)){            
-            if (LDConfig.boolSkeletonCanDropHead && skullRandomDropSuccess()) head = new ItemStack(Items.field_151144_bL, 1, 0);
+            if (LDConfig.boolSkeletonCanDropHead && skullRandomDropSuccess()) head = new ItemStack(Items.SKULL, 1, 0);
         }
                 
         if(head != null){
@@ -1183,13 +1329,22 @@ public class RealisticEntityBehaviorHandler {
     
     // REFERENCE: http://www.minecraftforge.net/forum/topic/24228-solved-1710-player-skulls/        
     private ItemStack GetCustomHead(String playerName, String headName) {           
-        ItemStack customHead = new ItemStack(Items.field_151144_bL, 1, 3);    
-        customHead.setTag(new NBTTagCompound()); 
-        customHead.getTag().setTag("SkullOwner", new NBTTagString(playerName));         
-        customHead.getOrCreateChildTag("display").setString("Name",headName);   
+        ItemStack customHead = new ItemStack(Items.SKULL, 1, 3);    
+     // customHead.setTagCompound(new NBTTagCompound()); customHead.setTagInfo(key, value);
+     // customHead.setTagInfo("SkullOwner", new NBTTagString(playerName));      
+        // customHead.getOrCreateSubCompound("display").setString("Name",headName);
+        
+
+        //Give the ItemStack a blank NBTTagCompound
+        customHead.setTagCompound(new NBTTagCompound());
+
+        //Give the blank tag compund the "SkullOwner" tag with the value of a new NBTTagString of the players name
+        customHead.getTagCompound().setTag("SkullOwner", new NBTTagString(playerName));
+        
+        customHead.getOrCreateSubCompound("display").setString("Name",headName);
+        
         return customHead;          
     }
-
 
     private Boolean skullRandomDropSuccess(){
         Boolean willDrop = false;
@@ -1234,13 +1389,13 @@ public class RealisticEntityBehaviorHandler {
             color = 1973019;            
 //          shirt.setTag(new NBTTagCompound()); 
 //          shirt.getTag().setTag("SkullOwner", new NBTTagString(playerName));          
-            shirt.getOrCreateChildTag("display").setString("Name","Burned Shirt");
+            shirt.getOrCreateSubCompound("display").setString("Name","Burned Shirt");
         }       
         
         shirt.setCount(1);                                                
         ItemArmor colorShirt = (ItemArmor)shirt.getItem();
         shirt.setCount(1);                                        
-        colorShirt.func_82813_b(shirt,color);                       
+        colorShirt.setColor(shirt,color);                       
         event.getEntityLiving().entityDropItem(shirt, 0);               
     }
 

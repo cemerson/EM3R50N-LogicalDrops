@@ -1,0 +1,16 @@
+[
+{
+  "modid": "logicaldrops",
+  "name": "Logical Drops",
+  "description": "Adjusts some things to make the Survival mode a bit more realistic.",
+  "version": "1.12.2.2",
+  "mcversion": "1.12.2", 
+  "url": "http://bit.ly/LogicalDrops",
+  "updateUrl": "",
+  "authorList": ["EM3R50N"],   
+  "logoFile": "/gfx/EM3R50N.png",
+  "screenshots": [],
+  "dependencies": []
+  
+}
+]

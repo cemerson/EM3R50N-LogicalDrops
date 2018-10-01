@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shapeless",    
+    "group": "Logicraft",                 
+    "ingredients":       
+	[       
+			{
+				"item": "minecraft:dye",
+				"data": 15
+			},
+			{
+				"item": "minecraft:dye",
+				"data": 1
+			}        
+                 
+	],               
+    
+	"result":
+	{
+		"item":"minecraft:dye",
+		"data":9,
+		"count":1
+	}
+}

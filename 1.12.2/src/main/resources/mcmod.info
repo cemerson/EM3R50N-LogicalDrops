@@ -1,14 +1,14 @@
 [
 {
   "modid": "logicaldrops",
-  "name": "Logical Drops",
-  "description": "Adjusts some things to make the Survival mode a bit more realistic.",
-  "version": "1.12.2.2",
+  "name": "LogicalCraft",
+  "description": "Some logical adjustments to make Survival mode a bit more realistic.",
+  "version": "1.12.2-14.23.4.2764",
   "mcversion": "1.12.2", 
-  "url": "http://bit.ly/LogicalDrops",
+  "url": "http://bit.ly/LogicalCraft",
   "updateUrl": "",
   "authorList": ["EM3R50N"],   
-  "logoFile": "/gfx/EM3R50N.png",
+  "logoFile": "/gfx/banner.png",
   "screenshots": [],
   "dependencies": []
   
